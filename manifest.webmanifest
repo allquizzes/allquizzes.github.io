@@ -1,27 +1,11 @@
 {
-  "short_name": "Weather",
-  "name": "Weather: Do I need an umbrella?",
-  "description": "Weather forecast information",
+  "short_name": "Quiz",
+  "name": "All Quizzes are here",
+  "description": "All Quizzes are here",
   
   "start_url": "/index.html",
-  "background_color": "#3367D6",
+  "background_color": "lightGreen",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#3367D6",
-  "shortcuts": [
-    {
-      "name": "How's weather today?",
-      "short_name": "Today",
-      "description": "View weather information for today",
-      "url": "/today?source=pwa",
-      "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "How's weather tomorrow?",
-      "short_name": "Tomorrow",
-      "description": "View weather information for tomorrow",
-      "url": "/tomorrow?source=pwa",
-      "icons": [{ "src": "/images/tomorrow.png", "sizes": "192x192" }]
-    }
-  ]
+  "theme_color": "cyan",
 }
