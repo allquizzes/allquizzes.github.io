@@ -7,5 +7,5 @@
   "background_color": "lightGreen",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "cyan",
+  "theme_color": "cyan"
 }
