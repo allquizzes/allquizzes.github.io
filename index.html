@@ -1,9 +1,667 @@
+<!doctype html>
 <html>
 <head>
-    <link rel="manifest" href="/manifest.webmanifest">
-   </head>
-<body>
-Omar and Osman
+ <title>Quiz</title>
+     <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
+ 
+ </head>
+<body id="body" onload="typeWriter() ; startGame() " >
+<marquee id="Cred">Created by <strong> Mohammad Omar Farooq Khan </strong></marquee>
+<h1 id="head"><br>Quiz <br><br></h1>
+<strong>Rules -</strong>
+<p id="demo"></p>
+​<center>
+<p id="timer">80</p>
+</center>
 
+<div class="con">
+<p><h2><u>Q.1</u> </h2><br> Which of the following is the fastest land animal ?</p>
+<button class="1" onclick="wrotwo(this.style)">Tiger</button><br><br>
+<button class="1" onclick="cortwo(this.style)">Cheetah</button><br><br> 
+<button class="1" onclick="wrotwo(this.style)">Leopard</button><br><br>
+<button onclick="wrotwo(this.style)" class="1">Panther</button><br><br>
+<p class="status"></p>
+</div><div class="con">
+<p><h2>Q.2</h2> Choose Asia from the Following Map ?</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/BlankMap-World-noborders.png" width="250" height="126" alt="Map" usemap="#planetmap">
+<p class="status"></p>
+<map id="planetmap" name="planetmap">
+<area shape="rect" coords="140,0,210,85" alt="Asia" onclick="corone()" id="areaone">
+<area shape="default" onclick="wroone()" id="area" >
+</map></div>
+<div class="con">
+ <p><h2>Q.3 </h2>Which of the following is the longest bone in the <strong>Human Body</strong> ?</p>
+ <button class="2" onclick="corthree(this.style)">Femur</button><br><br>
+ <button class="2" onclick="wrothree(this.style)">Tibia</button><br><br>
+ <button class="2" onclick="wrothree(this.style)">Fibula</button><br><br>
+ <button class="2" onclick="wrothree(this.style)">Radius</button><br>
+ <p class="status"></p>
+</div>
+<div class="con">
+ <p><h2>Q.4 </h2> The _____ is the<strong> Hardest Substance</strong> in the world.</p>
+ <button class="3" onclick="wrofour(this.style)">Gold</button><br><br><button class="3" onclick="wrofour(this.style)">Platinum</button><br><br>
+ <button class="3" onclick="wrofour(this.style)">Iron</button><br><br>
+ <button class="3" onclick="corfour(this.style)">Diamond </button><br> 
+ <p class="status"></p>
+</div>
+<div class="con">
+ <p><h2>Q.5 </h2> Which of the following author wrote the book -<strong>"The Adventures of Sherlock Holmes" </strong>?</p>
+ <button class="4" onclick="wrofive(this.style)">Charles  Dickens</button><br><br>
+ <button class="4" onclick="corfive(this.style)">Arthur Conan Doyle</button><br><br>
+ <button class="4" onclick="wrofive(this.style)">Oscar Wilde</button><br><br>
+ <button class="4" onclick="wrofive(this.style)">William
+ Shakespeare </button><br> 
+ <p class="status"></p>
+</div> 
+<div class="con">
+ <p><h2>Q.6 </h2>Type the <em>Word </em> using the given hints - <br><br>
+ 1. <strong>Definition -</strong> The scientific study of the human mind and its functions <br><br>
+ 2. <strong>Pronunciation -</strong>
+  <audio controls>
+<source src="https://upload.wikimedia.org/wikipedia/commons/f/f1/En-us-psychology.ogg">
+</audio>
+ <a href="https://commons.wikimedia.org/wiki/File:En-us-psychology.ogg">Audio Source</a>
+   </p>
+  <input type="text" id="spell" placeholder="Type the Word here"
+  autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><button onclick="spell()" id="spbutt" >Check</button>
+ <p class="status"></p>
+</div>
+
+<div class="con">
+ <p><h2>Q.7 </h2> What are the lines called which<em> never</em><strong> meet each other</strong> ?</p>
+ <img style="width : 300px" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Parallel_lines.jpg"><br>
+ <button class="5" onclick="wrosev(this.style)">Perpendicular Lines</button><br><br>
+ <button class="5" onclick="wrosev(this.style)">Intersecting Lines</button><br><br>
+ <button class="5" onclick="corsev(this.style)">Parallel    Lines</button><br><br>
+ <button class="5" onclick="wrosev(this.style)">None of These </button><br> 
+ <p class="status"></p>
+</div> 
+<div class="con">
+ <p><h2>Q.8 </h2>Which country won the 2019 <strong>Cricket World Cup</strong> ?</p>
+ <button class="6" onclick="wroeight(this.style)">🇦🇺  Australia 🇦🇺</button><br><br>
+ <button class="6" onclick="wroeight(this.style)">🇳🇿 New Zealand 🇳🇿</button><br><br>
+ <button class="6" onclick="coreight(this.style)">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England 🏴󠁧󠁢󠁥󠁮󠁧󠁿</button><br><br>
+ <button class="6" onclick="wroeight(this.style)">🇮🇳 India 🇮🇳</button><br> 
+ <p class="status"></p>
+</div> 
+<div class="con">
+ <p><h2>Q.9 </h2>Which building was the first to have <strong>more than <em>100 </em>floors</strong> ?</p>
+ <button class="7" onclick="wronine(this.style)">Shanghai Tower</button><br><br>
+ <button class="7" onclick="wronine(this.style)">One World Trade Center</button><br><br>
+ <button class="7" onclick="wronine(this.style)">Taipei <strong>101 </strong></button><br><br>
+ <button class="7" onclick="cornine(this.style)">Empire State Building</button><br> 
+ <p class="status"></p>
+</div> 
+<div class="con">
+ <p><h2>Q.10 </h2>Who was the first person to Walk on Moon ?</p>
+ <button class="8" onclick="corten(this.style)">Neil Armstrong</button><br><br>
+ <button class="8" onclick="wroten(this.style)">Edwin Aldrin</button><br><br>
+ <button class="8" onclick="wroten(this.style)">Charles Conrad</button><br><br>
+ <button class="8" onclick="wroten(this.style)">Alan Bean</button><br> 
+ <p class="status"></p>
+</div> <br><br>
+<button onclick="check()" id="chc">Check Score</button>
+<h2 id="h3"></h2>
+<p id="sco"></p>
+<div id="piechart"></div>
+<audio hidden id="auwin">
+<source src="https://upload.wikimedia.org/wikipedia/commons/9/93/Start.wav">
+</audio>
+<input type="hidden" id="cop">
+<br><br><br><br><br><br><br><br>
+ <script>
+
+var x = document
+
+ .getElementsByClassName("status");
+
+var scp = 0;
+
+var smi = 0;
+
+var random = document.getElementById(
+
+ "sta");
+
+var a = document.getElementById(
+
+ "audio");
+
+ var i = 0;
+
+var txt = ' This is a General Knowledge Quiz. It contains 10 questions for which you have 1 minute. After 1 minute you can not do the Quiz. Every Correct Answer gives you +5 points while every wrong answer gives you -3 points. You can Check your Score by clicking on "Check Score" button. You can also share your Score. So enjoy the Quiz !!!'; /* The text */
+
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+
+  if (i < txt.length) {
+
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+i++;
+setTimeout(typeWriter , speed)
+ }
+}
+var time;
+var countingdown;
+var timer = document.getElementById(
+ "timer");
+
+
+function countdown() {
+ if (time % 60 < 100) {
+  timer.innerHTML = time ;
+ } else {
+  timer.innerHTML = time;
+ }
+ if (time <= 0) {
+  timer.innerHTML = "0";
+ }
+ if (time == 0) {
+  alert("Time Up");
+  var y = document
+  .getElementsByClassName("1");
+ y[0].disabled = true;
+ y[1].disabled = true;
+ y[2].disabled = true;
+ y[3].disabled = true;
+  document.getElementById("area")
+  .onclick = "";
+  document.getElementById("areaone")
+  .onclick = "";
+  document.getElementsByClassName(
+  "2")[0].disabled = true;
+ document.getElementsByClassName(
+  "2")[1].disabled = true;
+ document.getElementsByClassName(
+  "2")[2].disabled = true;
+ document.getElementsByClassName(
+  "2")[3].disabled = true;
+  document.getElementsByClassName(
+  "3")[0].disabled = true;
+ document.getElementsByClassName(
+  "3")[1].disabled = true;
+ document.getElementsByClassName(
+  "3")[2].disabled = true;
+ document.getElementsByClassName(
+  "3")[3].disabled = true;
+  document.getElementsByClassName(
+  "4")[0].disabled = true;
+ document.getElementsByClassName(
+  "4")[1].disabled = true;
+ document.getElementsByClassName(
+  "4")[2].disabled = true;
+ document.getElementsByClassName(
+  "4")[3].disabled = true;
+  document.getElementsByClassName(
+  "5")[0].disabled = true;
+ document.getElementsByClassName(
+  "5")[1].disabled = true;
+ document.getElementsByClassName(
+  "5")[2].disabled = true;
+ document.getElementsByClassName(
+  "5")[3].disabled = true;
+  document.getElementsByClassName(
+  "6")[0].disabled = true;
+ document.getElementsByClassName(
+  "6")[1].disabled = true;
+ document.getElementsByClassName(
+  "6")[2].disabled = true;
+ document.getElementsByClassName(
+  "6")[3].disabled = true;
+  document.getElementsByClassName(
+  "7")[0].disabled = true;
+ document.getElementsByClassName(
+  "7")[1].disabled = true;
+ document.getElementsByClassName(
+  "7")[2].disabled = true;
+ document.getElementsByClassName(
+  "7")[3].disabled = true;
+  document.getElementsByClassName(
+  "8")[0].disabled = true;
+ document.getElementsByClassName(
+  "8")[1].disabled = true;
+ document.getElementsByClassName(
+  "8")[2].disabled = true;
+ document.getElementsByClassName(
+  "8")[3].disabled = true; 
+  document.getElementById(
+  "spell").readOnly = true;
+  document.getElementById("spbutt"). disabled = true;
+  
+   }
+ time--;
+}
+
+
+
+function startGame() {
+ clearInterval(countingdown);
+ time = 80;
+ countingdown = setInterval(
+  countdown, 1000);
+}
+ 
+ 
+ 
+function corone() {
+ x[1].innerHTML = "✓ Correct";
+ document.getElementById("area")
+  .onclick = "";
+ scp = scp + 1;
+}
+
+function wroone() {
+ x[1].innerHTML = "× Wrong";
+ document.getElementById("areaone")
+  .onclick = "";
+ x[1].style.color = "red";
+ smi = smi + 1;
+}
+
+function cortwo(here) {
+ here.backgroundColor = "green";
+ y = document
+  .getElementsByClassName("1");
+ y[0].disabled = true;
+ y[1].disabled = true;
+ y[2].disabled = true;
+ y[3].disabled = true;
+ scp += 1;
+ x[0].innerHTML = "✓ Correct";
+ random.innerHTML = "✓ Correct";
+ a.play();
+}
+
+function wrotwo(here) {
+ here.backgroundColor = "red";
+ x[0].innerHTML = "× Wrong";
+ x[0].style.color = "red";
+ y = document
+  .getElementsByClassName("1");
+ y[0].disabled = true;
+ y[1].disabled = true;
+ y[2].disabled = true;
+ y[3].disabled = true;
+ y[1].style.border =
+  "5px solid green";
+ smi += 1;
+ x[0].navigator.vibrate(200);
+ random.innerHTML = "× Wrong";
+}
+
+function corthree(here) {
+ here.backgroundColor = "green";
+ scp += 1;
+ x[2].innerHTML = "✓ Correct";
+ document.getElementsByClassName(
+  "2")[0].disabled = true;
+ document.getElementsByClassName(
+  "2")[1].disabled = true;
+ document.getElementsByClassName(
+  "2")[2].disabled = true;
+ document.getElementsByClassName(
+  "2")[3].disabled = true;
+ random.innerHTML = "✓ Correct";
+ a.play()
+}
+
+function wrothree(here) {
+ here.backgroundColor = "red";
+ smi += 1;
+ x[2].innerHTML = "× Wrong";
+ x[2].style.color = "red";
+ document.getElementsByClassName(
+  "2")[0].disabled = true;
+ document.getElementsByClassName(
+  "2")[1].disabled = true;
+ document.getElementsByClassName(
+  "2")[2].disabled = true;
+ document.getElementsByClassName(
+  "2")[3].disabled = true;
+ document.getElementsByClassName(
+   "2")[0].style.border =
+  "5px solid green";
+ random.innerHTML = "× Wrong";
+}
+
+function corfour(here) {
+ here.backgroundColor = "green";
+ scp += 1;
+ x[3].innerHTML = "✓ Correct";
+ document.getElementsByClassName(
+  "3")[0].disabled = true;
+ document.getElementsByClassName(
+  "3")[1].disabled = true;
+ document.getElementsByClassName(
+  "3")[2].disabled = true;
+ document.getElementsByClassName(
+  "3")[3].disabled = true;
+ random.innerHTML = "✓ Correct";
+ a.play()
+}
+
+function wrofour(here) {
+ here.backgroundColor = "red";
+ smi += 1;
+ x[3].innerHTML = "× Wrong";
+ x[3].style.color = "red";
+ document.getElementsByClassName(
+  "3")[0].disabled = true;
+ document.getElementsByClassName(
+  "3")[1].disabled = true;
+ document.getElementsByClassName(
+  "3")[2].disabled = true;
+ document.getElementsByClassName(
+  "3")[3].disabled = true;
+ document.getElementsByClassName(
+   "3")[3].style.border =
+  "5px solid green";
+ random.innerHTML = "× Wrong";
+}
+
+function corfive(here) {
+ here.backgroundColor = "green";
+ scp += 1;
+ x[4].innerHTML = "✓ Correct";
+ document.getElementsByClassName(
+  "4")[0].disabled = true;
+ document.getElementsByClassName(
+  "4")[1].disabled = true;
+ document.getElementsByClassName(
+  "4")[2].disabled = true;
+ document.getElementsByClassName(
+  "4")[3].disabled = true;
+ random.innerHTML = "✓ Correct";
+ a.play();
+}
+
+function wrofive(here) {
+ here.backgroundColor = "red";
+ smi += 1;
+ x[4].innerHTML = "× Wrong";
+ x[4].style.color = "red";
+ document.getElementsByClassName(
+  "4")[0].disabled = true;
+ document.getElementsByClassName(
+  "4")[1].disabled = true;
+ document.getElementsByClassName(
+  "4")[2].disabled = true;
+ document.getElementsByClassName(
+  "4")[3].disabled = true;
+ document.getElementsByClassName(
+   "4")[1].style.border =
+  "5px solid green";
+ random.innerHTML = "× Wrong";
+}
+
+function spell() {
+ var spl = document.getElementById(
+  "spell");
+ if (spl.value.toLowerCase() ===
+  "psychology") {
+  x[5].innerHTML = "✓ Correct";
+  spl.readOnly = true;
+  scp += 1;
+  random.innerHTML = "✓ Correct";
+  a.play();
+ } else {
+  x[5].innerHTML = "× Wrong";
+  x[5].style.color = "red";
+  spl.readOnly = true;
+  smi += 1;
+  spl.style.color = "red";
+  setTimeout(corsix, 2000);
+  random.innerHTML = "× Wrong";
+ }
+}
+
+function corsev(here) {
+ here.backgroundColor = "green";
+ scp += 1;
+ x[6].innerHTML = "✓ Correct";
+ document.getElementsByClassName(
+  "5")[0].disabled = true;
+ document.getElementsByClassName(
+  "5")[1].disabled = true;
+ document.getElementsByClassName(
+  "5")[2].disabled = true;
+ document.getElementsByClassName(
+  "5")[3].disabled = true;
+ random.innerHTML = "✓ Correct";
+ a.play();
+}
+
+function wrosev(here) {
+ here.backgroundColor = "red";
+ smi += 1;
+ x[6].innerHTML = "× Wrong";
+ x[6].style.color = "red";
+ document.getElementsByClassName(
+  "5")[0].disabled = true;
+ document.getElementsByClassName(
+  "5")[1].disabled = true;
+ document.getElementsByClassName(
+  "5")[2].disabled = true;
+ document.getElementsByClassName(
+  "5")[3].disabled = true;
+ document.getElementsByClassName(
+   "5")[2].style.border =
+  "5px solid green";
+ random.innerHTML = "× Wrong";
+}
+
+function coreight(here) {
+ here.backgroundColor = "green";
+ scp += 1;
+ x[7].innerHTML = "✓ Correct";
+ document.getElementsByClassName(
+  "6")[0].disabled = true;
+ document.getElementsByClassName(
+  "6")[1].disabled = true;
+ document.getElementsByClassName(
+  "6")[2].disabled = true;
+ document.getElementsByClassName(
+  "6")[3].disabled = true;
+ random.innerHTML = "✓ Correct";
+ a.play();
+}
+
+function wroeight(here) {
+ here.backgroundColor = "red";
+ smi += 1;
+ x[7].innerHTML = "× Wrong";
+ x[7].style.color = "red";
+ document.getElementsByClassName(
+  "6")[0].disabled = true;
+ document.getElementsByClassName(
+  "6")[1].disabled = true;
+ document.getElementsByClassName(
+  "6")[2].disabled = true;
+ document.getElementsByClassName(
+  "6")[3].disabled = true;
+ document.getElementsByClassName(
+   "6")[2].style.border =
+  "5px solid green";
+ random.innerHTML = "× Wrong";
+}
+
+function cornine(here) {
+ here.backgroundColor = "green";
+ scp += 1;
+ x[8].innerHTML = "✓ Correct";
+ document.getElementsByClassName(
+  "7")[0].disabled = true;
+ document.getElementsByClassName(
+  "7")[1].disabled = true;
+ document.getElementsByClassName(
+  "7")[2].disabled = true;
+ document.getElementsByClassName(
+  "7")[3].disabled = true;
+ random.innerHTML = "✓ Correct";
+ a.play();
+}
+
+function wronine(here) {
+ here.backgroundColor = "red";
+ smi += 1;
+ x[8].innerHTML = "× Wrong";
+ x[8].style.color = "red";
+ document.getElementsByClassName(
+  "7")[0].disabled = true;
+ document.getElementsByClassName(
+  "7")[1].disabled = true;
+ document.getElementsByClassName(
+  "7")[2].disabled = true;
+ document.getElementsByClassName(
+  "7")[3].disabled = true;
+ document.getElementsByClassName(
+   "7")[3].style.border =
+  "5px solid green";
+ random.innerHTML = "× Wrong";
+}
+
+function corten(here) {
+ here.backgroundColor = "green";
+ scp += 1;
+ x[9].innerHTML = "✓ Correct";
+ document.getElementsByClassName(
+  "8")[0].disabled = true;
+ document.getElementsByClassName(
+  "8")[1].disabled = true;
+ document.getElementsByClassName(
+  "8")[2].disabled = true;
+ document.getElementsByClassName(
+  "8")[3].disabled = true;
+ random.innerHTML = "✓ Correct";
+ a.play();
+}
+
+function wroten(here) {
+ here.backgroundColor = "red";
+ smi += 1;
+ x[9].innerHTML = "× Wrong";
+ x[9].style.color = "red";
+ document.getElementsByClassName(
+  "8")[0].disabled = true;
+ document.getElementsByClassName(
+  "8")[1].disabled = true;
+ document.getElementsByClassName(
+  "8")[2].disabled = true;
+ document.getElementsByClassName(
+  "8")[3].disabled = true;
+ document.getElementsByClassName(
+   "8")[0].style.border =
+  "5px solid green";
+ random.innerHTML = "× Wrong";
+}
+
+function corsix() {
+ document.getElementById("spell")
+  .value = "Psychology";
+ document.getElementById("spell")
+  .style.color = "green";
+}
+
+function check() {
+ var poipu = scp * 5;
+ var poimu = smi * 3;
+ var points = poipu - poimu;
+  var bill = "See my Score of this quiz  - " + document.URL + "\n \n Correct Answers : " +
+  scp + "\n \n Wrong Answers : " +
+  smi + "\n \n Points : " + points ;
+document.getElementById("sco")
+  .innerHTML =
+  "Correct Answers : " +
+  scp + "<br>Wrong Answers : " +
+  smi + "<br>Points : " + points +
+  `<br><button style='fontSize:36px' class='share-button'><i class='material-icons'>share</i><br> Share Score </button> <br><a id = "wh"><button id = "whhj">Share Score<br> via WhatsApp</button></a>`  ; 
+  document.getElementById("wh").href = "whatsapp://send?text=" + bill;
+  var h = document.getElementById("h3");
+  
+if(scp == 10) {
+h.innerHTML = "🏆 Perfect 🏆";
+}else if(points == 0){
+h.innerHTML = "🙂";
+}else if(points >= 40){
+h.innerHTML = "🏅 Excellent 🏅";
+}else if(points >= 30){
+h.innerHTML = "👏 Very Good 👏";
+}else if(points >= 15){
+h.innerHTML = "👍 Good 👍";
+}else if(points > 0){
+h.innerHTML = "😐 Fair 😐";
+}else if(points > -30){
+h.innerHTML = "☹️ You can do better ☹️";
+}
+
+
+  const shareButton = document
+ .querySelector('.share-button');
+shareButton.addEventListener('click',
+ event => { 
+  if (navigator.share) {
+   navigator.share({
+    text:  "See my Score of this quiz  - " + document.URL + "\n Correct Answers : " +
+  scp + "\n Wrong Answers : " +
+  smi + "\n Points : " + points
+    }).then(() => {
+    console.log(
+     'Thanks for sharing!');
+   })
+  } else {
+   alert(
+    "Looks like your browser doesn't support local Sharing You can use WhatsApp if you want"
+   );
+   
+  }
+ })
+ if (points > 0) {
+  document.getElementById("auwin")
+   .play();
+ } else {
+  navigator.vibrate(500);
+ }
+ //Chart Work Starts... 
+ google.charts.load('current', {
+  'packages': ['corechart']
+ });
+ google.charts.setOnLoadCallback(
+  drawChart);
+ // Draw the chart and set the chart values
+ function drawChart() {
+  var data = google.visualization
+   .arrayToDataTable([
+    ['status', 'percentage'],
+    ['Correct Answers', scp],
+    ['Wrong Answers', smi]
+   ]);
+  // Optional; add a title and set the width and height of the chart
+  var options = {
+   'title': 'Your Score',
+   'width': 500,
+   'height': 400,
+   is3D: true,
+   slices: {
+    0: {
+     color: 'green'
+    },
+    1: {
+     color: 'red'
+    }
+   }
+  };
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google
+   .visualization.PieChart(document
+    .getElementById('piechart'));
+  chart.draw(data, options);
+ }
+}
+</script>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </body>
 </html>
