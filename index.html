@@ -16,7 +16,7 @@
 ​<center>
 <p id="timer">80</p>
 </center>
-
+<button id="install-button">Install</button>
 <div class="con">
 <p><h2><u>Q.1</u> </h2><br> Which of the following is the fastest land animal ?</p>
 <button class="1" onclick="wrotwo(this.style)">Tiger</button><br><br>
@@ -661,6 +661,31 @@ shareButton.addEventListener('click',
   chart.draw(data, options);
  }
 }
+let installPromptEvent;
+
+window.addEventListener('beforeinstallprompt', (event) => {
+  // Prevent Chrome <= 67 from automatically showing the prompt
+  event.preventDefault();
+  // Stash the event so it can be triggered later.
+  installPromptEvent = event;
+  // Update the install UI to notify the user app can be installed
+  document.querySelector('#install-button').disabled = false;
+});btnInstall.addEventListener('click', () => {
+  // Update the install UI to remove the install button
+  document.querySelector('#install-button').disabled = true;
+  // Show the modal add to home screen dialog
+  installPromptEvent.prompt();
+  // Wait for the user to respond to the prompt
+  installPromptEvent.userChoice.then((choice) => {
+    if (choice.outcome === 'accepted') {
+      console.log('User accepted the A2HS prompt');
+    } else {
+      console.log('User dismissed the A2HS prompt');
+    }
+    // Clear the saved prompt since it can't be used again
+    installPromptEvent = null;
+  });
+});
 </script>
  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </body>
