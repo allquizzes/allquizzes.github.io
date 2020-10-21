@@ -39,8 +39,9 @@
  <p class="status"></p>
 </div>
 <div class="con">
- <p><h2>Q.4 </h2></p>
- <button class="3" onclick="wrofour(this.style)"></button><br><br><button class="3" onclick="wrofour(this.style)"></button><br><br>
+ <p><h2>Q.4 </h2>नमाज़ और वुज़ू का तरीक़ा अल्लाह ने किसके ज़रिए मुहम्मद (S.A.W.) को किसने सिखाया ?</p>
+ <button class="3" onclick="wrofour(this.style)"></button><br><br>
+ <button class="3" onclick="wrofour(this.style)"></button><br><br>
  <button class="3" onclick="wrofour(this.style)"></button><br><br>
  <button class="3" onclick="corfour(this.style)"> </button><br> 
  <p class="status"></p>
@@ -419,26 +420,6 @@ function wrofive(here) {
  random.innerHTML = "× Wrong";
 }
 
-function spell() {
- var spl = document.getElementById(
-  "spell");
- if (spl.value.toLowerCase() ===
-  "psychology") {
-  x[5].innerHTML = "✓ Correct";
-  spl.readOnly = true;
-  scp += 1;
-  random.innerHTML = "✓ Correct";
-  a.play();
- } else {
-  x[5].innerHTML = "× Wrong";
-  x[5].style.color = "red";
-  spl.readOnly = true;
-  smi += 1;
-  spl.style.color = "red";
-  setTimeout(corsix, 2000);
-  random.innerHTML = "× Wrong";
- }
-}
 
 function corsev(here) {
  here.backgroundColor = "green";
