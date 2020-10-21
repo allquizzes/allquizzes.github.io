@@ -29,10 +29,7 @@ background-color: black;
 font-size: 35px;
 text-shadow: 0 0 20px #32f, 0 0 30px #1004ff, 0 0 40px #0400ff, 0 0 50px #6666ff, 0 0 60px #2402ff, 0 0 70px #4440ff, 0 0 80px #444dff;
  }
- @keyframes color {
- 0%{color : red}
- 100%{color: chartreuse}
- }
+
  h2 {
   font-size: 30px;
   text-decoration: underline;
