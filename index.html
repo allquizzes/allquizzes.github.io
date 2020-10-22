@@ -640,19 +640,15 @@ shareButton.addEventListener('click',
 }
 </script>
 <script>
-if('serviceWorker' in navigator) {
-        window.addEventListiner('load', () => {
-            navigator.serviceWorker.register('sw.js')
-                .then((registration) => { 
-                    alert(`service worker registered succesfully ${registration}`) 
-                })
-                .catch((err) => {
-                    alert(`Error registring ${err}`) 
-                })
-        })
-    } else {
-        alert(`Service worker is not supported in this browser.`)
-    } 
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', ()=> {
+      navigator
+      .serviceWorker
+      .register('sw01.js')
+      .then(()=>console.log("Ready."))
+      .catch(()=>console.log("Err..."));
+    });
+  } 
 </script>
  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </body>
