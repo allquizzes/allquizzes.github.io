@@ -661,6 +661,11 @@ shareButton.addEventListener('click',
   chart.draw(data, options);
  }
 }
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/pwa-examples/a2hs/sw.js')
+           .then(function() { console.log('Service Worker Registered'); });
+}
 </script>
  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </body>
