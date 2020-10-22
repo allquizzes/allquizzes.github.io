@@ -1,12 +1,12 @@
-self.addEventListener('install', function(e) {
- e.waitUntil(
-   caches.open('all-quizzes').then(function(cache) {
-     return cache.addAll([
-       '/index.html' ,
+self.addEventListener('install', function(event) {
+  event.waitUntil(
+    caches.open('v1').then(function(cache) {
+      return cache.addAll([
+        '/index.html' ,
         '/style.css'
-     ]);
-   })
- );
+      ]);
+    })
+  );
 });
 
 self.addEventListener('fetch', function(event) {
@@ -27,7 +27,7 @@ self.addEventListener('fetch', function(event) {
         });
         return response;
       }).catch(function () {
-        return caches.match('/sw-test/gallery/myLittleVader.jpg');
+        return caches.match('/index.html');
       });
     }
   }));
