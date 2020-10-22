@@ -397,28 +397,6 @@ function wrofive(here) {
   "5px solid green";
  random.innerHTML = "× Wrong";
 }
-
-function spell() {
- var spl = document.getElementById(
-  "spell");
- if (spl.value.toLowerCase() ===
-  "psychology") {
-  x[5].innerHTML = "✓ Correct";
-  spl.readOnly = true;
-  scp += 1;
-  random.innerHTML = "✓ Correct";
-  a.play();
- } else {
-  x[5].innerHTML = "× Wrong";
-  x[5].style.color = "red";
-  spl.readOnly = true;
-  smi += 1;
-  spl.style.color = "red";
-  setTimeout(corsix, 2000);
-  random.innerHTML = "× Wrong";
- }
-}
-
 function corsev(here) {
  here.backgroundColor = "green";
  scp += 1;
