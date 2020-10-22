@@ -638,18 +638,20 @@ shareButton.addEventListener('click',
   chart.draw(data, options);
  }
 }
+</script>
+<script>
 if('serviceWorker' in navigator) {
         window.addEventListiner('load', () => {
             navigator.serviceWorker.register('sw.js')
                 .then((registration) => { 
-                    console.log(`service worker registered succesfully ${registration}`) 
+                    alert(`service worker registered succesfully ${registration}`) 
                 })
                 .catch((err) => {
-                    console.log(`Error registring ${err}`) 
+                    alert(`Error registring ${err}`) 
                 })
         })
     } else {
-        console.log(`Service worker is not supported in this browser.`)
+        alert(`Service worker is not supported in this browser.`)
     } 
 </script>
  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
