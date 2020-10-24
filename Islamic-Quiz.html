@@ -165,7 +165,7 @@ function countdown() {
    60) + ":" + (time % 60);
  }
  if (time <= 0) {
-  timer.innerHTML = "0";
+  timer.innerHTML = "0:00";
  }
  if (time == 0) {
   alert("Time Up");
@@ -256,7 +256,7 @@ document.getElementsByClassName(
 
 function startGame() {
  clearInterval(countingdown);
- time = 5:00;
+ time = 300;
  countingdown = setInterval(
   countdown, 1000);
 }
