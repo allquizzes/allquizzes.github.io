@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
- <title>Quiz</title>
+ <title>Islamic Quiz</title>
  <link rel="stylesheet" href="style.css">
  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  <link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
@@ -23,6 +23,7 @@
 <button class="1" onclick="wrotwo(this.style)">जूंदी पहाड़</button><br><br>
 <button onclick="wrotwo(this.style)" class="1">कोहे सफा और कोहे मरवा</button><br><br>
 <p class="status"></p>
+<div id="tain">
 </div><div class="con">
 <p><h2>Q.2</h2>हब्शा के बादशाह को हज़रत जाफ़र ने कौन सी सूरः सुनाई ?</p>
 <button class="20" onclick="wroone(this.style)">सूरः अर-रहमान</button><br><br>
@@ -95,7 +96,9 @@
  <button class="8" onclick="wroten(this.style)">380</button><br><br>
  <button class="8" onclick="wroten(this.style)">280</button><br> 
  <p class="status"></p>
-</div> <br><br>
+</div>
+</div>
+ <br><br>
 <button onclick="check()" id="chc">Check Score</button>
 <h2 id="h3"></h2>
 <p id="sco"></p>
@@ -124,7 +127,7 @@ var a = document.getElementById(
  "audio");
 
  var i = 0;
-var bodyis = document.getElementById("body");
+var bodyis = document.getElementById("tain");
 var txt = ' This is an Islamic Quiz based on Muhammad (S.A.W). It contains 10 questions for which you have 5 minutes. After 5 minutes you can not do the Quiz. You can do this Quiz only one time. Every Correct Answer gives you 5 points. You can Check your Score by clicking on "Check Score" button. You can also share your Score. So enjoy the Quiz !!!'; /* The text */
 
 var speed = 50; /* The speed/duration of the effect in milliseconds */
