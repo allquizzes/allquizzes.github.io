@@ -629,15 +629,15 @@ if(scp == 10) {
 h.innerHTML = "🏆 Perfect 🏆";
 }else if(points == 0){
 h.innerHTML = "😐";
-}else if(points >= 40){
+}else if(points >= 80){
 h.innerHTML = "🏅 Excellent 🏅";
-}else if(points >= 30){
+}else if(points >= 60){
 h.innerHTML = "👏 Very Good 👏";
-}else if(points >= 15){
+}else if(points >= 40){
 h.innerHTML = "👍 Good 👍";
-}else if(points > 0){
+}else if(points >= 20){
 h.innerHTML = "🙂 Fair 🙂";
-}else if(points >= -30){
+}else if(points >= 10){
 h.innerHTML = "☹️ You can do better ☹️";
 }
 
@@ -650,7 +650,7 @@ shareButton.addEventListener('click',
    navigator.share({
     text:  "See my Score of this quiz  - " + document.URL + "\n Correct Answers : " +
   scp + "\n Wrong Answers : " +
-  smi + "\n Points : " + points
+  smi + "\n Points : " + points + "/100"
     }).then(() => {
     console.log(
      'Thanks for sharing!');
