@@ -159,7 +159,7 @@ var timer = document.getElementById(
 function countdown() {
  if (time % 60 < 100) {
   timer.innerHTML = Math.floor(time /
-   60) + ":0" + (time % 60); 
+   60) + ":" + (time % 60); 
  } else {
   timer.innerHTML = Math.floor(time /
    60) + ":" + (time % 60);
