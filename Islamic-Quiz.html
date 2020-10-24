@@ -8,7 +8,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
-<body id="body" onload="typeWriter() ; startGame() ; dont() " >
+<body id="body" onload="typeWriter() ; startGame() ; dont() ; " onunload='dothis()'>
 <marquee id="Cred">Created by <strong> Mohammad Omar Farooq Khan </strong></marquee>
 <h1 id="head"><br>Quiz <br><br></h1>
 <strong>Rules -</strong>
@@ -130,10 +130,13 @@ var txt = ' This is an Islamic Quiz based on Muhammad (S.A.W). It contains 10 qu
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 function dont(){
 if(localStorage.getItem("key") == null) {
-localStorage.setItem("key" , bodyis.innerHTML)
+console.log("New")
  }else{
 bodyis.innerHTML = localStorage.getItem("key") ; 
  }
+} 
+function dothis() {
+localStorage.setItem("key" , bodyis.innerHTML)
 }
 function typeWriter() {
 
