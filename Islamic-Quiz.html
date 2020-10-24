@@ -8,7 +8,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
-<body id="body" onload="typeWriter() ; startGame() " >
+<body id="body" onload="typeWriter() ; startGame() ; dont() " >
 <marquee id="Cred">Created by <strong> Mohammad Omar Farooq Khan </strong></marquee>
 <h1 id="head"><br>Quiz <br><br></h1>
 <strong>Rules -</strong>
@@ -124,11 +124,17 @@ var a = document.getElementById(
  "audio");
 
  var i = 0;
-
+var bodyis = document.getElementById("body");
 var txt = ' This is an Islamic Quiz based on Muhammad (S.A.W). It contains 10 questions for which you have 5 minutes. After 5 minutes you can not do the Quiz. You can do this Quiz only one time. Every Correct Answer gives you 5 points. You can Check your Score by clicking on "Check Score" button. You can also share your Score. So enjoy the Quiz !!!'; /* The text */
 
 var speed = 50; /* The speed/duration of the effect in milliseconds */
-
+function dont(){
+if(localStorage.getItem("key") == null) {
+localStorage.setItem("key" , bodyis.innerHTML)
+ }else{
+bodyis.innerHTML = localStorage.getItem("key") ; 
+ }
+}
 function typeWriter() {
 
   if (i < txt.length) {
