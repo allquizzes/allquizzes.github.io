@@ -610,7 +610,7 @@ function wrosix(here) {
 function check() {
  var poipu = scp * 5;
  var poimu = smi * 3;
- var points = poipu - poimu;
+ var points = poipu;
   var bill = "See my Score of this quiz  - " + document.URL + "\n \n Correct Answers : " +
   scp + "\n \n Wrong Answers : " +
   smi + "\n \n Points : " + points ;
@@ -626,7 +626,7 @@ document.getElementById("sco")
 if(scp == 10) {
 h.innerHTML = "🏆 Perfect 🏆";
 }else if(points == 0){
-h.innerHTML = "🙂";
+h.innerHTML = "😐";
 }else if(points >= 40){
 h.innerHTML = "🏅 Excellent 🏅";
 }else if(points >= 30){
@@ -634,7 +634,7 @@ h.innerHTML = "👏 Very Good 👏";
 }else if(points >= 15){
 h.innerHTML = "👍 Good 👍";
 }else if(points > 0){
-h.innerHTML = "😐 Fair 😐";
+h.innerHTML = "🙂 Fair 🙂";
 }else if(points >= -30){
 h.innerHTML = "☹️ You can do better ☹️";
 }
@@ -655,8 +655,8 @@ shareButton.addEventListener('click',
    })
   } else {
    alert(
-    "Looks like your browser doesn't support local Sharing You can use WhatsApp if you want"
-   );
+    "Looks like your browser doesn't support local Sharing You can use WhatsApp if you want")
+
    
   }
  })
