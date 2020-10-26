@@ -644,27 +644,6 @@ shareButton.addEventListener('click',
  }
 }
 </script>
-<script>
-
-if ('serviceWorker' in navigator) {
-
-    navigator.serviceWorker.register('sw.js')
-
-      .then((registration) => { 
-
-         alert("Success")     
-
-      })
-
-      .catch((err) => {
-
-         alert("fail")
-
-      });
-
-  } 
-
-</script>
  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </body>
 </html>
