@@ -1,55 +1,20 @@
 
-var urlsToCache = [
-
-  'style.css',
-
-  'index.html'
-
-];
-
-​
-
-self.addEventListener('install', (event) => {
-
-  event.waitUntil(
-
-    caches.open('my-cache')
-
-      .then((cache) => {
-
-        return cache.addAll(urlsToCache);
-
-      })
-
-  );
-
+self.addEventListener('install', function(e) {
+ e.waitUntil(
+   caches.open('fox-store').then(function(cache) {
+     return cache.addAll([
+       'a.html' ,
+       'style.css'
+     ]);
+   })
+ );
 });
-self.addEventListener('fetch', (event) => {
 
-  event.respondWith(
-
-    caches.match(event.request)
-
-      .then((response) => {
-
-        // The responce is in the cache
-
-        if (response) {
-
-          return response;
-
-        }
-
-​
-
-        // No cache match, we attempt to fetch it from the network
-
-        return fetch(event.request);
-
-      }
-
-    )
-
+self.addEventListener('fetch', function(e) {
+  console.log(e.request.url);
+  e.respondWith(
+    caches.match(e.request).then(function(response) {
+      return response || fetch(e.request);
+    })
   );
-
 });
