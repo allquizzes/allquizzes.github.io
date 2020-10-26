@@ -641,11 +641,24 @@ shareButton.addEventListener('click',
 }
 </script>
 <script>
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker
-           .register('sw.js')
-           .then(function() { console.log('Service Worker Registered'); });
-}
+
+if ('serviceWorker' in navigator) {
+
+    navigator.serviceWorker.register('/serviceWorker.js')
+
+      .then((registration) => { 
+
+         // The registration was successful       
+
+      })
+
+      .catch((err) => {
+
+         // The registration failed
+
+      });
+
+  } 
 
 </script>
  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
