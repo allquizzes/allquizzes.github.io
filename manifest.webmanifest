@@ -1,6 +1,6 @@
 {
-  "background_color": "purple",
-  "description": "Shows random fox pictures. Hey, at least it isn't cats.",
+  "background_color": "cyan",
+  "description": "It has all the Quizzes",
   "display": "fullscreen",
   "icons": [
     {
@@ -9,7 +9,7 @@
       "type": "image/png"
     }
   ],
-  "name": "Awesome fox pictures",
-  "short_name": "Foxes",
+  "name": "AllQuizzes",
+  "short_name": "Quizzes",
   "start_url": "index.html"
 }
