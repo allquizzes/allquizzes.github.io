@@ -9,7 +9,7 @@
       "type": "image/jpeg"
     }
   ],
-  "name": "AllQuizzes",
-  "short_name": "Quizzes",
-  "start_url": "index.html"
+  "name": "All Quizzes",
+  "short_name": "Quiz",
+  "start_url": "/index.html"
 }
