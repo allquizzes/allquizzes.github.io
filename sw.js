@@ -1,11 +1,9 @@
 
 var urlsToCache = [
 
-  '/',
+  'style.css',
 
-  '/styles.css',
-
-  '/home.js'
+  'index.html'
 
 ];
 
