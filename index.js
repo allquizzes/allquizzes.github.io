@@ -34,3 +34,13 @@ window.addEventListener('beforeinstallprompt', (e) => {
       });
   });
 });
+function display() {
+Notification.requestPermission(function(status) {
+    console.log('Notification permission status:', status);
+});
+  if (Notification.permission == 'granted') {
+    navigator.serviceWorker.getRegistration().then(function(reg) {
+      reg.showNotification('Hello world!');
+    });
+  }
+}
