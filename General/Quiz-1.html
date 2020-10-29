@@ -155,9 +155,11 @@ var timer = document.getElementById(
 
 function countdown() {
  if (time % 60 < 100) {
-  timer.innerHTML = time ;
+  timer.innerHTML = Math.floor(time /
+   60) + ":" + (time % 60); 
  } else {
-  timer.innerHTML = time;
+  timer.innerHTML = Math.floor(time /
+   60) + ":" + (time % 60);
  }
  if (time <= 0) {
   timer.innerHTML = "0";
@@ -242,7 +244,7 @@ function countdown() {
 
 function startGame() {
  clearInterval(countingdown);
- time = 80;
+ time = 120;
  countingdown = setInterval(
   countdown, 1000);
 }
