@@ -5,7 +5,9 @@
  <link rel="stylesheet" href="style.css">
  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  <link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    <script src="index.js" defer></script>
+
+ </head>
 <body id="body" onload="typeWriter() ; startGame() " >
 <marquee id="Cred">Created by <strong> Mohammad Omar Farooq Khan </strong></marquee>
 <h1 id="head"><br>Quiz <br><br></h1>
@@ -143,9 +145,11 @@ var timer = document.getElementById(
 
 function countdown() {
  if (time % 60 < 100) {
-  timer.innerHTML = time ;
+  timer.innerHTML = Math.floor(time /
+   60) + ":" + (time % 60); 
  } else {
-  timer.innerHTML = time;
+  timer.innerHTML = Math.floor(time /
+   60) + ":" + (time % 60);
  }
  if (time <= 0) {
   timer.innerHTML = "0";
@@ -239,7 +243,7 @@ document.getElementsByClassName(
 
 function startGame() {
  clearInterval(countingdown);
- time = 80;
+ time = 120;
  countingdown = setInterval(
   countdown, 1000);
 }
