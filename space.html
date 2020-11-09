@@ -25,11 +25,11 @@
 <button onclick="cortwo(this.style)" class="1">big-bang theory</button><br><br>
 <p class="status"></p>
 </div><div class="con">
-<p><h2>Q.2</h2> </p>
-<button class="20" onclick="wroone(this.style)"></button><br><br>
- <button class="20" onclick="wroone(this.style)"></button><br><br>
- <button class="20" onclick="corone(this.style)"></button><br><br>
- <button class="20" onclick="wroone(this.style)"> </button><br>
+<p><h2>Q.2</h2><b>Milky Way</b> is which type of galaxy ? </p>
+<button class="20" onclick="wroone(this.style)">Spiral</button><br><br>
+ <button class="20" onclick="corone(this.style)">Barred-Spiral</button><br><br>
+ <button class="20" onclick="wroone(this.style)">Elliptical</button><br><br>
+ <button class="20" onclick="wroone(this.style)">Irregular</button><br>
 <p class="status"></p></div>
 <div class="con">
  <p><h2>Q.3 </h2></p>
@@ -281,7 +281,7 @@ here.backgroundColor = "red";
  document.getElementsByClassName(
   "20")[3].disabled = true;
  document.getElementsByClassName(
-   "20")[3].style.border =
+   "20")[1].style.border =
   "5px solid green";
  random.innerHTML = "× Wrong";
 }
@@ -313,7 +313,6 @@ function wrotwo(here) {
  y[1].style.border =
   "5px solid green";
  smi += 1;
- x[0].navigator.vibrate(200);
  random.innerHTML = "× Wrong";
 }
 
