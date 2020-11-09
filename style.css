@@ -11,8 +11,6 @@ text-align: center;
 }
 #piechart {
  position: relative;
- bottom: 35px;
- left: 90px;
  z-index: 0;
  }
  .con {
