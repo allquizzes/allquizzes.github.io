@@ -3,5 +3,8 @@
 <body>
 <h1>Your Score:</h1>
 <p>Correct Answers : <span id="correct"></span></p>
+<script>
+document.getElementById("correct").innerHTML = sessionStorage.getItem("correct");
+</script>
 </body>
 </html>
