@@ -4,9 +4,11 @@
 <h1>Your Score:</h1>
 <h1>Correct Answers : <span id="correct"></span></h1>
 <h1>Wrong Answers : <span id="wrong"></span></h1>
+<h1>Points<span id="points"></span></h1>
 <script>
 document.getElementById("correct").innerHTML = sessionStorage.getItem("correct");
 document.getElementById("wrong").innerHTML = sessionStorage.getItem("wrong");
+document.getElementById("points").innerHTML = sessionStorage.getItem("points");
 
 </script>
 </body>
