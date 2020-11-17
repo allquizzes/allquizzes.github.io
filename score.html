@@ -37,7 +37,8 @@ document.getElementById("points").innerHTML = sessionStorage.getItem("points");
   var points = sessionStorage.getItem("points");
  var scp = document.getElementById("correct");
 var scp = document.getElementById("wrong");
-
+var hi = sessionStorage.getItem("correct");
+var bye = sessionStorage.getItem("wrong");
 var h = document.getElementById("comment") ;
 if(scp.innerHTML == 10) {
 h.innerHTML = "🏆 Perfect 🏆";
@@ -54,8 +55,7 @@ h.innerHTML = "🙂 Fair 🙂";
 }else if(points >= -30){
 h.innerHTML = "☹️ You can do better ☹️";
 }
- //Chart Work Starts... 
- /* google.charts.load('current', {
+ google.charts.load('current', {
   'packages': ['corechart']
  });
  google.charts.setOnLoadCallback(
@@ -65,8 +65,8 @@ h.innerHTML = "☹️ You can do better ☹️";
   var data = google.visualization
    .arrayToDataTable([
     ['status', 'percentage'],
-    ['Correct Answers', sessionStorage.getItem("correct");],
-    ['Wrong Answers', sessionStorage.getItem("wrong");]
+    ['Correct Answers', hi],
+    ['Wrong Answers', bye]
    ]);
   // Optional; add a title and set the width and height of the chart
   var options = {
@@ -88,7 +88,7 @@ h.innerHTML = "☹️ You can do better ☹️";
    .visualization.PieChart(document
     .getElementById('piechart'));
   chart.draw(data, options);
- } */
+ } 
 </script>
  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
