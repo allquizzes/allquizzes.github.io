@@ -40,8 +40,8 @@ document.getElementById("points").innerHTML = sessionStorage.getItem("points");
 var scp = document.getElementById("wrong");
 var high = document.getElementById("correct").innerHTML ;
 var byeg = document.getElementById("wrong").innerHTML  ;
-var hi = high;
-var bye = byeg;
+var hi = parseInt(high);
+var bye = parseInt(byeg);
 var h = document.getElementById("comment") ;
 if(scp.innerHTML == 10) {
 h.innerHTML = "🏆 Perfect 🏆";
