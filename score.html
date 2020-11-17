@@ -115,9 +115,8 @@ h.innerHTML = "☹️ You can do better ☹️";
 } ;
 var ampersand;
 if (points > 0) {
-  document.getElementById("auwin")
-   .play();
- } else {
+  document.getElementById("auwin").play();
+ } else if(points < 0) {
   navigator.vibrate(500);
  }
  google.charts.load('current', {
