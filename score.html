@@ -79,6 +79,10 @@ font-size : default;
   </div>
 
 </div>
+
+<audio hidden id="auwin">
+<source src="https://upload.wikimedia.org/wikipedia/commons/9/93/Start.wav">
+</audio>
 <div id='piechart'></div>
 <script>
 document.getElementById("correct").innerHTML = sessionStorage.getItem("correct");
@@ -109,6 +113,12 @@ h.innerHTML = "🙂 Fair 🙂";
 }else if(points >= -30){
 h.innerHTML = "☹️ You can do better ☹️";
 }
+if (points > 0) {
+  document.getElementById("auwin")
+   .play();
+ } else {
+  navigator.vibrate(500);
+ }
  google.charts.load('current', {
   'packages': ['corechart']
  });
