@@ -38,8 +38,8 @@ document.getElementById("points").innerHTML = sessionStorage.getItem("points");
   var points = sessionStorage.getItem("points");
  var scp = document.getElementById("correct");
 var scp = document.getElementById("wrong");
-var hi = sessionStorage.getItem("correct") * 100;
-var bye = sessionStorage.getItem("wrong") * 100;
+var hi = sessionStorage.getItem("correct");
+var bye = sessionStorage.getItem("wrong") ;
 var h = document.getElementById("comment") ;
 if(scp.innerHTML == 10) {
 h.innerHTML = "🏆 Perfect 🏆";
