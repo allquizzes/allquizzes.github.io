@@ -37,7 +37,7 @@ document.getElementById("points").innerHTML = sessionStorage.getItem("points");
  var scp = document.getElementById("correct");
 var scp = document.getElementById("wrong");
 
-va h = document.getElementById("comment") ;
+var h = document.getElementById("comment") ;
 if(scp.innerHTML == 10) {
 h.innerHTML = "🏆 Perfect 🏆";
 }else if(points == 0){
@@ -48,7 +48,7 @@ h.innerHTML = "🏅 Excellent 🏅";
 h.innerHTML = "👏 Very Good 👏";
 }else if(points >= 15){
 h.innerHTML = "👍 Good 👍";
-}else if(points > 0){
+}else if(points > -10){
 h.innerHTML = "🙂 Fair 🙂";
 }else if(points >= -30){
 h.innerHTML = "☹️ You can do better ☹️";
