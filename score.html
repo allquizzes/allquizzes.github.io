@@ -1,16 +1,26 @@
 <!doctype html>
 <html>
 <head><style>
-h2{
-font-size : 50px;
+h2 {
+font-size : 60px;
+text-align : center;
+}
+.correct {
+color : green;
+}
+.wrong {
+color : red;
+}
+.points {
+color : yellow;
 }
 </style>
 </head>
 <body>
-<h2>Your Score:</h2>
-<h1>Correct Answers : <span id="correct"></span></h1>
-<h1>Wrong Answers : <span id="wrong"></span></h1>
-<h1>Points : <span id="points"></span></h1>
+<h2>Your Score</h2>
+<h1 class="correct">Correct Answers : <span id="correct"></span></h1>
+<h1 class="wrong">Wrong Answers : <span id="wrong"></span></h1>
+<h1 class="points">Points : <span id="points"></span></h1>
 <script>
 document.getElementById("correct").innerHTML = sessionStorage.getItem("correct");
 document.getElementById("wrong").innerHTML = sessionStorage.getItem("wrong");
