@@ -65,8 +65,8 @@ h.innerHTML = "☹️ You can do better ☹️";
   var data = google.visualization
    .arrayToDataTable([
     ['status', 'percentage'],
-    ['Correct Answers', scp.innerHTML],
-    ['Wrong Answers', smi.innerHTML]
+    ['Correct Answers', sessionStorage.getItem("correct");],
+    ['Wrong Answers', sessionStorage.getItem("wrong");]
    ]);
   // Optional; add a title and set the width and height of the chart
   var options = {
