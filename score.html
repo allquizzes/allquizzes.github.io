@@ -26,22 +26,19 @@ font-size : default;
 <h1 class="correct">Correct Answers : <span id="correct"></span></h1>
 <h1 class="wrong">Wrong Answers : <span id="wrong"></span></h1>
 <h1 class="points">Points : <span id="points"></span></h1>
+<h1 id="comment" ></h1>
 <script>
 document.getElementById("correct").innerHTML = sessionStorage.getItem("correct");
 document.getElementById("wrong").innerHTML = sessionStorage.getItem("wrong");
 document.getElementById("points").innerHTML = sessionStorage.getItem("points");
-
 </script>
-document.getElementById("sco")
-  .innerHTML =
-  "Correct Answers : " +
-  scp + "<br>Wrong Answers : " +
-  smi + "<br>Points : " + points +
-  `<br><button style='fontSize:36px' class='share-button'><i class='material-icons'>share</i><br> Share Score </button> <br><a id = "wh"><button id = "whhj">Share Score<br> via WhatsApp</button></a>`  ; 
-  document.getElementById("wh").href = "whatsapp://send?text=" + bill;
-  var h = document.getElementById("h3");
-  
-if(scp == 10) {
+<script>
+  var points = sessionStorage.getItem("points");
+ var scp = document.getElementById("correct");
+var scp = document.getElementById("wrong");
+
+va h = document.getElementById("comment") ;
+if(scp.innerHTML == 10) {
 h.innerHTML = "🏆 Perfect 🏆";
 }else if(points == 0){
 h.innerHTML = "🙂";
@@ -52,7 +49,7 @@ h.innerHTML = "👏 Very Good 👏";
 }else if(points >= 15){
 h.innerHTML = "👍 Good 👍";
 }else if(points > 0){
-h.innerHTML = "😐 Fair 😐";
+h.innerHTML = "🙂 Fair 🙂";
 }else if(points >= -30){
 h.innerHTML = "☹️ You can do better ☹️";
 }
