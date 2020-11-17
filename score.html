@@ -53,28 +53,6 @@ h.innerHTML = "🙂 Fair 🙂";
 }else if(points >= -30){
 h.innerHTML = "☹️ You can do better ☹️";
 }
-
-
-  const shareButton = document
- .querySelector('.share-button');
-shareButton.addEventListener('click',
- event => { 
-  if (navigator.share) {
-   navigator.share({
-    text:  "See my Score of this quiz  - " + document.URL + "\n Correct Answers : " +
-  scp + "\n Wrong Answers : " +
-  smi + "\n Points : " + points
-    }).then(() => {
-    console.log(
-     'Thanks for sharing!');
-   })
-  } else {
-   alert(
-    "Looks like your browser doesn't support local Sharing You can use WhatsApp if you want"
-   );
-   
-  }
- })
  if (points > 0) {
   document.getElementById("auwin")
    .play();
@@ -92,8 +70,8 @@ shareButton.addEventListener('click',
   var data = google.visualization
    .arrayToDataTable([
     ['status', 'percentage'],
-    ['Correct Answers', scp],
-    ['Wrong Answers', smi]
+    ['Correct Answers', scp.innerHTML],
+    ['Wrong Answers', smi.innerHTML]
    ]);
   // Optional; add a title and set the width and height of the chart
   var options = {
@@ -116,7 +94,6 @@ shareButton.addEventListener('click',
     .getElementById('piechart'));
   chart.draw(data, options);
  }
-}
 </script>
  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
