@@ -115,7 +115,26 @@ if (points > 0) {
   document.getElementById("auwin").play();
  } else if(points < 0) {
   navigator.vibrate(500);
- }
+ } ;
+var bill = sessionStorage.getItem("share");
+const shareButton = document
+ .querySelector('.share-button');
+shareButton.addEventListener('click',
+ event => { 
+  if (navigator.share) {
+   navigator.share({
+    text:  bill ;
+    }).then(() => {
+    console.log(
+     'Thanks for sharing!');
+   })
+  } else {
+   alert(
+    "Looks like your browser doesn't support local Sharing You can use WhatsApp if you want"
+   );
+   
+  }
+ })
  google.charts.load('current', {
   'packages': ['corechart']
  });
