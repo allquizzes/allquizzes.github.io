@@ -71,7 +71,8 @@ color : blue;
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>the Modal..</p>
+    <h2>Share via</h2>
+    <a id="whatsapp">WhatsApp</a>
   </div>
 
 </div>
@@ -176,6 +177,10 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+</script>
+<script>
+var share = sessionStorage.getItem("share");
+document.getElementById("whatsapp").href = share ;
 </script>
 </body>
 </html>
