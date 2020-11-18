@@ -64,7 +64,7 @@ color : blue;
 <h1 class="wrong">Wrong Answers : <span id="wrong"></span></h1>
 <h1 class="points">Points : <span id="points"></span></h1>
 <h1 id="comment" ></h1>
-<button id="myBtn">Share Score</button>
+<button id="myBtn">Share Sore</button>
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
@@ -159,6 +159,7 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
+  navigator.share({text : "Omar";})
   modal.style.display = "block";
 }
 
