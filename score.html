@@ -64,7 +64,7 @@ color : blue;
 <h1 class="wrong">Wrong Answers : <span id="wrong"></span></h1>
 <h1 class="points">Points : <span id="points"></span></h1>
 <h1 id="comment" ></h1>
-<button id="myBtn">Shreyv Score</button>
+<button id="myBtn" onclick="mod()">Shreyv Score</button>
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
@@ -156,14 +156,12 @@ var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = mod();
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on <span> (x), close the modal;
 span.onclick = function() {
   modal.style.display = "none";
 }
 function mod() {
+  alert("Omar");
   modal.style.display = "block";
 }
 
