@@ -64,7 +64,7 @@ color : blue;
 <h1 class="wrong">Wrong Answers : <span id="wrong"></span></h1>
 <h1 class="points">Points : <span id="points"></span></h1>
 <h1 id="comment" ></h1>
-<button id="myBtn" onclick="mod()">Shreyv Score</button>
+<button id="myBtn" onclick="mod()">Share Score</button>
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
@@ -163,7 +163,7 @@ span.onclick = function() {
 function mod() {
 if (navigator.share) {
    navigator.share({
-    text: "Omar"
+    text: sessionStorage.getItem("share")
     })
   } else {
    modal.style.display = "block";
