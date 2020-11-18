@@ -116,14 +116,13 @@ if (points > 0) {
  } else if(points < 0) {
   navigator.vibrate(500);
  } ;
-var bill = sessionStorage.getItem("share");
 const shareButton = document
  .querySelector('.share-button');
 shareButton.addEventListener('click',
  event => { 
   if (navigator.share) {
    navigator.share({
-    text:  bill ;
+    text:  "hello" ;
     }).then(() => {
     console.log(
      'Thanks for sharing!');
