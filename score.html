@@ -161,8 +161,16 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 function mod() {
-  modal.style.display = "block";
-navigator.share({text: "Omar"});
+if (navigator.share) {
+   navigator.share({
+    text: "Omar";
+    }).then(() => {
+    console.log(
+     'Thanks for sharing!');
+   })
+  } else {
+   modal.style.display = "block";
+  }
 }
 
 // When the user clicks anywhere outside of the modal, close it
