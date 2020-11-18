@@ -163,11 +163,8 @@ span.onclick = function() {
 function mod() {
 if (navigator.share) {
    navigator.share({
-    text: "Omar";
-    }).then(() => {
-    console.log(
-     'Thanks for sharing!');
-   })
+    text: "Omar"
+    })
   } else {
    modal.style.display = "block";
   }
