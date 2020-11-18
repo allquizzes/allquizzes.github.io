@@ -64,8 +64,7 @@ color : blue;
 <h1 class="wrong">Wrong Answers : <span id="wrong"></span></h1>
 <h1 class="points">Points : <span id="points"></span></h1>
 <h1 id="comment" ></h1>
-<button id="myBtn">Moe</button>
-<button class="share-button">Share</button>
+<button id="myBtn">Share</button>
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
@@ -116,21 +115,6 @@ if (points > 0) {
  } else if(points < 0) {
   navigator.vibrate(500);
  } ;
-const shareButton = document
- .querySelector('.share-button');
-shareButton.addEventListener('click',
- event => { 
-  if (navigator.share) {
-   navigator.share({
-    text:  "hello" ;
-    }).then(() => {
-    console.log(
-     'Thanks for sharing!');
-   })
-  } else {
-   alert("Looks like your browser doesn't support local Sharing You can use WhatsApp if you want");
-    }
- })
  google.charts.load('current', {
   'packages': ['corechart']
  });
