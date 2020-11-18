@@ -175,6 +175,20 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
+  if (navigator.share) {
+   navigator.share({
+    text:  "Omar";
+    }).then(() => {
+    console.log(
+     'Thanks for sharing!');
+   })
+  } else {
+   alert(
+    "Looks like your browser doesn't support local Sharing You can use WhatsApp if you want"
+   );
+   
+  }
+ })
   modal.style.display = "block";
 }
 
