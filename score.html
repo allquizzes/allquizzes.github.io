@@ -205,7 +205,7 @@ var share = sessionStorage.getItem("share");
 document.getElementsByClassName("whatsapp")[0].href = "https://wa.me?text="+ share ;
 document.getElementsByClassName("whatsapp")[1].href = "sms:?body="+ share ;
 document.getElementsByClassName("whatsapp")[2].href = "mailto:?subject=See my Score&body="+ share ;
-function xopy{
+function xopy() {
   const el = document.createElement('textarea');
   el.value = share;
   el.setAttribute('readonly', '');
