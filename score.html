@@ -199,7 +199,7 @@ window.onclick = function(event) {
 <script>
 var share = sessionStorage.getItem("share");
 document.getElementByClassName("whatsapp")[0].href = "https://wa.me?text="+ share ;
-document.getElementByClassName("whatsapp")[1].href = "sms:"+ share ;
+document.getElementByClassName("whatsapp")[1].href = "sms:&body="+ share ;
 
 </script>
 </body>
