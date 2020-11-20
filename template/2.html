@@ -601,9 +601,9 @@ function check() {
  var poipu = scp * 5;
  var poimu = smi * 3;
  var points = poipu - poimu;
-  var bill = "See my Score of this quiz  - " + "\n \n Correct Answers : " +
+  var bill = "See my Score of this quiz  - " + document.URL +  "\n \n Correct Answers : " +
   scp + "\n \n Wrong Answers : " +
-  smi + "\n \n Points : " + points ;
+  smi + "\n \n Points : " + points + " \n \n You can also play these quiz on https://allquizzes.github.io/" ;
 sessionStorage.setItem("points", points);
 sessionStorage.setItem("correct", scp);
 sessionStorage.setItem("wrong", smi);
