@@ -90,6 +90,8 @@ text-decoration : none;
     <a class="whatsapp" target="_blank"><div class="shareing"><img src="/whatsapp.png" height="40" width="40" ><span class="what">WhatsApp</span></div></a>
 <a class="whatsapp" target="_blank"><div class="shareing"><img src="/SMS.png" height="40" width="40" ><span class="what">SMS</span></div></a>
 <a class="whatsapp" target="_blank"><div class="shareing"><img src="/SMS.png" height="40" width="40" ><span class="what">Email</span></div></a>
+<a class="whatsapp" onclick="xopy()"><div class="shareing"><img src="/SMS.png" height="40" width="40" ><span class="what">Copy to Clipboard</span></div></a>
+
 
 
    
@@ -203,7 +205,17 @@ var share = sessionStorage.getItem("share");
 document.getElementsByClassName("whatsapp")[0].href = "https://wa.me?text="+ share ;
 document.getElementsByClassName("whatsapp")[1].href = "sms:?body="+ share ;
 document.getElementsByClassName("whatsapp")[2].href = "mailto:?subject=See my Score&body="+ share ;
-
+function xopy{
+  const el = document.createElement('textarea');
+  el.value = share;
+  el.setAttribute('readonly', '');
+  el.style.position = 'absolute';
+  el.style.left = '-9999px';
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+}
 </script>
 </body>
 </html>
