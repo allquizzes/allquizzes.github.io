@@ -57,14 +57,14 @@ color : blue;
  background-color : lightgray;
  display : block
 }
-#what {
+.what {
 position : relative;
 bottom: 10px;
 left: 10px;
 color : black;
 font-size : 20px;
 }
-#whatsapp {
+.whatsapp {
 text-decoration : none;
 }
 </style>
@@ -87,7 +87,9 @@ text-decoration : none;
     <span class="close">&times;</span>
     <h3>Share via</h3>
      <div class="shareing">
-    <a id="whatsapp" target="_blank"><img src="/whatsapp.png" height="40" width="40" ><span id ="what">WhatsApp</span></a>
+    <a class="whatsapp" target="_blank"><img src="/whatsapp.png" height="40" width="40" ><span class="what">WhatsApp</span></a>
+<a class="whatsapp" target="_blank"><img src="/SMS.png" height="40" width="40" ><span class="what">SMS</span></a>
+
    </div>
   </div>
 
@@ -196,7 +198,9 @@ window.onclick = function(event) {
 </script>
 <script>
 var share = sessionStorage.getItem("share");
-document.getElementById("whatsapp").href = "https://wa.me?text="+ share ;
+document.getElementByClassName("whatsapp")[0].href = "https://wa.me?text="+ share ;
+document.getElementByClassName("whatsapp")[1].href = "sms:"+ share ;
+
 </script>
 </body>
 </html>
