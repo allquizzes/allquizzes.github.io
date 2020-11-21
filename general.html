@@ -571,38 +571,31 @@ function wroten(here) {
  random.innerHTML = "× Wrong";
 }
 
-function corsix(here) {
- here.backgroundColor = "green";
- scp += 1;
- x[5].innerHTML = "✓ Correct";
- document.getElementsByClassName(
-  "10")[0].disabled = true;
- document.getElementsByClassName(
-  "10")[1].disabled = true;
- document.getElementsByClassName(
-  "10")[2].disabled = true;
- document.getElementsByClassName(
-  "10")[3].disabled = true;
- random.innerHTML = "✓ Correct";
- a.play()
+function spell() {
+ var spl = document.getElementById(
+  "spell");
+ if (spl.value.toLowerCase() ===
+  "psychology") {
+  x[5].innerHTML = "✓ Correct";
+  spl.readOnly = true;
+  scp += 1;
+  random.innerHTML = "✓ Correct";
+  a.play();
+ } else {
+  x[5].innerHTML = "× Wrong";
+  x[5].style.color = "red";
+  spl.readOnly = true;
+  smi += 1;
+  spl.style.color = "red";
+  setTimeout(corsix, 2000);
+  random.innerHTML = "× Wrong";
+ }
 }
-function wrosix(here) {
- here.backgroundColor = "red";
- smi += 1;
- x[5].innerHTML = "× Wrong";
- x[5].style.color = "red";
- document.getElementsByClassName(
-  "10")[0].disabled = true;
- document.getElementsByClassName(
-  "10")[1].disabled = true;
- document.getElementsByClassName(
-  "10")[2].disabled = true;
- document.getElementsByClassName(
-  "10")[3].disabled = true;
- document.getElementsByClassName(
-   "10")[0].style.border =
-  "5px solid green";
- random.innerHTML = "× Wrong";
+function corsix() {
+ document.getElementById("spell")
+  .value = "Psychology";
+ document.getElementById("spell")
+  .style.color = "green";
 }
 function check() {
  var poipu = scp * 5;
