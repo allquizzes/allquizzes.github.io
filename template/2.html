@@ -31,7 +31,7 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 <div class="modal-body">
-         <ul> <li>This is a ___ Quiz.  </li> <li>It contains 10 questions  </li> <li> You have 2 minutes to do this Quiz, After 2 minutes you can not do the Quiz.</li> <li> Every Correct Answer gives you +5 points </li> <li> And Every wrong answer gives you -3 points.</li> <li> You can Check your Score by clicking on "Check Score" button  </li>  So enjoy the Quiz !!!'; /* The text */
+         <ul> <li>This is a ___ Quiz.  </li> <li>It contains 10 questions  </li> <li> You have 2 minutes to do this Quiz, After 2 minutes you can not do the Quiz.</li> <li> Every Correct Answer gives you +5 points </li> <li> And Every wrong answer gives you -3 points.</li> <li> You can Check your Score by clicking on "Check Score" button  </li>  <span style="text-align: center;">So enjoy the Quiz !!!
          </ul>
         </div>
         
@@ -259,7 +259,7 @@ document.getElementsByClassName(
 
 function startGame() {
  clearInterval(countingdown);
- time = 120;
+ time = 119;
  countingdown = setInterval(
   countdown, 1000);
 }
