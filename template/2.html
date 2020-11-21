@@ -5,14 +5,46 @@
  <link rel="stylesheet" href="../style.css">
  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  <link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
  </head>
-<body id="body" onload="typeWriter() ; startGame() " >
+<body id="body" onload = "startGame()" >
 <strong style="text-align: center;"><a href="../index.html">Main Page</a></strong>
 <h1 id="head"><br>Quiz <br><br></h1>
-<strong>Rules -</strong>
-<p id="demo"></p>
+<div class="container">
+ <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header"><h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+<div class="modal-body">
+          This is a General Knowledge Quiz. It contains 10 questions for which you have 1 minute. After 1 minute you can not do the Quiz. Every Correct Answer gives you +5 points while every wrong answer gives you -3 points. You can Check your Score by clicking on "Check Score" button. You can also share your Score. So enjoy the Quiz !!!'; /* The text */
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
 ​<center>
 <p id="timer">2:00</p>
 </center>
@@ -121,22 +153,6 @@ var random = document.getElementById(
 var a = document.getElementById(
 
  "audio");
-
- var i = 0;
-
-var txt = ' This is a General Knowledge Quiz. It contains 10 questions for which you have 1 minute. After 1 minute you can not do the Quiz. Every Correct Answer gives you +5 points while every wrong answer gives you -3 points. You can Check your Score by clicking on "Check Score" button. You can also share your Score. So enjoy the Quiz !!!'; /* The text */
-
-var speed = 50; /* The speed/duration of the effect in milliseconds */
-
-function typeWriter() {
-
-  if (i < txt.length) {
-
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-i++;
-setTimeout(typeWriter , speed)
- }
-}
 var time;
 var countingdown;
 var timer = document.getElementById(
