@@ -274,10 +274,25 @@ function startGame() {
  
  
 function corone(here) {
- 
-here.backgroundColor = "green";
+  x[1].innerHTML = "✓ Correct";
+ document.getElementById("area")
+  .onclick = "";
+ scp = scp + 1;
+
+}
+
+function wroone(here) {
+x[1].innerHTML = "× Wrong";
+ document.getElementById("areaone")
+  .onclick = "";
+ x[1].style.color = "red";
+ smi = smi + 1;
+}
+
+function cortwo(here) {
+  here.backgroundColor = "green";
  scp += 1;
- x[1].innerHTML = "✓ Correct";
+ x[0].innerHTML = "✓ Correct";
  document.getElementsByClassName(
   "20")[0].disabled = true;
  document.getElementsByClassName(
@@ -290,11 +305,11 @@ here.backgroundColor = "green";
  a.play()
 }
 
-function wroone(here) {
+function wrotwo(here) {
 here.backgroundColor = "red";
  smi += 1;
- x[1].innerHTML = "× Wrong";
- x[1].style.color = "red";
+ x[0].innerHTML = "× Wrong";
+ x[0].style.color = "red";
  document.getElementsByClassName(
   "20")[0].disabled = true;
  document.getElementsByClassName(
@@ -304,24 +319,9 @@ here.backgroundColor = "red";
  document.getElementsByClassName(
   "20")[3].disabled = true;
  document.getElementsByClassName(
-   "20")[2].style.border =
+   "20")[1].style.border =
   "5px solid green";
  random.innerHTML = "× Wrong";
-}
-
-function cortwo(here) {
-  x[1].innerHTML = "✓ Correct";
- document.getElementById("area")
-  .onclick = "";
- scp = scp + 1;
-}
-
-function wrotwo(here) {
-x[1].innerHTML = "× Wrong";
- document.getElementById("areaone")
-  .onclick = "";
- x[1].style.color = "red";
- smi = smi + 1;
 }
 
 function corthree(here) {
