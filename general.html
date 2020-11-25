@@ -184,7 +184,10 @@ function countdown() {
  y[1].disabled = true;
  y[2].disabled = true;
  y[3].disabled = true;
-
+  document.getElementById("area")
+  .onclick = "";
+  document.getElementById("areaone")
+  .onclick = "";
   document.getElementsByClassName(
   "2")[0].disabled = true;
  document.getElementsByClassName(
@@ -241,22 +244,10 @@ function countdown() {
   "8")[2].disabled = true;
  document.getElementsByClassName(
   "8")[3].disabled = true; 
-document.getElementsByClassName(
-  "20")[0].disabled = true;
- document.getElementsByClassName(
-  "20")[1].disabled = true;
- document.getElementsByClassName(
-  "20")[2].disabled = true;
- document.getElementsByClassName(
-  "20")[3].disabled = true;
-    document.getElementsByClassName(
-  "20")[0].disabled = true;
- document.getElementsByClassName(
-  "20")[1].disabled = true;
- document.getElementsByClassName(
-  "20")[2].disabled = true;
- document.getElementsByClassName(
-  "20")[3].disabled = true;
+  document.getElementById(
+  "spell").readOnly = true;
+  document.getElementById("spbutt"). disabled = true;
+  
    }
  time--;
 }
