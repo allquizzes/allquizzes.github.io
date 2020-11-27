@@ -1,5 +1,0 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target" : { "namespace": "android_app", "package_name": "io.github.allquizzes",
-                   "sha256_cert_fingerprints": ["40:A8:28:50:C0:8C:13:CA:6C:FF:C9:D6:5D:A4:86:21:4D:2D:4A:AE:DB:BB:F0:67:30:59:6D:DB:FD:18:8C:3B"] }
-    }]
