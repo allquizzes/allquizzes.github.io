@@ -111,11 +111,9 @@
  <p class="status"></p>
 </div> 
 <div class="con">
- <p><h2>Q.9 </h2></p>
- <button class="7" onclick="wronine(this.style)"></button><br><br>
- <button class="7" onclick="wronine(this.style)"></button><br><br>
- <button class="7" onclick="wronine(this.style)"></button><br><br>
- <button class="7" onclick="cornine(this.style)"></button><br> 
+ <p><h2>Q.9 </h2>The moon keeps the same face towards the Earth.</p>
+  <button class="7" onclick="cornine(this.style)">True</button><br><br>
+ <button class="7" onclick="wronine(this.style)">False</button><br> 
  <p class="status"></p>
 </div> 
 <div class="con">
@@ -222,10 +220,6 @@ function countdown() {
   "7")[0].disabled = true;
  document.getElementsByClassName(
   "7")[1].disabled = true;
- document.getElementsByClassName(
-  "7")[2].disabled = true;
- document.getElementsByClassName(
-  "7")[3].disabled = true;
   document.getElementsByClassName(
   "8")[0].disabled = true;
  document.getElementsByClassName(
@@ -516,10 +510,6 @@ function cornine(here) {
   "7")[0].disabled = true;
  document.getElementsByClassName(
   "7")[1].disabled = true;
- document.getElementsByClassName(
-  "7")[2].disabled = true;
- document.getElementsByClassName(
-  "7")[3].disabled = true;
  random.innerHTML = "✓ Correct";
  a.play();
 }
@@ -534,11 +524,7 @@ function wronine(here) {
  document.getElementsByClassName(
   "7")[1].disabled = true;
  document.getElementsByClassName(
-  "7")[2].disabled = true;
- document.getElementsByClassName(
-  "7")[3].disabled = true;
- document.getElementsByClassName(
-   "7")[3].style.border =
+   "7")[0].style.border =
   "5px solid green";
  random.innerHTML = "× Wrong";
 }
