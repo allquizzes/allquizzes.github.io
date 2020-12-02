@@ -110,7 +110,7 @@ border: none;
 <script>
 document.getElementById("correct").innerHTML = sessionStorage.getItem("correct");
 document.getElementById("wrong").innerHTML = sessionStorage.getItem("wrong");
-document.getElementById("points").innerHTML = sessionStorage.getItem("points");
+document.getElementById("points").innerHTML = sessionStorage.getItem("correct") * 5;
 </script>
 <script>
   var points = sessionStorage.getItem("points");
