@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <title>Quiz</title>
+ <link rel="stylesheet" href="../style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" defer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+
+ </head>
+<body id="body" onload = "startGame()" >
+<strong><center><a href="../index.html" style="text-align: center;">Go to Home Page</a></center></strong>
+<h1 id="head"><br>Quiz <br><br></h1>
+<div class="container">
+ <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Instructions
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header"><h4 class="modal-title">Instructions -</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+<div class="modal-body">
+         <ul> <li>This is a ___ Quiz.  </li> <li>It contains 10 questions  </li> <li> You have 2 minutes to do this Quiz, After 2 minutes you can not do the Quiz.</li> <li> Every Correct Answer gives you +5 points </li> <li> And Every Wrong Answer gives you -3 points.</li> <li> You can Check your Score by clicking on "Check Score" button  </li></ul>  <span style="text-align: center;">So enjoy the Quiz !!! </span>
+      
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+​<center>
+<p id="timer">2:00</p>
+</center>
+
+<div class="con">
+<p><h2><u>Q.1</u> </h2>Smallest Planet<br> </p>
+<button class="1" onclick="cortwo(this.style)">Mercury</button><br><br>
+<button class="1" onclick="cortwo(this.style)">Venud</button><br><br> 
+<button class="1" onclick="wrotwo(this.style)">Earth</button><br><br>
+<button onclick="cortwo(this.style)" class="1">Mars</button><br><br>
+<p class="status"></p>
+</div><div class="con">
+<p><h2>Q.2</h2> </p>
+<button class="20" onclick="wroone(this.style)"></button><br><br>
+ <button class="20" onclick="wroone(this.style)"></button><br><br>
+ <button class="20" onclick="corone(this.style)"></button><br><br>
+ <button class="20" onclick="wroone(this.style)"> </button><br>
+<p class="status"></p></div>
+<div class="con">
+ <p><h2>Q.3 </h2></p>
+ <button class="2" onclick="corthree(this.style)"></button><br><br>
+ <button class="2" onclick="wrothree(this.style)"></button><br><br>
+ <button class="2" onclick="wrothree(this.style)"></button><br><br>
+ <button class="2" onclick="wrothree(this.style)"></button><br>
+ <p class="status"></p>
+</div>
+<div class="con">
+ <p><h2>Q.4 </h2></p>
+ <button class="3" onclick="wrofour(this.style)"></button><br><br><button class="3" onclick="wrofour(this.style)"></button><br><br>
+ <button class="3" onclick="wrofour(this.style)"></button><br><br>
+ <button class="3" onclick="corfour(this.style)"> </button><br> 
+ <p class="status"></p>
+</div>
+<div class="con">
+ <p><h2>Q.5 </h2> </p>
+ <button class="4" onclick="wrofive(this.style)"></button><br><br>
+ <button class="4" onclick="corfive(this.style)"></button><br><br>
+ <button class="4" onclick="wrofive(this.style)"> </button><br><br>
+ <button class="4" onclick="wrofive(this.style)"> </button><br> 
+ <p class="status"></p>
+</div> 
+<div class="con">
+ <p><h2>Q.6 </h2></p>
+<button class="10" onclick="corsix(this.style)"></button><br><br>
+ <button class="10" onclick="wrosix(this.style)"></button><br><br>
+ <button class="10" onclick="wrosix(this.style)"></button><br><br>
+ <button class="10" onclick="wrosix(this.style)"></button><br>
+ <p class="status"></p>
+</div>
+
+<div class="con">
+ <p><h2>Q.7 </h2> </p>
+ <button class="5" onclick="wrosev(this.style)"></button><br><br>
+ <button class="5" onclick="wrosev(this.style)"></button><br><br>
+ <button class="5" onclick="corsev(this.style)"></button><br><br>
+ <button class="5" onclick="wrosev(this.style)"> </button><br> 
+ <p class="status"></p>
+</div> 
+<div class="con">
+ <p><h2>Q.8 </h2></p>
+ <button class="6" onclick="wroeight(this.style)"></button><br><br>
+ <button class="6" onclick="wroeight(this.style)"></button><br><br>
+ <button class="6" onclick="coreight(this.style)"></button><br><br>
+ <button class="6" onclick="wroeight(this.style)"></button><br> 
+ <p class="status"></p>
+</div> 
+<div class="con">
+ <p><h2>Q.9 </h2></p>
+ <button class="7" onclick="wronine(this.style)"></button><br><br>
+ <button class="7" onclick="wronine(this.style)"></button><br><br>
+ <button class="7" onclick="wronine(this.style)"></button><br><br>
+ <button class="7" onclick="cornine(this.style)"></button><br> 
+ <p class="status"></p>
+</div> 
+<div class="con">
+ <p><h2>Q.10 </h2></p>
+ <button class="8" onclick="corten(this.style)"></button><br><br>
+ <button class="8" onclick="wroten(this.style)"></button><br><br>
+ <button class="8" onclick="wroten(this.style)"></button><br><br>
+ <button class="8" onclick="wroten(this.style)"></button><br> 
+ <p class="status"></p>
+</div> <br><br>
+<button onclick="check()" id="chc">Check Score</button>
+<h2 id="h3"></h2>
+<p id="sco"></p>
+<div id="piechart"></div>
+<audio hidden id="auwin">
+<source src="https://upload.wikimedia.org/wikipedia/commons/9/93/Start.wav">
+</audio>
+<input type="hidden" id="cop">
+<br><br><br><br><br><br><br><br>
+ <script>
+
+var x = document
+
+ .getElementsByClassName("status");
+
+var scp = 0;
+
+var smi = 0;
+
+var random = document.getElementById(
+
+ "sta");
+
+var a = document.getElementById(
+
+ "audio");
+var time;
+var countingdown;
+var timer = document.getElementById(
+ "timer");
+
+
+function countdown() {
+ if (time % 60 < 100) {
+  timer.innerHTML = Math.floor(time /
+   60) + ":" + (time % 60); 
+ } else {
+  timer.innerHTML = Math.floor(time /
+   60) + ":" + (time % 60);
+ }
+ if (time <= 0) {
+  timer.innerHTML = "0";
+ }
+ if (time == 0) {
+  alert("Time Up");
+  var y = document
+  .getElementsByClassName("1");
+ y[0].disabled = true;
+ y[1].disabled = true;
+ y[2].disabled = true;
+ y[3].disabled = true;
+
+  document.getElementsByClassName(
+  "2")[0].disabled = true;
+ document.getElementsByClassName(
+  "2")[1].disabled = true;
+ document.getElementsByClassName(
+  "2")[2].disabled = true;
+ document.getElementsByClassName(
+  "2")[3].disabled = true;
+  document.getElementsByClassName(
+  "3")[0].disabled = true;
+ document.getElementsByClassName(
+  "3")[1].disabled = true;
+ document.getElementsByClassName(
+  "3")[2].disabled = true;
+ document.getElementsByClassName(
+  "3")[3].disabled = true;
+  document.getElementsByClassName(
+  "4")[0].disabled = true;
+ document.getElementsByClassName(
+  "4")[1].disabled = true;
+ document.getElementsByClassName(
+  "4")[2].disabled = true;
+ document.getElementsByClassName(
+  "4")[3].disabled = true;
+  document.getElementsByClassName(
+  "5")[0].disabled = true;
+ document.getElementsByClassName(
+  "5")[1].disabled = true;
+ document.getElementsByClassName(
+  "5")[2].disabled = true;
+ document.getElementsByClassName(
+  "5")[3].disabled = true;
+  document.getElementsByClassName(
+  "6")[0].disabled = true;
+ document.getElementsByClassName(
+  "6")[1].disabled = true;
+ document.getElementsByClassName(
+  "6")[2].disabled = true;
+ document.getElementsByClassName(
+  "6")[3].disabled = true;
+  document.getElementsByClassName(
+  "7")[0].disabled = true;
+ document.getElementsByClassName(
+  "7")[1].disabled = true;
+ document.getElementsByClassName(
+  "7")[2].disabled = true;
+ document.getElementsByClassName(
+  "7")[3].disabled = true;
+  document.getElementsByClassName(
+  "8")[0].disabled = true;
+ document.getElementsByClassName(
+  "8")[1].disabled = true;
+ document.getElementsByClassName(
+  "8")[2].disabled = true;
+ document.getElementsByClassName(
+  "8")[3].disabled = true; 
+document.getElementsByClassName(
+  "20")[0].disabled = true;
+ document.getElementsByClassName(
+  "20")[1].disabled = true;
+ document.getElementsByClassName(
+  "20")[2].disabled = true;
+ document.getElementsByClassName(
+  "20")[3].disabled = true;
+    document.getElementsByClassName(
+  "20")[0].disabled = true;
+ document.getElementsByClassName(
+  "20")[1].disabled = true;
+ document.getElementsByClassName(
+  "20")[2].disabled = true;
+ document.getElementsByClassName(
+  "20")[3].disabled = true;
+   }
+ time--;
+}
+
+
+
+function startGame() {
+ clearInterval(countingdown);
+ time = 119;
+ countingdown = setInterval(
+  countdown, 1000);
+}
+ 
+ 
+ 
+function corone(here) {
+ 
+here.backgroundColor = "green";
+ scp += 1;
+ x[1].innerHTML = "✓ Correct";
+ document.getElementsByClassName(
+  "20")[0].disabled = true;
+ document.getElementsByClassName(
+  "20")[1].disabled = true;
+ document.getElementsByClassName(
+  "20")[2].disabled = true;
+ document.getElementsByClassName(
+  "20")[3].disabled = true;
+ random.innerHTML = "✓ Correct";
+ a.play()
+}
+
+function wroone(here) {
+here.backgroundColor = "red";
+ smi += 1;
+ x[1].innerHTML = "× Wrong";
+ x[1].style.color = "red";
+ document.getElementsByClassName(
+  "20")[0].disabled = true;
+ document.getElementsByClassName(
+  "20")[1].disabled = true;
+ document.getElementsByClassName(
+  "20")[2].disabled = true;
+ document.getElementsByClassName(
+  "20")[3].disabled = true;
+ document.getElementsByClassName(
+   "20")[2].style.border =
+  "5px solid green";
+ random.innerHTML = "× Wrong";
+}
+
+function cortwo(here) {
+ here.backgroundColor = "green";
+ y = document
+  .getElementsByClassName("1");
+ y[0].disabled = true;
+ y[1].disabled = true;
+ y[2].disabled = true;
+ y[3].disabled = true;
+ scp += 1;
+ x[0].innerHTML = "✓ Correct";
+ random.innerHTML = "✓ Correct";
+ a.play();
+}
+
+function wrotwo(here) {
+ here.backgroundColor = "red";
+ x[0].innerHTML = "× Wrong";
+ x[0].style.color = "red";
+ y = document
+  .getElementsByClassName("1");
+ y[0].disabled = true;
+ y[1].disabled = true;
+ y[2].disabled = true;
+ y[3].disabled = true;
+ y[0].style.border =
+  "5px solid green";
+ smi += 1;
+ x[0].navigator.vibrate(200);
+ random.innerHTML = "× Wrong";
+}
+
+function corthree(here) {
+ here.backgroundColor = "green";
+ scp += 1;
+ x[2].innerHTML = "✓ Correct";
+ document.getElementsByClassName(
+  "2")[0].disabled = true;
+ document.getElementsByClassName(
+  "2")[1].disabled = true;
+ document.getElementsByClassName(
+  "2")[2].disabled = true;
+ document.getElementsByClassName(
+  "2")[3].disabled = true;
+ random.innerHTML = "✓ Correct";
+ a.play()
+}
+
+function wrothree(here) {
+ here.backgroundColor = "red";
+ smi += 1;
+ x[2].innerHTML = "× Wrong";
+ x[2].style.color = "red";
+ document.getElementsByClassName(
+  "2")[0].disabled = true;
+ document.getElementsByClassName(
+  "2")[1].disabled = true;
+ document.getElementsByClassName(
+  "2")[2].disabled = true;
+ document.getElementsByClassName(
+  "2")[3].disabled = true;
+ document.getElementsByClassName(
+   "2")[0].style.border =
+  "5px solid green";
+ random.innerHTML = "× Wrong";
+}
+
+function corfour(here) {
+ here.backgroundColor = "green";
+ scp += 1;
+ x[3].innerHTML = "✓ Correct";
+ document.getElementsByClassName(
+  "3")[0].disabled = true;
+ document.getElementsByClassName(
+  "3")[1].disabled = true;
+ document.getElementsByClassName(
+  "3")[2].disabled = true;
+ document.getElementsByClassName(
+  "3")[3].disabled = true;
+ random.innerHTML = "✓ Correct";
+ a.play()
+}
+
+function wrofour(here) {
+ here.backgroundColor = "red";
+ smi += 1;
+ x[3].innerHTML = "× Wrong";
+ x[3].style.color = "red";
+ document.getElementsByClassName(
+  "3")[0].disabled = true;
+ document.getElementsByClassName(
+  "3")[1].disabled = true;
+ document.getElementsByClassName(
+  "3")[2].disabled = true;
+ document.getElementsByClassName(
+  "3")[3].disabled = true;
+ document.getElementsByClassName(
+   "3")[3].style.border =
+  "5px solid green";
+ random.innerHTML = "× Wrong";
+}
+
+function corfive(here) {
+ here.backgroundColor = "green";
+ scp += 1;
+ x[4].innerHTML = "✓ Correct";
+ document.getElementsByClassName(
+  "4")[0].disabled = true;
+ document.getElementsByClassName(
+  "4")[1].disabled = true;
+ document.getElementsByClassName(
+  "4")[2].disabled = true;
+ document.getElementsByClassName(
+  "4")[3].disabled = true;
+ random.innerHTML = "✓ Correct";
+ a.play();
+}
+
+function wrofive(here) {
+ here.backgroundColor = "red";
+ smi += 1;
+ x[4].innerHTML = "× Wrong";
+ x[4].style.color = "red";
+ document.getElementsByClassName(
+  "4")[0].disabled = true;
+ document.getElementsByClassName(
+  "4")[1].disabled = true;
+ document.getElementsByClassName(
+  "4")[2].disabled = true;
+ document.getElementsByClassName(
+  "4")[3].disabled = true;
+ document.getElementsByClassName(
+   "4")[1].style.border =
+  "5px solid green";
+ random.innerHTML = "× Wrong";
+}
+
+
+
+function corsev(here) {
+ here.backgroundColor = "green";
+ scp += 1;
+ x[6].innerHTML = "✓ Correct";
+ document.getElementsByClassName(
+  "5")[0].disabled = true;
+ document.getElementsByClassName(
+  "5")[1].disabled = true;
+ document.getElementsByClassName(
+  "5")[2].disabled = true;
+ document.getElementsByClassName(
+  "5")[3].disabled = true;
+ random.innerHTML = "✓ Correct";
+ a.play();
+}
+
+function wrosev(here) {
+ here.backgroundColor = "red";
+ smi += 1;
+ x[6].innerHTML = "× Wrong";
+ x[6].style.color = "red";
+ document.getElementsByClassName(
+  "5")[0].disabled = true;
+ document.getElementsByClassName(
+  "5")[1].disabled = true;
+ document.getElementsByClassName(
+  "5")[2].disabled = true;
+ document.getElementsByClassName(
+  "5")[3].disabled = true;
+ document.getElementsByClassName(
+   "5")[2].style.border =
+  "5px solid green";
+ random.innerHTML = "× Wrong";
+}
+
+function coreight(here) {
+ here.backgroundColor = "green";
+ scp += 1;
+ x[7].innerHTML = "✓ Correct";
+ document.getElementsByClassName(
+  "6")[0].disabled = true;
+ document.getElementsByClassName(
+  "6")[1].disabled = true;
+ document.getElementsByClassName(
+  "6")[2].disabled = true;
+ document.getElementsByClassName(
+  "6")[3].disabled = true;
+ random.innerHTML = "✓ Correct";
+ a.play();
+}
+
+function wroeight(here) {
+ here.backgroundColor = "red";
+ smi += 1;
+ x[7].innerHTML = "× Wrong";
+ x[7].style.color = "red";
+ document.getElementsByClassName(
+  "6")[0].disabled = true;
+ document.getElementsByClassName(
+  "6")[1].disabled = true;
+ document.getElementsByClassName(
+  "6")[2].disabled = true;
+ document.getElementsByClassName(
+  "6")[3].disabled = true;
+ document.getElementsByClassName(
+   "6")[2].style.border =
+  "5px solid green";
+ random.innerHTML = "× Wrong";
+}
+
+function cornine(here) {
+ here.backgroundColor = "green";
+ scp += 1;
+ x[8].innerHTML = "✓ Correct";
+ document.getElementsByClassName(
+  "7")[0].disabled = true;
+ document.getElementsByClassName(
+  "7")[1].disabled = true;
+ document.getElementsByClassName(
+  "7")[2].disabled = true;
+ document.getElementsByClassName(
+  "7")[3].disabled = true;
+ random.innerHTML = "✓ Correct";
+ a.play();
+}
+
+function wronine(here) {
+ here.backgroundColor = "red";
+ smi += 1;
+ x[8].innerHTML = "× Wrong";
+ x[8].style.color = "red";
+ document.getElementsByClassName(
+  "7")[0].disabled = true;
+ document.getElementsByClassName(
+  "7")[1].disabled = true;
+ document.getElementsByClassName(
+  "7")[2].disabled = true;
+ document.getElementsByClassName(
+  "7")[3].disabled = true;
+ document.getElementsByClassName(
+   "7")[3].style.border =
+  "5px solid green";
+ random.innerHTML = "× Wrong";
+}
+
+function corten(here) {
+ here.backgroundColor = "green";
+ scp += 1;
+ x[9].innerHTML = "✓ Correct";
+ document.getElementsByClassName(
+  "8")[0].disabled = true;
+ document.getElementsByClassName(
+  "8")[1].disabled = true;
+ document.getElementsByClassName(
+  "8")[2].disabled = true;
+ document.getElementsByClassName(
+  "8")[3].disabled = true;
+ random.innerHTML = "✓ Correct";
+ a.play();
+}
+
+function wroten(here) {
+ here.backgroundColor = "red";
+ smi += 1;
+ x[9].innerHTML = "× Wrong";
+ x[9].style.color = "red";
+ document.getElementsByClassName(
+  "8")[0].disabled = true;
+ document.getElementsByClassName(
+  "8")[1].disabled = true;
+ document.getElementsByClassName(
+  "8")[2].disabled = true;
+ document.getElementsByClassName(
+  "8")[3].disabled = true;
+ document.getElementsByClassName(
+   "8")[0].style.border =
+  "5px solid green";
+ random.innerHTML = "× Wrong";
+}
+
+function corsix(here) {
+ here.backgroundColor = "green";
+ scp += 1;
+ x[5].innerHTML = "✓ Correct";
+ document.getElementsByClassName(
+  "10")[0].disabled = true;
+ document.getElementsByClassName(
+  "10")[1].disabled = true;
+ document.getElementsByClassName(
+  "10")[2].disabled = true;
+ document.getElementsByClassName(
+  "10")[3].disabled = true;
+ random.innerHTML = "✓ Correct";
+ a.play()
+}
+function wrosix(here) {
+ here.backgroundColor = "red";
+ smi += 1;
+ x[5].innerHTML = "× Wrong";
+ x[5].style.color = "red";
+ document.getElementsByClassName(
+  "10")[0].disabled = true;
+ document.getElementsByClassName(
+  "10")[1].disabled = true;
+ document.getElementsByClassName(
+  "10")[2].disabled = true;
+ document.getElementsByClassName(
+  "10")[3].disabled = true;
+ document.getElementsByClassName(
+   "10")[0].style.border =
+  "5px solid green";
+ random.innerHTML = "× Wrong";
+}
+function check() {
+ var poipu = scp * 5;
+ var poimu = smi * 3;
+ var points = poipu - poimu;
+  var bill = "See my Score of this quiz  - " + document.URL +  "\n \n Correct Answers : " +
+  scp + "\n \n Wrong Answers : " +
+  smi + "\n \n Points : " + points + " \n \n You can also play these quiz on https://allquizzes.github.io/" ;
+sessionStorage.setItem("points", points);
+sessionStorage.setItem("correct", scp);
+sessionStorage.setItem("wrong", smi);
+sessionStorage.setItem("share", bill);
+window.open("/score.html" , "_self" );
+}
+</script>
+</body>
+</html>
