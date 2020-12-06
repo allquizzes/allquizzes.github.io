@@ -46,7 +46,8 @@
 ​<center>
 <p id="timer">2:00</p>
 </center>
-
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 <div class="con">
 <p><h2><u>Q.1</u> </h2>Smallest Planet<br> </p>
 <button class="1" onclick="cortwo(this.style)">Mercury</button><br><br>
@@ -626,5 +627,28 @@ sessionStorage.setItem("share", bill);
 window.open("/score.html" , "_self" );
 }
 </script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("con");
+if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+slides[slideIndex-1].style.display = "block";
 </body>
 </html>
