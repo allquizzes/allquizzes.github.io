@@ -34,7 +34,7 @@ function dragstart_handler(ev) {
  ev.currentTarget.style.border = "dashed";
  // Add the id of the drag source element to the drag data payload so
  // it is available when the drop event is fired
- ev.dataTransfer.setData("text", ev.target.id);
+ ev.dataTransfer.setData("image/png", ev.target.id);
  // Tell the browser both copy and move are possible
  ev.effectAllowed = "copyMove";
 }
@@ -72,8 +72,8 @@ function dragend_handler(ev) {
 </head>
 <body>
 <h1>Drag and Drop: Copy and Move elements with <code>DataTransfer</code></h1>
- <div draggable="true" id="src_copy" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);">
-     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Rosa_Kardinal_02.jpg" height="400" width="300">
+ <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Rosa_Kardinal_02.jpg" draggable="true" id="src_copy" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);">
+  
  </div>
  <div id="dest_copy" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"><strong>Copy Drop Zone</strong></div>
  <div draggable="true" id="src_move" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);">
