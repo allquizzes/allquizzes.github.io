@@ -13,6 +13,12 @@
     // Add the ondragstart event listener
     element.addEventListener("dragstart", dragstart_handler);
   });
+function dragstart_handler(ev) {
+  // Add different types of drag data
+  ev.dataTransfer.setData("text/plain", ev.target.innerText);
+  ev.dataTransfer.setData("text/html", ev.target.outerHTML);
+  ev.dataTransfer.setData("text/uri-list", ev.target.ownerDocument.location.href);
+}
 </script>
 
 <p id="p1" draggable="true">This element is draggable.</p>
