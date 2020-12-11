@@ -47,6 +47,7 @@ slides[slideIndex-1].style.display = "block";
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  visibility: hidden;
 }
 
 /* Position the "next button" to the right */
@@ -306,6 +307,10 @@ document.getElementsByClassName(
 
 
 function startGame() {
+ document.getElementsByClassName(
+  "next")[0].style.visibility = "visible";
+ document.getElementsByClassName(
+  "prev")[0].style.visibility = "visible";
 document.getElementById(
  "Que-1").style.display = "block";
  clearInterval(countingdown);
