@@ -25,8 +25,8 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("con");
-  if (n > 1) {slideIndex = 1}
-  if (n < slides.length) {slideIndex = slides.length}
+  if (n < 1) {slideIndex = 1}
+  if (n > slides.length) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
