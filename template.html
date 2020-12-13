@@ -25,6 +25,7 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("con");
+  if (n == 1) {document.getElementsByClassName("prev")[0].onclick = ""}
   if (n == 2) {document.getElementsByClassName("prev")[0].onclick = "plusSlides(-1)"}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
@@ -34,8 +35,7 @@ slides[slideIndex-1].style.display = "block";
 </script>
 <style>
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
+  cursor: pointer;  position: absolute;
   top: 75%;
   width: auto;
   margin-top: -22px;
@@ -100,7 +100,7 @@ display: none;
 ​<center>
 <p id="timer">2:00</p>
 </center>
-  <a class="prev" onclick="">&#10094;</a>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 <button id="startquiz" onclick  = "startGame()" >Start Quiz</button>
 <div class="con" id="Que-1" >
