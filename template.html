@@ -25,7 +25,6 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("con");
- if (n == 1) {document.getElementsByClassName("prev")[0].onclick = "" }
   if (n > 1) {document.getElementsByClassName("prev")[0].onclick = "plusSlides(-1)"}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
