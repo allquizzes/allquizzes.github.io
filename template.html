@@ -214,7 +214,6 @@ margin-right: 50 px;
  <p class="status"></p>
 </div><div class="con" style="border: none; text-align: center" >
 <button onclick="check()" id="chc" style="none">Check Score</button></div>
-<input type="hidden" id="cop">
 <br><br><br><br><br><br><br><br>
  <script>
 
@@ -367,8 +366,6 @@ here.backgroundColor = "green";
   "20")[2].disabled = true;
  document.getElementsByClassName(
   "20")[3].disabled = true;
- random.innerHTML = "✓ Correct";
- a.play()
 }
 
 function wroone(here) {
@@ -387,8 +384,7 @@ here.backgroundColor = "red";
  document.getElementsByClassName(
   "20")[2].style.border =
   "5px solid green";
- random.innerHTML = "❌ Wrong";
-}
+ }
 
 function cortwo(here) {
  here.backgroundColor = "green";
@@ -400,13 +396,11 @@ function cortwo(here) {
  y[3].disabled = true;
  scp += 1;
  x[0].innerHTML = "✓ Correct";
- random.innerHTML = "✓ Correct";
- a.play();
-}
+ }
 
 function wrotwo(here) {
  here.backgroundColor = "red";
- x[0].innerHTML = "× Wrong";
+ x[0].innerHTML = "❌ Wrong";
  x[0].style.color = "red";
  y = document
   .getElementsByClassName("1");
@@ -417,9 +411,7 @@ function wrotwo(here) {
  y[1].style.border =
   "5px solid green";
  smi += 1;
- x[0].navigator.vibrate(200);
- random.innerHTML = "× Wrong";
-}
+ }
 
 function corthree(here) {
  here.backgroundColor = "green";
