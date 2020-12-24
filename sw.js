@@ -28,5 +28,5 @@ self.addEventListener('sync', function(event) {
   }
 });
 function uff() {
-window.location.reload
+window.location.reload() ;
 }
