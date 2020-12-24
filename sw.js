@@ -4,6 +4,7 @@ self.addEventListener('install', function(e) {
    caches.open('fox-store').then(function(cache) {
      return cache.addAll([
        'IMG-20201127-WA0043.jpg' ,
+       'index.html' , 
        'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js' ,
        'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js' ,
        'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js' ,
@@ -21,3 +22,11 @@ self.addEventListener('fetch', function(e) {
     })
   );
 });
+self.addEventListener('sync', function(event) {
+  if (event.tag == 'myFirstSync') {
+    event.waitUntil(uff());
+  }
+});
+function uff() {
+window.location.reload
+}
