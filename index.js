@@ -2,6 +2,9 @@ if('serviceWorker' in navigator) {
   navigator.serviceWorker
            .register('sw.js')
            .then(function() { console.log('Service Worker Registered'); });
+navigator.serviceWorker.ready.then(function(swRegistration) {
+  return swRegistration.sync.register('myFirstSync');
+});
 }
 
 // Code to handle install prompt on desktop
@@ -34,10 +37,3 @@ window.addEventListener('beforeinstallprompt', (e) => {
       });
   });
 });
-function display(){
-  if (Notification.permission == 'granted') {
-    navigator.serviceWorker.getRegistration().then(function(reg) {
-      reg.showNotification('Hello world!');
-    });
-  }
-}
