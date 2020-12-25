@@ -1,9 +1,6 @@
 a {
 color: royalblue
 }
-body {
- background-color: white;
-}
 .status {
  color: green;
 }
@@ -12,13 +9,14 @@ color: cyan;
 background-color: black;
 text-align: center;
 }
-#piechart {
- position: relative;
- z-index: 0;
- }
  .con {
   text-align: center;
   border: 5px solid black;
+  display: none;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
  }
  #head {
   text-align: center;
@@ -36,8 +34,6 @@ text-shadow: 0 0 20px #32f, 0 0 30px #1004ff, 0 0 40px #0400ff, 0 0 50px #6666ff
  #chc {
 width: 300px;  
 height: 50px;
-position: relative;
-left: 20px;
 color: royalblue;
 font-weight: bold;
 font-size: 25px;
@@ -47,15 +43,7 @@ background-color: pink;
   background-color: yellow;
   color: blue;
  }
- #Cred {
- text-align: center;
-  position: sticky;
-  top: 1px;
-  left: 25px;
-  border: 1px solid;
-  width: 300px;
-  background-color: rgba(100 , 0 , 0 , 0.1);
- } 
+  
  #timer{
     font-size: 30px;
     text-align: center;
@@ -65,7 +53,69 @@ background-color: pink;
     border: solid black 3px;
     border-radius: 15px;
 }
- #h3 {
-  text-decoration: none;
- }
- 
+ .prev, .next {
+  cursor: pointer;  position: absolute;
+  top: 160%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  visibility: hidden;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(50,50,50,0.4);
+ color: red;
+}
+#body{
+font-family: "Helvetica Neue";
+font-size:16px;
+line-height: 1.5;
+}
+@-webkit-keyframes fade {
+  from {opacity: .3}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .3}
+  to {opacity: 1}
+}
+#startquiz {
+ background-color: red;
+ color: lightGreen;
+ position: relative;
+ left: 100px;
+ height: 100px;
+ width: 150px;
+font-size: 27px;
+font-weight:bold;
+}
+#chc {
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: 50 px;
+margin-right: 50 px;
+}
+#descript {
+border: 2px solid;
+padding: 10px
+}
+.share {
+color: purple;
+background: lightblue;
+font-weight: bold;
+}
