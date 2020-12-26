@@ -115,7 +115,9 @@ margin-right: 50 px;
 }
 #descript {
 border: 2px solid;
-padding: 10px
+padding: 10px;
+position: relative;
+bottom:60px ;
 }
 .share {
 color: purple;
