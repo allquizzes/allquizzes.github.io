@@ -13,6 +13,8 @@ text-align: center;
   text-align: center;
   border: 5px solid black;
   display: none;
+   position: relative ;
+   bottom: 40px ;
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1s;
   animation-name: fade;
