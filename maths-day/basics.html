@@ -40,22 +40,6 @@
  <button class="2" onclick="wrothree(this.style)">26 December</button><br>
  <p class="status"></p>
 </div>
-<div class="con">
- <p><h2>Q.4 </h2></p>
- <button class="3" onclick="wrofour(this.style)"></button><br><br>
- <button class="3" onclick="wrofour(this.style)"></button><br><br>
- <button class="3" onclick="wrofour(this.style)"></button><br><br>
- <button class="3" onclick="corfour(this.style)"> </button><br> 
- <p class="status"></p>
-</div>
-<div class="con">
- <p><h2>Q.5 </h2> </p>
- <button class="4" onclick="wrofive(this.style)"></button><br><br>
- <button class="4" onclick="corfive(this.style)"></button><br><br>
- <button class="4" onclick="wrofive(this.style)"> </button><br><br>
- <button class="4" onclick="wrofive(this.style)"> </button><br> 
- <p class="status"></p>
-</div> 
 <div class="con" style="border: none; text-align: center" >
 <button onclick="check()" id="chc" style="none">Check Score</button></div></div>
 <br><br><br>
@@ -114,23 +98,7 @@ function countdown() {
   "2")[2].disabled = true;
  document.getElementsByClassName(
   "2")[3].disabled = true;
-  document.getElementsByClassName(
-  "3")[0].disabled = true;
- document.getElementsByClassName(
-  "3")[1].disabled = true;
- document.getElementsByClassName(
-  "3")[2].disabled = true;
- document.getElementsByClassName(
-  "3")[3].disabled = true;
-  document.getElementsByClassName(
-  "4")[0].disabled = true;
- document.getElementsByClassName(
-  "4")[1].disabled = true;
- document.getElementsByClassName(
-  "4")[2].disabled = true;
- document.getElementsByClassName(
-  "4")[3].disabled = true;
-  document.getElementsByClassName(
+    document.getElementsByClassName(
   "20")[0].disabled = true;
  document.getElementsByClassName(
   "20")[1].disabled = true;
@@ -253,70 +221,7 @@ function wrothree(here) {
   "5px solid green";
 }
 
-function corfour(here) {
- here.backgroundColor = "green";
- scp += 1;
- x[3].innerHTML = "✓ Correct";
- document.getElementsByClassName(
-  "3")[0].disabled = true;
- document.getElementsByClassName(
-  "3")[1].disabled = true;
- document.getElementsByClassName(
-  "3")[2].disabled = true;
- document.getElementsByClassName(
-  "3")[3].disabled = true;
-}
 
-function wrofour(here) {
- here.backgroundColor = "red";
- smi += 1;
- x[3].innerHTML = "❌ Wrong";
- x[3].style.color = "red";
- document.getElementsByClassName(
-  "3")[0].disabled = true;
- document.getElementsByClassName(
-  "3")[1].disabled = true;
- document.getElementsByClassName(
-  "3")[2].disabled = true;
- document.getElementsByClassName(
-  "3")[3].disabled = true;
- document.getElementsByClassName(
-   "3")[3].style.border =
-  "5px solid green";
-}
-
-function corfive(here) {
- here.backgroundColor = "green";
- scp += 1;
- x[4].innerHTML = "✓ Correct";
- document.getElementsByClassName(
-  "4")[0].disabled = true;
- document.getElementsByClassName(
-  "4")[1].disabled = true;
- document.getElementsByClassName(
-  "4")[2].disabled = true;
- document.getElementsByClassName(
-  "4")[3].disabled = true;
- random.innerHTML = "✓ Correct";
-}
-
-function wrofive(here) {
- here.backgroundColor = "red";
- smi += 1;
- x[4].innerHTML = "❌ Wrong";
- x[4].style.color = "red";
- document.getElementsByClassName(
-  "4")[0].disabled = true;
- document.getElementsByClassName(
-  "4")[1].disabled = true;
- document.getElementsByClassName(
-  "4")[2].disabled = true;
- document.getElementsByClassName(
-  "4")[3].disabled = true;
- document.getElementsByClassName(
-   "4")[1].style.border =
-  "5px solid green";
-}
 function check() {
  var poipu = scp * 5;
  var poimu = smi * 3;
