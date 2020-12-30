@@ -57,7 +57,7 @@ background-color: pink;
 }
  .prev, .next {
   cursor: pointer;  position: absolute;
-  top: 100%;
+  top: 85%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
