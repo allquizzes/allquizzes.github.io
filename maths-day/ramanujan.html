@@ -19,7 +19,7 @@
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 <button id="startquiz" onclick  = "startGame() ; plusSlides(1)" >Start Quiz</button>
 <div class="con" id="Que-1" >
-<p><h2><u>Q.1</u>On which date Srinivasa Ramanujan born- ?</h2></p>
+<p><h2><u>Q.1</u></h2>On which date Srinivasa Ramanujan born- ?</p>
 <button class="1" onclick="cortwo(this.style)">22 december, 1887</button><br><br>
 <button class="1" onclick="wrotwo(this.style)">22 december, 1988</button><br><br> 
 <button class="1" onclick="wrotwo(this.style)">22 december, 1888</button><br><br>
@@ -277,7 +277,7 @@ here.backgroundColor = "red";
  document.getElementsByClassName(
   "20")[3].disabled = true;
  document.getElementsByClassName(
-  "20")[0].style.border =
+  "20")[2].style.border =
   "5px solid green";
  }
 
@@ -303,7 +303,7 @@ function wrotwo(here) {
  y[1].disabled = true;
  y[2].disabled = true;
  y[3].disabled = true;
- y[1].style.border =
+ y[0].style.border =
   "5px solid green";
  smi += 1;
  }
