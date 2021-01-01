@@ -66,37 +66,14 @@
 </div>
 
 <div class="con">
- <p><h2>Q.7 </h2> </p>
- <button class="5" onclick="wrosev(this.style)"></button><br><br>
- <button class="5" onclick="wrosev(this.style)"></button><br><br>
- <button class="5" onclick="corsev(this.style)"></button><br><br>
- <button class="5" onclick="wrosev(this.style)"> </button><br> 
+ <p><h2>Q.7 </h2>Which number is known as <b>Hardy-Ramanujan Number</b> ?</p>
+ <button class="5" onclick="wrosev(this.style)">1777</button><br><br>
+ <button class="5" onclick="wrosev(this.style)">1768</button><br><br>
+ <button class="5" onclick="wrosev(this.style)">1778</button><br><br>
+ <button class="5" onclick="corsev(this.style)">1729</button><br> 
  <p class="status"></p>
 </div> 
-<div class="con">
- <p><h2>Q.8 </h2></p>
- <button class="6" onclick="wroeight(this.style)"></button><br><br>
- <button class="6" onclick="wroeight(this.style)"></button><br><br>
- <button class="6" onclick="coreight(this.style)"></button><br><br>
- <button class="6" onclick="wroeight(this.style)"></button><br> 
- <p class="status"></p>
-</div> 
-<div class="con">
- <p><h2>Q.9 </h2></p>
- <button class="7" onclick="wronine(this.style)"></button><br><br>
- <button class="7" onclick="wronine(this.style)"></button><br><br>
- <button class="7" onclick="wronine(this.style)"></button><br><br>
- <button class="7" onclick="cornine(this.style)"></button><br> 
- <p class="status"></p>
-</div> 
-<div class="con">
- <p><h2>Q.10 </h2></p>
- <button class="8" onclick="corten(this.style)"></button><br><br>
- <button class="8" onclick="wroten(this.style)"></button><br><br>
- <button class="8" onclick="wroten(this.style)"></button><br><br>
- <button class="8" onclick="wroten(this.style)"></button><br> 
- <p class="status"></p>
-</div><div class="con" style="border: none; text-align: center" >
+<div class="con" style="border: none; text-align: center" >
 <button onclick="check()" id="chc" style="none">Check Score</button></div></div>
 <br><br><br>
 <div id="descript"> <h2 style="text-align:left ; text-decoration:none" >Instructions -</h2> <ul> <li>This is a ___ Quiz.  </li> <li>Click on <b>Start Quiz </b>button to start the Quiz.</li><li>It contains 10 questions.</li> <li> You have 2 minutes to do this Quiz, After 2 minutes you can not do the Quiz.</li> <li> Every Correct Answer gives you +5 points.</li> <li> You can Check your Score by clicking on <b>Check Score</b> button after completing the Quiz.</li><li>Please <strong>Like, Comment and <button class="share" ; id="sharethis"; onclick="sharequiz()" ><b>Share</button></b></strong>
@@ -178,30 +155,6 @@ function countdown() {
   "5")[2].disabled = true;
  document.getElementsByClassName(
   "5")[3].disabled = true;
-  document.getElementsByClassName(
-  "6")[0].disabled = true;
- document.getElementsByClassName(
-  "6")[1].disabled = true;
- document.getElementsByClassName(
-  "6")[2].disabled = true;
- document.getElementsByClassName(
-  "6")[3].disabled = true;
-  document.getElementsByClassName(
-  "7")[0].disabled = true;
- document.getElementsByClassName(
-  "7")[1].disabled = true;
- document.getElementsByClassName(
-  "7")[2].disabled = true;
- document.getElementsByClassName(
-  "7")[3].disabled = true;
-  document.getElementsByClassName(
-  "8")[0].disabled = true;
- document.getElementsByClassName(
-  "8")[1].disabled = true;
- document.getElementsByClassName(
-  "8")[2].disabled = true;
- document.getElementsByClassName(
-  "8")[3].disabled = true; 
 document.getElementsByClassName(
   "10")[0].disabled = true;
  document.getElementsByClassName(
@@ -436,103 +389,7 @@ function wrosev(here) {
  document.getElementsByClassName(
   "5")[3].disabled = true;
  document.getElementsByClassName(
-   "5")[2].style.border =
-  "5px solid green";
-}
-
-function coreight(here) {
- here.backgroundColor = "green";
- scp += 1;
- x[7].innerHTML = "✓ Correct";
- document.getElementsByClassName(
-  "6")[0].disabled = true;
- document.getElementsByClassName(
-  "6")[1].disabled = true;
- document.getElementsByClassName(
-  "6")[2].disabled = true;
- document.getElementsByClassName(
-  "6")[3].disabled = true;
- }
-
-function wroeight(here) {
- here.backgroundColor = "red";
- smi += 1;
- x[7].innerHTML = "❌ Wrong";
- x[7].style.color = "red";
- document.getElementsByClassName(
-  "6")[0].disabled = true;
- document.getElementsByClassName(
-  "6")[1].disabled = true;
- document.getElementsByClassName(
-  "6")[2].disabled = true;
- document.getElementsByClassName(
-  "6")[3].disabled = true;
- document.getElementsByClassName(
-   "6")[2].style.border =
-  "5px solid green";
- }
-
-function cornine(here) {
- here.backgroundColor = "green";
- scp += 1;
- x[8].innerHTML = "✓ Correct";
- document.getElementsByClassName(
-  "7")[0].disabled = true;
- document.getElementsByClassName(
-  "7")[1].disabled = true;
- document.getElementsByClassName(
-  "7")[2].disabled = true;
- document.getElementsByClassName(
-  "7")[3].disabled = true;
-}
-
-function wronine(here) {
- here.backgroundColor = "red";
- smi += 1;
- x[8].innerHTML = "❌ Wrong";
- x[8].style.color = "red";
- document.getElementsByClassName(
-  "7")[0].disabled = true;
- document.getElementsByClassName(
-  "7")[1].disabled = true;
- document.getElementsByClassName(
-  "7")[2].disabled = true;
- document.getElementsByClassName(
-  "7")[3].disabled = true;
- document.getElementsByClassName(
-   "7")[3].style.border =
-  "5px solid green";
-}
-
-function corten(here) {
- here.backgroundColor = "green";
- scp += 1;
- x[9].innerHTML = "✓ Correct";
- document.getElementsByClassName(
-  "8")[0].disabled = true;
- document.getElementsByClassName(
-  "8")[1].disabled = true;
- document.getElementsByClassName(
-  "8")[2].disabled = true;
- document.getElementsByClassName(
-  "8")[3].disabled = true;
-}
-
-function wroten(here) {
- here.backgroundColor = "red";
- smi += 1;
- x[9].innerHTML = "❌ Wrong";
- x[9].style.color = "red";
- document.getElementsByClassName(
-  "8")[0].disabled = true;
- document.getElementsByClassName(
-  "8")[1].disabled = true;
- document.getElementsByClassName(
-  "8")[2].disabled = true;
- document.getElementsByClassName(
-  "8")[3].disabled = true;
- document.getElementsByClassName(
-   "8")[0].style.border =
+   "5")[3].style.border =
   "5px solid green";
 }
 
