@@ -16,7 +16,11 @@
 ​<center>
 <p id="timer">2:00</p>
 </center>
-<div class="con">
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<button id="startquiz" onclick  = "startGame() ; plusSlides(1)" >Start Quiz</button>
+
+<div class="con" id="Que-1">
 <p><h2><u>Q.1</u> </h2>Smallest Planet<br> </p>
 <button class="1" onclick="cortwo(this.style)">Mercury</button><br><br>
 <button class="1" onclick="cortwo(this.style)">Venus</button><br><br> 
