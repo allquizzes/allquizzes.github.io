@@ -554,7 +554,7 @@ function corsix() {
 function check() {
  var poipu = scp * 5;
  var poimu = smi * 3;
- var points = poipu - poimu;
+ var points = poipu ;
   var bill = "See my Score of this quiz  - " + document.URL +  "\n \n Correct Answers : " +
   scp + "\n \n Wrong Answers : " +
   smi + "\n \n Points : " + points + " \n \n You can also play these quiz on https://allquizzes.github.io/" ;
@@ -562,7 +562,16 @@ sessionStorage.setItem("points", points);
 sessionStorage.setItem("correct", scp);
 sessionStorage.setItem("wrong", smi);
 sessionStorage.setItem("share", bill);
+sessionStorage.setItem("explanation", "https://allquizzes.github.io/explanation/general/1.html" );
 window.open("../score.html" , "_self" );
+}
+function sharequiz() {
+if (navigator.share) {
+navigator.share ({ text : "Please play this Amazing Quiz - \n"  + document.URL 
+ })
+ } else {
+ document.getElementById("sharethis").style.display = "none";
+ }
 }
 </script>
 <div id="fb-root"></div>
