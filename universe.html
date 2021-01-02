@@ -225,6 +225,14 @@ document.getElementsByClassName(
 
 
 function startGame() {
+ document.getElementById(
+ "startquiz").style.display = "none";
+ document.getElementsByClassName(
+  "next")[0].style.visibility = "visible";
+ document.getElementsByClassName(
+  "prev")[0].style.visibility = "visible";
+document.getElementById(
+ "Que-1").style.display = "block";
  clearInterval(countingdown);
  time = 119;
  countingdown = setInterval(
@@ -577,12 +585,21 @@ function check() {
  var points = poipu - poimu;
   var bill = "See my Score of this quiz  - " + document.URL +  "\n \n Correct Answers : " +
   scp + "\n \n Wrong Answers : " +
-  smi + "\n \n Points : " + points + " \n \n You can also play these quiz on https://allquizzes.github.io/" ;
+  smi + "\n \n Points : " + points + " \n \n You can also play these quizzes on https://allquizzes.github.io/" ;
 sessionStorage.setItem("points", points);
 sessionStorage.setItem("correct", scp);
 sessionStorage.setItem("wrong", smi);
 sessionStorage.setItem("share", bill);
+sessionStorage.setItem("explanation", "https://allquizzes.github.io/explanation/space/planet-extremes.html" );
 window.open("/score.html" , "_self" );
+}
+function sharequiz() {
+if (navigator.share) {
+navigator.share ({ text : "Please play this Amazing Quiz - \n"  + document.URL 
+ })
+ } else {
+ document.getElementById("sharethis").style.display = "none";
+ }
 }
 </script>
 </body>
