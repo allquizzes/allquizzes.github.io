@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="description" content="It contains 10 questions on General Knowledge. Play this Quiz to increase your knowledge">
  <meta property="fb:admins" content="100055036303318"/>
-
+<script src="../slideshow.js"></script>
 </head>
 <body id="body" onload = "startGame()" >
 <strong><center><a href="../index.html" style="text-align: center;">Go to Home Page</a></center></strong>
@@ -15,6 +15,9 @@
 ​<center>
 <p id="timer">2:00</p>
 </center>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<button id="startquiz" onclick  = "startGame() ; plusSlides(1)" >Start Quiz</button>
 <div class="con">
 <p><h2><u>Q.1</u> </h2><br> Which of the following is the fastest land animal ?</p>
 <button class="1" onclick="wrotwo(this.style)">Tiger</button><br><br>
