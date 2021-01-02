@@ -230,6 +230,14 @@ document.getElementsByClassName(
 
 
 function startGame() {
+ document.getElementById(
+ "startquiz").style.display = "none";
+ document.getElementsByClassName(
+  "next")[0].style.visibility = "visible";
+ document.getElementsByClassName(
+  "prev")[0].style.visibility = "visible";
+document.getElementById(
+ "Que-1").style.display = "block";
  clearInterval(countingdown);
  time = 119;
  countingdown = setInterval(
@@ -598,6 +606,14 @@ sessionStorage.setItem("wrong", smi);
 sessionStorage.setItem("share", bill);
 sessionStorage.setItem("explanation", "https://allquizzes.github.io/explanation/space/planet-extremes.html" );
 window.open("/score.html" , "_self" );
+}
+function sharequiz() {
+if (navigator.share) {
+navigator.share ({ text : "Please play this Amazing Quiz - \n"  + document.URL 
+ })
+ } else {
+ document.getElementById("sharethis").style.display = "none";
+ }
 }
 </script>
 </body>
