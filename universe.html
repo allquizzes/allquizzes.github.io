@@ -10,15 +10,18 @@
    <meta name="description" content="It contains 10 questions on _. Play this Quiz to increase your knowledge">
 
  </head>
-<body id="body" onload = "startGame()" >
+<body id="body" >
 <strong><center><a href="../index.html" style="text-align: center;">Go to Home Page</a></center></strong>
 <h1 id="head"><br>Universe Quiz - 1<br><br></h1>
 
 ​<center>
 <p id="timer">2:00</p>
 </center>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<button id="startquiz" onclick  = "startGame() ; plusSlides(1)" >Start Quiz</button>
 
-<div class="con">
+<div class="con" id="Que-1">
 <p><h2><u>Q.1</u></h2> How did the Universe came into existence ?</h2><br> </p>
 <button class="1" onclick="wrotwo(this.style)">big-bounce theory</button><br><br>
 <button class="1" onclick="wrotwo(this.style)">big-boom theory</button><br><br> 
