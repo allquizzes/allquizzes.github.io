@@ -3,7 +3,6 @@
 <head>
 <title>AllQuizzes</title>
 <meta name="description" content="Here you can get AllQuizzes">
-<script src="index.js" defer></script>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="OqG2BMR050qvhOcgeL-TVyLlg219lR6JEpweudILhbk" />
    <meta name="keywords" content="AllQuizzes">
@@ -18,37 +17,67 @@
   gtag('config', 'G-RT3B1MT30J' );
 
 </script>
+<style>
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 </head>
 <body>
 <h1>
 AllQuizzes
 </h1>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="add-button">Add to home screen</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">open</span>
+
 <a href="general.html" >General Knowledge Quiz - 1 </a><br><br>
 <a href="universe.html">Universe Quiz - 1</a><br><br>
 <a href="planet-extremes.html">Planet-Extremes Quiz</a><br><br>
  <button class="add-button">Add to home screen</button>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyCI1HSl4_W768YbgsZKdCM9fgHe7aE40Ac",
-    authDomain: "allquizzes-omar.firebaseapp.com",
-    projectId: "allquizzes-omar",
-    storageBucket: "allquizzes-omar.appspot.com",
-    messagingSenderId: "1021464806738",
-    appId: "1:1021464806738:web:b32e4f1c70962845d8668b",
-    measurementId: "G-KEYTD120W6"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
+<script src="index.js" defer></script>
 </body>
 </html>
