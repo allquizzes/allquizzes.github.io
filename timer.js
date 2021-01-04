@@ -1,6 +1,6 @@
 const FULL_DASH_ARRAY = 283;
-const WARNING_THRESHOLD = 10;
-const ALERT_THRESHOLD = 5;
+const WARNING_THRESHOLD = 20;
+const ALERT_THRESHOLD = 10;
 
 const COLOR_CODES = {
   info: {
@@ -16,7 +16,7 @@ const COLOR_CODES = {
   }
 };
 
-const TIME_LIMIT = 20;
+const TIME_LIMIT = 120;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
@@ -46,13 +46,108 @@ document.getElementById("timer").innerHTML = `
 </div>
 `;
 
-startTimer();
+startGame();
 
 function onTimesUp() {
+var y = document
+  .getelementsbyclassname("1");
+ y[0].disabled = true;
+ y[1].disabled = true;
+ y[2].disabled = true;
+ y[3].disabled = true;
+
+  document.getelementsbyclassname(
+  "2")[0].disabled = true;
+ document.getelementsbyclassname(
+  "2")[1].disabled = true;
+ document.getelementsbyclassname(
+  "2")[2].disabled = true;
+ document.getelementsbyclassname(
+  "2")[3].disabled = true;
+  document.getelementsbyclassname(
+  "3")[0].disabled = true;
+ document.getelementsbyclassname(
+  "3")[1].disabled = true;
+ document.getelementsbyclassname(
+  "3")[2].disabled = true;
+ document.getelementsbyclassname(
+  "3")[3].disabled = true;
+  document.getelementsbyclassname(
+  "4")[0].disabled = true;
+ document.getelementsbyclassname(
+  "4")[1].disabled = true;
+ document.getelementsbyclassname(
+  "4")[2].disabled = true;
+ document.getelementsbyclassname(
+  "4")[3].disabled = true;
+  document.getelementsbyclassname(
+  "5")[0].disabled = true;
+ document.getelementsbyclassname(
+  "5")[1].disabled = true;
+ document.getelementsbyclassname(
+  "5")[2].disabled = true;
+ document.getelementsbyclassname(
+  "5")[3].disabled = true;
+  document.getelementsbyclassname(
+  "6")[0].disabled = true;
+ document.getelementsbyclassname(
+  "6")[1].disabled = true;
+ document.getelementsbyclassname(
+  "6")[2].disabled = true;
+ document.getelementsbyclassname(
+  "6")[3].disabled = true;
+  document.getelementsbyclassname(
+  "7")[0].disabled = true;
+ document.getelementsbyclassname(
+  "7")[1].disabled = true;
+ document.getelementsbyclassname(
+  "7")[2].disabled = true;
+ document.getelementsbyclassname(
+  "7")[3].disabled = true;
+  document.getelementsbyclassname(
+  "8")[0].disabled = true;
+ document.getelementsbyclassname(
+  "8")[1].disabled = true;
+ document.getelementsbyclassname(
+  "8")[2].disabled = true;
+ document.getelementsbyclassname(
+  "8")[3].disabled = true; 
+document.getelementsbyclassname(
+  "10")[0].disabled = true;
+ document.getelementsbyclassname(
+  "10")[1].disabled = true;
+ document.getelementsbyclassname(
+  "10")[2].disabled = true;
+ document.getelementsbyclassname(
+  "10")[3].disabled = true;
+document.getelementsbyclassname(
+  "20")[0].disabled = true;
+ document.getelementsbyclassname(
+  "20")[1].disabled = true;
+ document.getelementsbyclassname(
+  "20")[2].disabled = true;
+ document.getelementsbyclassname(
+  "20")[3].disabled = true;
+    document.getelementsbyclassname(
+  "20")[0].disabled = true;
+ document.getelementsbyclassname(
+  "20")[1].disabled = true;
+ document.getelementsbyclassname(
+  "20")[2].disabled = true;
+ document.getelementsbyclassname(
+  "20")[3].disabled = true;
   clearInterval(timerInterval);
 }
 
-function startTimer() {
+function startGame() {
+ document.getelementbyid(
+ "startquiz").style.display = "none";
+ document.getelementsbyclassname(
+  "next")[0].style.visibility = "visible";
+ document.getelementsbyclassname(
+  "prev")[0].style.visibility = "visible";
+document.getelementbyid(
+ "que-1").style.display = "block";
   timerInterval = setInterval(() => {
     timePassed = timePassed += 1;
     timeLeft = TIME_LIMIT - timePassed;
