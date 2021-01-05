@@ -33,17 +33,7 @@ font-family: Garamond, serif; font-size: 40px ;
   text-decoration: underline;
  }
  
- #timer{
-    position: relative;
-    bottom:60px;
-    font-size: 30px;
-    text-align: center;
-    font-family: monospace;
-    background-color: lightblue;
-    width: 30%;
-    border: solid black 3px;
-    border-radius: 15px;
-}
+
  .prev, .next {
   cursor: pointer;  position: absolute;
   top: 85%;
