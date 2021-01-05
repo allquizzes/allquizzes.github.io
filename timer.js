@@ -46,8 +46,6 @@ document.getElementById("timer").innerHTML = `
 </div>
 `;
 
-startGame();
-
 function onTimesUp() {
  var y = document
   .getElementsByClassName("1");
