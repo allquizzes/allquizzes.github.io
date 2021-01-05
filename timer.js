@@ -49,105 +49,105 @@ document.getElementById("timer").innerHTML = `
 startGame();
 
 function onTimesUp() {
-var y = document
-  .getelementsbyclassname("1");
+ var y = document
+  .getElementsByClassName("1");
  y[0].disabled = true;
  y[1].disabled = true;
  y[2].disabled = true;
  y[3].disabled = true;
 
-  document.getelementsbyclassname(
+  document.getElementsByClassName(
   "2")[0].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "2")[1].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "2")[2].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "2")[3].disabled = true;
-  document.getelementsbyclassname(
+  document.getElementsByClassName(
   "3")[0].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "3")[1].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "3")[2].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "3")[3].disabled = true;
-  document.getelementsbyclassname(
+  document.getElementsByClassName(
   "4")[0].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "4")[1].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "4")[2].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "4")[3].disabled = true;
-  document.getelementsbyclassname(
+  document.getElementsByClassName(
   "5")[0].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "5")[1].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "5")[2].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "5")[3].disabled = true;
-  document.getelementsbyclassname(
+  document.getElementsByClassName(
   "6")[0].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "6")[1].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "6")[2].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "6")[3].disabled = true;
-  document.getelementsbyclassname(
+  document.getElementsByClassName(
   "7")[0].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "7")[1].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "7")[2].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "7")[3].disabled = true;
-  document.getelementsbyclassname(
+  document.getElementsByClassName(
   "8")[0].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "8")[1].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "8")[2].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "8")[3].disabled = true; 
-document.getelementsbyclassname(
+document.getElementsByClassName(
   "10")[0].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "10")[1].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "10")[2].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "10")[3].disabled = true;
-document.getelementsbyclassname(
+document.getElementsByClassName(
   "20")[0].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "20")[1].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "20")[2].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "20")[3].disabled = true;
-    document.getelementsbyclassname(
+    document.getElementsByClassName(
   "20")[0].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "20")[1].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "20")[2].disabled = true;
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "20")[3].disabled = true;
   clearInterval(timerInterval);
 }
 
 function startGame() {
- document.getelementbyid(
+ document.getElementById(
  "startquiz").style.display = "none";
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "next")[0].style.visibility = "visible";
- document.getelementsbyclassname(
+ document.getElementsByClassName(
   "prev")[0].style.visibility = "visible";
-document.getelementbyid(
- "que-1").style.display = "block";
+document.getElementById(
+ "Que-1").style.display = "block";
   timerInterval = setInterval(() => {
     timePassed = timePassed += 1;
     timeLeft = TIME_LIMIT - timePassed;
