@@ -48,7 +48,7 @@
 <div id="descript"> <h2 style="text-align:left ; text-decoration:none" >Instructions -</h2> <ul> <li>This is a Special Quiz designed on the occasion of national maths day. It contains basics of Maths Day  </li> <li>Click on <b>Start Quiz </b>button to start the Quiz.</li><li>It contains 3 questions.</li> <li> You have 2 minutes to do this Quiz, After 2 minutes you can not do the Quiz.</li> <li> Every Correct Answer gives you +5 points.</li> <li> You can Check your Score by clicking on <b>Check Score</b> button after completing the Quiz.</li><li>Please <strong>Like, Comment and <button class="share" ; id="sharethis"; onclick="sharequiz()" ><b>Share</button></b></strong>
 </ul>  <span style="text-align: center;">So enjoy the Quiz !!! </span>
    </div>
-
+<script src="timer.js"></script>
 <script>
 
 var x = document
@@ -59,77 +59,6 @@ var scp = 0;
 
 var smi = 0;
 
-var random = document.getElementById(
-
- "sta");
-
-var a = document.getElementById(
-
- "audio");
-var time;
-var countingdown;
-var timer = document.getElementById(
- "timer");
-
-
-function countdown() {
- if (time % 60 < 100) {
-  timer.innerHTML = Math.floor(time /
-   60) + ":" + (time % 60); 
- } else {
-  timer.innerHTML = Math.floor(time /
-   60) + ":" + (time % 60);
- }
- if (time <= 0) {
-  timer.innerHTML = "0";
- }
- if (time == 0) {
-  alert("Time Up");
-  var y = document
-  .getElementsByClassName("1");
- y[0].disabled = true;
- y[1].disabled = true;
- y[2].disabled = true;
- y[3].disabled = true;
-
-  document.getElementsByClassName(
-  "2")[0].disabled = true;
- document.getElementsByClassName(
-  "2")[1].disabled = true;
- document.getElementsByClassName(
-  "2")[2].disabled = true;
- document.getElementsByClassName(
-  "2")[3].disabled = true;
-    document.getElementsByClassName(
-  "20")[0].disabled = true;
- document.getElementsByClassName(
-  "20")[1].disabled = true;
- document.getElementsByClassName(
-  "20")[2].disabled = true;
- document.getElementsByClassName(
-  "20")[3].disabled = true;
-   }
- time--;
-}
-
-
-
-function startGame() {
-document.getElementById(
- "startquiz").style.display = "none";
- document.getElementsByClassName(
-  "next")[0].style.visibility = "visible";
- document.getElementsByClassName(
-  "prev")[0].style.visibility = "visible";
-document.getElementById(
- "Que-1").style.display = "block";
- clearInterval(countingdown);
- time = 119;
- countingdown = setInterval(
-  countdown, 1000);
-}
- 
- 
  
 function corone(here) {
  
