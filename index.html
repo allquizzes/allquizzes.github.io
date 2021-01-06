@@ -113,5 +113,29 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCI1HSl4_W768YbgsZKdCM9fgHe7aE40Ac",
+    authDomain: "allquizzes-omar.firebaseapp.com",
+    databaseURL: "https://allquizzes-omar-default-rtdb.firebaseio.com",
+    projectId: "allquizzes-omar",
+    storageBucket: "allquizzes-omar.appspot.com",
+    messagingSenderId: "1021464806738",
+    appId: "1:1021464806738:web:b32e4f1c70962845d8668b",
+    measurementId: "G-KEYTD120W6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 </html>
