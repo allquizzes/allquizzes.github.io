@@ -166,12 +166,10 @@ font-weight: bold;
 body {
   --text-color: #222;
   --bkg-color: #fff;
-  --com-ment: #eee;
-}
+  }
 body.dark-theme {
   --text-color: #eee;
   --bkg-color: #121212;
-  --com-ment: #eee;
 }
 
 * {
@@ -185,7 +183,4 @@ body {
 h1,
 p {
   color: var(--text-color);
-}
-.fb-comments {
-background: var(--com-ment);
 }
