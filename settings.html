@@ -2,10 +2,28 @@
 <head>
 <meta name="color-scheme" content="dark light">
 <style>
-body.dark-theme {
-background : black;
-color : white;
+body {
+  --text-color: #222;
+  --bkg-color: #fff;
 }
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #121212;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--bkg-color);
+}
+
+h1,
+p {
+  color: var(--text-color);
+}
+
 </head>
 <body>
 <h1 style="text-align: center" >Settings</h1>
