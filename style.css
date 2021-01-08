@@ -180,7 +180,6 @@ body {
   background: var(--bkg-color);
 }
 
-h1,
-p {
+body {
   color: var(--text-color);
 }
