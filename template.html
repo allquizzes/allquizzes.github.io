@@ -15,6 +15,7 @@
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
   document.body.classList.add("dark-theme");
+  document.getElementsByClassName("fb-comments")[0].data-colorscheme = "dark";
 }
 </script>
 <strong><center><a href="../index.html" style="text-align: center;">Go to Home Page</a></center></strong>
