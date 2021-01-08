@@ -11,13 +11,6 @@
 <meta name="color-scheme" content="dark light">
 </head>
 <body id="body" >
-<script>
-const currentTheme = localStorage.getItem("theme");
-if (currentTheme == "dark") {
-  document.body.classList.add("dark-theme");
-  document.getElementsByClassName("fb-comments")[0].data-colorscheme = "dark";
-}
-</script>
 <strong><center><a href="../index.html" style="text-align: center;">Go to Home Page</a></center></strong>
 <h1 id="head"><br>Quiz <br><br></h1>
 ​<center>
@@ -468,7 +461,13 @@ navigator.share ({ text : "Please play this Amazing Quiz - \n"  + document.URL
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0&appId=373600737090673&autoLogAppEvents=1" nonce="LYz9jszN"></script>
 <div class="fb-comments" data-href="https://allquizzes.github.io/template.html" data-width="" data-numposts="5"></div>
-
+<script>
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme == "dark") {
+  document.body.classList.add("dark-theme");
+  document.getElementsByClassName("fb-comments")[0].data-colorscheme = "dark";
+}
+</script>
  <br><br><br><br><br><br><br><br>
 </body>
 </html>
