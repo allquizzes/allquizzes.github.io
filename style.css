@@ -36,7 +36,7 @@ font-family: Garamond, serif; font-size: 40px ;
 
  .prev, .next {
   cursor: pointer;  position: absolute;
-  top: 200% ;
+  top: 70% ;
   width: auto;
   margin-top: -22px;
   padding: 16px;
