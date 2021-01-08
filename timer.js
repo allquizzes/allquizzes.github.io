@@ -47,6 +47,7 @@ document.getElementById("timer").innerHTML = `
 `;
 
 function onTimesUp() {
+  clearInterval(timerInterval);
  var y = document
   .getElementsByClassName("1");
  y[0].disabled = true;
@@ -134,7 +135,6 @@ document.getElementsByClassName(
   "20")[2].disabled = true;
  document.getElementsByClassName(
   "20")[3].disabled = true;
-  clearInterval(timerInterval);
 }
 
 function startGame() {
