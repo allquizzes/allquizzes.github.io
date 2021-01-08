@@ -162,3 +162,17 @@ font-weight: bold;
   justify-content: center;
   font-size: 48px;
 }
+body {
+  --text-color: #222;
+  --bkg-color: #fff;
+}
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #121212;
+}
+
+
+h1,
+p {
+  color: var(--text-color);
+}
