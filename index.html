@@ -76,15 +76,42 @@ window.smartsupp||(function(d) {
   background-color: black;
   margin: 6px 0;
 }
+body {
+  --text-color: #222;
+  --bkg-color: #fff;
+  }
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #121212;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--bkg-color);
+}
+
+body {
+  color: var(--text-color);
+}
 </style>
 </head>
 <body>
+<script>
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme == "dark") {
+  document.body.classList.add("dark-theme");
+  }
+</script>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   
   <a class ="add-button">Add to home screen</a><hr>
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSet9MEfP97EJGEhGjpy69iRs_jEPAZII1nNpm6lHPPHRYYASg/viewform">Feedback</a><hr>
   <a href="https://wa.me/919319515504">Contact us on WhatsApp</a><hr>
+  <a href="settings.html">Settings</a>
 </div>
 
 <div onclick="openNav()">
