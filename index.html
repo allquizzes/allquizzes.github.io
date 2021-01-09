@@ -70,19 +70,15 @@ window.smartsupp||(function(d) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-.ham {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
-}
 body {
   --text-color: #222;
   --bkg-color: #fff;
+  --side-nav: black;
   }
 body.dark-theme {
   --text-color: #eee;
   --bkg-color: #121212;
+  --side-nav: white;
 }
 
 * {
@@ -95,6 +91,12 @@ body {
 
 body {
   color: var(--text-color);
+}
+.ham {
+  width: 35px;
+  height: 5px;
+  background-color: var(--side-nav) ;
+  margin: 6px 0;
 }
 </style>
 </head>
