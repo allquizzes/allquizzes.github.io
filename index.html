@@ -74,11 +74,13 @@ body {
   --text-color: #222;
   --bkg-color: #fff;
   --side-nav: black;
+  --link: red;
   }
 body.dark-theme {
   --text-color: #eee;
   --bkg-color: #121212;
   --side-nav: white;
+  --link: chartreuse;
 }
 
 * {
@@ -99,7 +101,7 @@ body {
   margin: 6px 0;
 }
 a:visited {
-color : chartreuse;
+color : var(--link);
 }
 </style>
 </head>
