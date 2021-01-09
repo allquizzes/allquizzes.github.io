@@ -43,21 +43,6 @@ window.smartsupp||(function(d) {
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
@@ -75,12 +60,14 @@ body {
   --bkg-color: #fff;
   --side-nav: black;
   --link: red;
+  --link-visit: green;
   }
 body.dark-theme {
   --text-color: #eee;
   --bkg-color: #121212;
   --side-nav: white;
   --link: chartreuse;
+  --link-visit: red ;
 }
 
 * {
@@ -100,8 +87,25 @@ body {
   background-color: var(--side-nav) ;
   margin: 6px 0;
 }
-a:visited {
+a:link {
 color : var(--link);
+}
+a:visited {
+color : var(--link-visit) ;
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 </style>
 </head>
