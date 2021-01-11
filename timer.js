@@ -1,6 +1,6 @@
 const FULL_DASH_ARRAY = 283;
-const WARNING_THRESHOLD = 20;
-const ALERT_THRESHOLD = 10;
+const WARNING_THRESHOLD = 30;
+const ALERT_THRESHOLD = 15;
 
 const COLOR_CODES = {
   info: {
