@@ -1,12 +1,13 @@
 <!doctype html>
 <html><body>
+<input id="money">
 <button onclick="pay()" >Donate Us</button>
 <script>
 function pay() {
 const paymentDetails = {
   total: {
     label: 'Total due',
-    amount: { currency: 'INR', value : '50' }
+    amount: { currency: 'INR', value : document.getElementById("money").value ; }
   }
 };
 // Supported payment methods
