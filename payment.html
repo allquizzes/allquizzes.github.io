@@ -24,11 +24,9 @@ const paymentMethods = [{
   supportedMethods: 'https://bobpay.xyz/pay',
 }];
 const paymentOptions = {
-  requestShipping: true,
   requestPayerEmail: true,
   requestPayerPhone: true,
   requestPayerName: true,
-  shippingType: 'delivery'
 };
 const request = new PaymentRequest(paymentMethods, paymentDetails, paymentOptions);
 request.show().then(response => {
