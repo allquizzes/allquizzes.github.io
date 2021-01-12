@@ -1,14 +1,12 @@
 <!doctype html>
 <html><body>
+<button onclick="pay()" >Donate Us</button>
 <script>
+function pay() {
 const paymentDetails = {
-  displayItems: [{
-    label: 'Explore',
-    amount: { currency: 'USD', value: '22.15' }
-  }],
   total: {
     label: 'Total due',
-    amount: { currency: 'USD', value : '22.15' }
+    amount: { currency: 'INR', value : '50' }
   }
 };
 // Supported payment methods
@@ -34,5 +32,6 @@ request.show().then(response => {
   // send to a PSP etc.
   response.complete('success');
 });
+}
 </script>
 </body></html>
