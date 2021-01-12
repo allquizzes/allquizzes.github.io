@@ -1,0 +1,40 @@
+<!doctype html>
+<html><body>
+<script>
+const paymentDetails = {
+  displayItems: [{
+    label: 'Explore',
+    amount: { currency: 'USD', value: '22.15' }
+  }],
+  total: {
+    label: 'Total due',
+    amount: { currency: 'USD', value : '22.15' }
+  }
+};
+// Supported payment methods
+const paymentMethods = [{
+  supportedMethods: 'basic-card',
+  data: {
+    supportedNetworks: [
+      'visa', 'mastercard', 'amex', 'discover',
+      'diners', 'jcb', 'unionpay'
+    ]
+  }
+}, {
+  supportedMethods: 'https://bobpay.xyz/pay',
+}];
+const paymentOptions = {
+  requestShipping: true,
+  requestPayerEmail: true,
+  requestPayerPhone: true,
+  requestPayerName: true,
+  shippingType: 'delivery'
+};
+const request = new PaymentRequest(paymentMethods, paymentDetails, paymentOptions);
+request.show().then(response => {
+  // [process payment]
+  // send to a PSP etc.
+  response.complete('success');
+});
+</script>
+</body></html>
