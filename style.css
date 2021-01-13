@@ -1,5 +1,6 @@
 a {
-color: royalblue
+color: royalblue ;
+font-family : cursive ;
 }
 .status {
  color: green;
