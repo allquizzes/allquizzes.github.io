@@ -119,14 +119,6 @@ document.getElementsByClassName(
   "10")[2].disabled = true;
  document.getElementsByClassName(
   "10")[3].disabled = true;
-document.getElementsByClassName(
-  "20")[0].disabled = true;
- document.getElementsByClassName(
-  "20")[1].disabled = true;
- document.getElementsByClassName(
-  "20")[2].disabled = true;
- document.getElementsByClassName(
-  "20")[3].disabled = true;
     document.getElementsByClassName(
   "20")[0].disabled = true;
  document.getElementsByClassName(
