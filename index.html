@@ -140,5 +140,20 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+button id="fs-get">Get</button>
+<script>
+const getFileBtn = document.getElementById('fs-get')
+
+getFileBtn.onclick= async () => {
+
+const [handle] await window.showOpenFilePicker(); const file = await handle.getFile();
+
+console.log(file)
+
+[]
+
+};
+
+</script>
 </body>
 </html>
