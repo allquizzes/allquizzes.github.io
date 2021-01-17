@@ -27,11 +27,11 @@ if (currentTheme == "dark") {
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 <button id="startquiz" onclick  = "startGame() ; plusSlides(1)" >Start Quiz</button>
 <div class="con" id="Que-1" >
-<p><h2><u>Q.1</u> </h2></p>
-<button class="1" onclick="wrotwo(this.style)"></button><br><br>
-<button class="1" onclick="cortwo(this.style)"></button><br><br> 
-<button class="1" onclick="wrotwo(this.style)"></button><br><br>
-<button onclick="wrotwo(this.style)" class="1"></button><br><br>
+<p><h2><u>Q.1</u> </h2>Invertebrates are animals which -</p>
+<button class="1" onclick="cortwo(this.style)">lacks backbone</button><br><br>
+<button class="1" onclick="wrotwo(this.style)">have endoskeleton</button><br><br> 
+<button class="1" onclick="wrotwo(this.style)">have exoskeleton</button><br><br>
+<button onclick="wrotwo(this.style)" class="1">lacks limbs</button><br><br>
 <p class="status"></p>
 </div><div class="con">
 <p><h2>Q.2</h2> </p>
@@ -179,7 +179,7 @@ function wrotwo(here) {
  y[1].disabled = true;
  y[2].disabled = true;
  y[3].disabled = true;
- y[1].style.border =
+ y[0].style.border =
   "5px solid green";
  smi += 1;
 setTimeout(plusSlides, 3000 , 1);
