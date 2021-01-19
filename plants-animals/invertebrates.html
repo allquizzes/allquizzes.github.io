@@ -29,30 +29,30 @@ if (currentTheme == "dark") {
 <div class="con" id="Que-1" >
 <p><h2><u>Q.1</u> </h2>Invertebrates are animals which -</p>
 <button class="1" onclick="cortwo(this.style)">lacks backbone</button><br><br>
-<button class="1" onclick="wrotwo(this.style)">have endoskeleton</button><br><br> 
-<button class="1" onclick="wrotwo(this.style)">have exoskeleton</button><br><br>
-<button onclick="wrotwo(this.style)" class="1">lacks limbs</button><br><br>
+<button class="1" onclick="wrotwo(this.style)">have backbone</button><br><br> 
+<button class="1" onclick="wrotwo(this.style)">are small</button><br><br>
+<button onclick="wrotwo(this.style)" class="1">no legs</button><br><br>
 <p class="status"></p>
 </div><div class="con">
-<p><h2>Q.2</h2> </p>
-<button class="20" onclick="wroone(this.style)"></button><br><br>
- <button class="20" onclick="wroone(this.style)"></button><br><br>
- <button class="20" onclick="corone(this.style)"></button><br><br>
- <button class="20" onclick="wroone(this.style)"> </button><br>
+<p><h2>Q.2</h2>Which of the following is not a Invertebrate -</p>
+<button class="20" onclick="wroone(this.style)">Crab</button><br><br>
+ <button class="20" onclick="corone(this.style)">Lizard</button><br><br>
+ <button class="20" onclick="wroone(this.style)">Butterfly</button><br><br>
+ <button class="20" onclick="wroone(this.style)">Mosquito</button><br>
 <p class="status"></p></div>
 <div class="con">
- <p><h2>Q.3 </h2></p>
- <button class="2" onclick="corthree(this.style)"></button><br><br>
- <button class="2" onclick="wrothree(this.style)"></button><br><br>
- <button class="2" onclick="wrothree(this.style)"></button><br><br>
- <button class="2" onclick="wrothree(this.style)"></button><br>
+ <p><h2>Q.3 </h2><b>Portuguese man-of-war is _____ that lives _____ .</p>
+ <button class="2" onclick="wrothree(this.style)">vertebrate , on land</button><br><br>
+ <button class="2" onclick="wrothree(this.style)">vertebrate , in water</button><br><br>
+ <button class="2" onclick="wrothree(this.style)">invertebrate , on land</button><br><br>
+ <button class="2" onclick="corthree(this.style)">invertebrate , in water</button><br>
  <p class="status"></p>
 </div>
 <div class="con">
- <p><h2>Q.4 </h2></p>
- <button class="3" onclick="wrofour(this.style)"></button><br><br><button class="3" onclick="wrofour(this.style)"></button><br><br>
- <button class="3" onclick="wrofour(this.style)"></button><br><br>
- <button class="3" onclick="corfour(this.style)"> </button><br> 
+ <p><h2>Q.4 </h2>97% of animal kingdom is made up by Invertebrates !</p>
+ <button class="3" onclick="corfour(this.style)">True</button><br><br><button class="3" onclick="wrofour(this.style)">False</button><br><br>
+ <button class="3" onclick="wrofour(this.style)">More than 97%</button><br><br>
+ <button class="3" onclick="wrofour(this.style)">Less than 97%</button><br> 
  <p class="status"></p>
 </div>
 <div class="con">
@@ -151,7 +151,7 @@ here.backgroundColor = "red";
  document.getElementsByClassName(
   "20")[3].disabled = true;
  document.getElementsByClassName(
-  "20")[2].style.border =
+  "20")[1].style.border =
   "5px solid green";
 setTimeout(plusSlides, 3000 , 1);
  }
@@ -214,7 +214,7 @@ function wrothree(here) {
  document.getElementsByClassName(
   "2")[3].disabled = true;
  document.getElementsByClassName(
-   "2")[0].style.border =
+   "2")[3].style.border =
   "5px solid green";
 setTimeout(plusSlides, 3000 , 1);
 }
@@ -248,7 +248,7 @@ function wrofour(here) {
  document.getElementsByClassName(
   "3")[3].disabled = true;
  document.getElementsByClassName(
-   "3")[3].style.border =
+   "3")[0].style.border =
   "5px solid green";
 
 setTimeout(plusSlides, 3000 , 1);
