@@ -50,7 +50,8 @@ if (currentTheme == "dark") {
 </div>
 <div class="con">
  <p><h2>Q.4 </h2></p>
- <button class="3" onclick="wrofour(this.style)"></button><br><br><button class="3" onclick="wrofour(this.style)"></button><br><br>
+ <button class="3" onclick="wrofour(this.style)"></button><br><br>
+ <button class="3" onclick="wrofour(this.style)"></button><br><br>
  <button class="3" onclick="wrofour(this.style)"></button><br><br>
  <button class="3" onclick="corfour(this.style)"> </button><br> 
  <p class="status"></p>
@@ -134,7 +135,6 @@ here.backgroundColor = "green";
   "20")[2].disabled = true;
  document.getElementsByClassName(
   "20")[3].disabled = true;
-setTimeout(plusSlides, 3000 , 1);
 }
 
 function wroone(here) {
@@ -153,7 +153,6 @@ here.backgroundColor = "red";
  document.getElementsByClassName(
   "20")[2].style.border =
   "5px solid green";
-setTimeout(plusSlides, 3000 , 1);
  }
 
 function cortwo(here) {
@@ -166,7 +165,6 @@ function cortwo(here) {
  y[3].disabled = true;
  scp += 1;
  x[0].innerHTML = "✓ Correct";
-setTimeout(plusSlides, 3000 , 1);
  }
 
 function wrotwo(here) {
@@ -182,7 +180,6 @@ function wrotwo(here) {
  y[1].style.border =
   "5px solid green";
  smi += 1;
-setTimeout(plusSlides, 3000 , 1);
  }
 
 function corthree(here) {
@@ -197,7 +194,6 @@ function corthree(here) {
   "2")[2].disabled = true;
  document.getElementsByClassName(
   "2")[3].disabled = true;
-setTimeout(plusSlides, 3000 , 1);
  }
 
 function wrothree(here) {
@@ -216,7 +212,6 @@ function wrothree(here) {
  document.getElementsByClassName(
    "2")[0].style.border =
   "5px solid green";
-setTimeout(plusSlides, 3000 , 1);
 }
 
 function corfour(here) {
@@ -231,7 +226,6 @@ function corfour(here) {
   "3")[2].disabled = true;
  document.getElementsByClassName(
   "3")[3].disabled = true;
-setTimeout(plusSlides, 3000 , 1);
 }
 
 function wrofour(here) {
@@ -250,8 +244,6 @@ function wrofour(here) {
  document.getElementsByClassName(
    "3")[3].style.border =
   "5px solid green";
-
-setTimeout(plusSlides, 3000 , 1);
 }
 
 function corfive(here) {
@@ -267,7 +259,6 @@ function corfive(here) {
  document.getElementsByClassName(
   "4")[3].disabled = true;
  random.innerHTML = "✓ Correct";
-setTimeout(plusSlides, 3000 , 1);
 }
 
 function wrofive(here) {
@@ -286,7 +277,6 @@ function wrofive(here) {
  document.getElementsByClassName(
    "4")[1].style.border =
   "5px solid green";
-setTimeout(plusSlides, 3000 , 1);
 }
 
 
@@ -303,7 +293,6 @@ function corsev(here) {
   "5")[2].disabled = true;
  document.getElementsByClassName(
   "5")[3].disabled = true;
-setTimeout(plusSlides, 3000 , 1);
 }
 
 function wrosev(here) {
@@ -322,7 +311,6 @@ function wrosev(here) {
  document.getElementsByClassName(
    "5")[2].style.border =
   "5px solid green";
-setTimeout(plusSlides, 3000 , 1);
 }
 
 function coreight(here) {
@@ -337,7 +325,6 @@ function coreight(here) {
   "6")[2].disabled = true;
  document.getElementsByClassName(
   "6")[3].disabled = true;
-setTimeout(plusSlides, 3000 , 1);
  }
 
 function wroeight(here) {
@@ -356,7 +343,6 @@ function wroeight(here) {
  document.getElementsByClassName(
    "6")[2].style.border =
   "5px solid green";
-setTimeout(plusSlides, 3000 , 1);
  }
 
 function cornine(here) {
@@ -371,7 +357,6 @@ function cornine(here) {
   "7")[2].disabled = true;
  document.getElementsByClassName(
   "7")[3].disabled = true;
-setTimeout(plusSlides, 3000 , 1);
 }
 
 function wronine(here) {
@@ -390,7 +375,6 @@ function wronine(here) {
  document.getElementsByClassName(
    "7")[3].style.border =
   "5px solid green";
-setTimeout(plusSlides, 3000 , 1);
 }
 
 function corten(here) {
@@ -405,7 +389,6 @@ function corten(here) {
   "8")[2].disabled = true;
  document.getElementsByClassName(
   "8")[3].disabled = true;
-setTimeout(plusSlides, 3000 , 1);
 }
 
 function wroten(here) {
@@ -424,7 +407,6 @@ function wroten(here) {
  document.getElementsByClassName(
    "8")[0].style.border =
   "5px solid green";
-setTimeout(plusSlides, 3000 , 1);
 }
 
 function corsix(here) {
@@ -439,7 +421,6 @@ function corsix(here) {
   "10")[2].disabled = true;
  document.getElementsByClassName(
   "10")[3].disabled = true;
-setTimeout(plusSlides, 3000 , 1);
 }
 function wrosix(here) {
  here.backgroundColor = "red";
@@ -457,7 +438,6 @@ function wrosix(here) {
  document.getElementsByClassName(
    "10")[0].style.border =
   "5px solid green";
-setTimeout(plusSlides, 3000 , 1);
 }
 function check() {
  var poipu = scp * 5;
@@ -465,12 +445,12 @@ function check() {
  var points = poipu ;
   var bill = "See my Score of this quiz  - " + document.URL +  "\n \n Correct Answers : " +
   scp + "\n \n Wrong Answers : " +
-  smi + "\n \n Points : " + points + " \n \n You can also play these quiz on https://allquizzes.github.io/" ;
+  smi + "\n \n Points : " + points + " \n \n You can also play these quizzes on https://allquizzes.github.io/" ;
 sessionStorage.setItem("points", points);
 sessionStorage.setItem("correct", scp);
 sessionStorage.setItem("wrong", smi);
 sessionStorage.setItem("share", bill);
-sessionStorage.setItem("explanation", "https://allquizzes.github.io/" );
+sessionStorage.setItem("explanation", "https://allquizzes.github.io/explanation" );
 window.open("/score.html" , "_self" );
 }
 function sharequiz() {
@@ -478,7 +458,7 @@ if (navigator.share) {
 navigator.share ({ text : "Please play this Amazing Quiz - \n"  + document.URL 
  })
  } else {
- document.getElementById("sharethis").style.display = "none";
+ alert("Native Sharing is not supported in your Browser") ;
  }
 }
 </script>
