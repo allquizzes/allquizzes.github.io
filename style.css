@@ -189,4 +189,8 @@ body {
   .prev , .next {
  top: 45% ;
  }
+ button {
+  height: 20px;
+ width : 100px ;
+ }
 }
