@@ -187,6 +187,6 @@ body {
 }
 @media screen and (min-width: 600px) {
   .prev , .next {
- top: 180% ;
+ top: 45% ;
  }
 }
