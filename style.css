@@ -185,3 +185,8 @@ body {
 body {
   color: var(--text-color);
 }
+@media screen and (min-width: 600px) {
+  .prev , .next {
+ top: 180% ;
+ }
+}
