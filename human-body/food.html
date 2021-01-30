@@ -90,19 +90,19 @@ if (currentTheme == "dark") {
  <p class="status"></p>
 </div> 
 <div class="con">
- <p><h2>Q.9 </h2></p>
- <button class="7" onclick="wronine(this.style)"></button><br><br>
- <button class="7" onclick="wronine(this.style)"></button><br><br>
- <button class="7" onclick="wronine(this.style)"></button><br><br>
- <button class="7" onclick="cornine(this.style)"></button><br> 
+ <p><h2>Q.9 </h2>Proteins break down into-</p>
+ <button class="7" onclick="wronine(this.style)">Sugar</button><br><br>
+ <button class="7" onclick="cornine(this.style)">Amino Acids</button><br><br>
+ <button class="7" onclick="wronine(this.style)">Fatty Acids</button><br><br>
+ <button class="7" onclick="wronine(this.style)">Glycerol</button><br> 
  <p class="status"></p>
 </div> 
 <div class="con">
- <p><h2>Q.10 </h2></p>
- <button class="8" onclick="corten(this.style)"></button><br><br>
- <button class="8" onclick="wroten(this.style)"></button><br><br>
- <button class="8" onclick="wroten(this.style)"></button><br><br>
- <button class="8" onclick="wroten(this.style)"></button><br> 
+ <p><h2>Q.10 </h2>Identify this- <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Millet-1697117_1920.jpg" alt=" Millet" height="50" width="50"><br><a href="https://commons.m.wikimedia.org/wiki/File:Millet-1697117_1920.jpg">Image Source</p>
+ <button class="8" onclick="wroten(this.style)">Wheat</button><br><br>
+ <button class="8" onclick="wroten(this.style)">Rice</button><br><br>
+ <button class="8" onclick="corten(this.style)">Millet</button><br><br>
+ <button class="8" onclick="wroten(this.style)">Barley</button><br> 
  <p class="status"></p>
 </div><div class="con" style="border: none; text-align: center" >
 <button onclick="check()" id="chc" style="none">Check Score</button></div></div>
@@ -373,7 +373,7 @@ function wronine(here) {
  document.getElementsByClassName(
   "7")[3].disabled = true;
  document.getElementsByClassName(
-   "7")[3].style.border =
+   "7")[1].style.border =
   "5px solid green";
 }
 
@@ -405,7 +405,7 @@ function wroten(here) {
  document.getElementsByClassName(
   "8")[3].disabled = true;
  document.getElementsByClassName(
-   "8")[0].style.border =
+   "8")[2].style.border =
   "5px solid green";
 }
 
