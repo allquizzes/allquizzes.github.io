@@ -168,15 +168,15 @@ function cortwo(here) {
 
 function wrotwo(here) {
  here.backgroundColor = "red";
- x[0].innerHTML = "❌ Wrong";
- x[0].style.color = "red";
+ x[1].innerHTML = "❌ Wrong";
+ x[1].style.color = "red";
  y = document
   .getElementsByClassName("1");
  y[0].disabled = true;
  y[1].disabled = true;
  y[2].disabled = true;
  y[3].disabled = true;
- document.querySelector("button[onclick=cortwo(this.style)]").style.border =
+ document.querySelector('button[onclick="cortwo(this.style)"]').style.border =
   "5px solid green";
  smi += 1;
  }
