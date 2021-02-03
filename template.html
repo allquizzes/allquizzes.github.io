@@ -150,7 +150,7 @@ here.backgroundColor = "red";
   "1" )[2].disabled = true;
  document.getElementsByClassName(
   "1")[3].disabled = true;
- document.querySelector("button[onclick=corone]").style.border =
+ document.querySelector("button[onclick=corone(this.style)]").style.border =
   "5px solid green";
  }
 
@@ -176,7 +176,7 @@ function wrotwo(here) {
  y[1].disabled = true;
  y[2].disabled = true;
  y[3].disabled = true;
- document.querySelector("button[onclick=cortwo]").style.border =
+ document.querySelector("button[onclick=cortwo(this.style)]").style.border =
   "5px solid green";
  smi += 1;
  }
