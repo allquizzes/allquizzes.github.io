@@ -157,6 +157,24 @@ if (currentTheme == "dark") {
   
   <a class ="add-button">Add to home screen</a><hr>
  <a href="settings.html">Settings</a><hr>
+<dialog id="dialog">
+
+  <h1>Follow us on -</h1>
+ <a href="https://fb.me/AllQuizzes">Facebook</a>
+ <a href="https://www.youtube.com/channel/UC_fpcvDmHAPr44YS2yWsjIA">YouTube</a>
+<button onclick="Close()">Close</button>
+</dialog>
+<a onclick="hello()">Social Media</a>
+<script>
+function hello() {
+  var dialog = document.getElementById('dialog');
+
+  dialog.showModal(); // "showModal" instead of "show"
+}
+  function Close(){
+    dialog.close()
+    }
+</script>
  <a href="https://docs.google.com/forms/d/e/1FAIpQLSet9MEfP97EJGEhGjpy69iRs_jEPAZII1nNpm6lHPPHRYYASg/viewform">Feedback</a><hr>
  <a href="https://github.com/allquizzes/allquizzes.github.io/discussions">Discussion</a><hr>
     <a href="https://www.patreon.com/join/allquizzes">Donate Us</a><hr>
