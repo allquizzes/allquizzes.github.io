@@ -1,0 +1,19 @@
+a {
+color: royalblue ;
+font-family : cursive ;
+font-weight: bold ;
+}
+h1 {
+  text-align: center;
+color : white ; 
+font-size: 35px;
+font-weight: 900;
+background: repeating-radial-gradient(
+    circle,
+    purple,
+    purple 10px,
+    #4b026f 10px, 
+    #4b026f 20px
+  );
+font-family: Garamond, serif; font-size: 40px ;
+}
