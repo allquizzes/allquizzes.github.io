@@ -16,10 +16,7 @@ text-align: center;
   display: none;
  border : 5px solid ;
 border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 5;
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1s;
-  animation-name: fade;
-  animation-duration: 1s;
+  
  }
  #head {
   text-align: center;
@@ -73,15 +70,6 @@ font-family: Garamond, serif; font-size: 40px ;
 font-family: "Helvetica Neue";
 font-size:16px;
 line-height: 1.5;
-}
-@-webkit-keyframes fade {
-  from {opacity: .3}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .3}
-  to {opacity: 1;}
 }
 #startquiz {
  background-color: red;
@@ -199,4 +187,3 @@ body {
 font-size:75px;
 }
 }
-
