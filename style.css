@@ -15,7 +15,7 @@ text-align: center;
   text-align: center;
   display: none;
  border : 5px solid ;
-border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 5;
+border-image: conic-gradient(from var(--angle) , red, yellow, lime, aqua, blue, magenta, red) 5;
 
 	animation: 10s rotate linear infinite;  
  }
