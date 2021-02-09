@@ -1,6 +1,6 @@
 a {
 color: royalblue ;
-font-family : Helvetica ;
+font-family : cursive ;
 font-weight: bold ;
 }
 .status {
@@ -14,7 +14,7 @@ text-align: center;
  .con {
   text-align: center;
   display: none;
-border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) ;
+border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 5;
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1s;
   animation-name: fade;
