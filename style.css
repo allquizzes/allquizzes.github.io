@@ -14,7 +14,7 @@ text-align: center;
  .con {
   text-align: center;
   display: none;
-border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) ;
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1s;
   animation-name: fade;
@@ -80,7 +80,7 @@ line-height: 1.5;
 
 @keyframes fade {
   from {opacity: .3}
-  to {opacity: 1 ; 	--angle: 360deg;}
+  to {opacity: 1;}
 }
 #startquiz {
  background-color: red;
@@ -197,10 +197,5 @@ body {
  h1 {
 font-size:75px;
 }
-}
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
 }
 
