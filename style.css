@@ -14,7 +14,7 @@ text-align: center;
  .con {
   text-align: center;
   display: none;
-border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1s;
   animation-name: fade;
