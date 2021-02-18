@@ -138,7 +138,7 @@ if (currentTheme == "dark") {
   </div>
 
 </div>
-
+<span id="totalscore"></span>
 <audio hidden id="auwin">
 <source src="https://upload.wikimedia.org/wikipedia/commons/9/93/Start.wav">
 </audio>
@@ -147,6 +147,16 @@ if (currentTheme == "dark") {
 document.getElementById("correct").innerHTML = sessionStorage.getItem("correct");
 document.getElementById("wrong").innerHTML = sessionStorage.getItem("wrong");
 document.getElementById("points").innerHTML = sessionStorage.getItem("correct") * 5;
+if(localStorage.getItem("acorrect") == null) {
+localStorage.setItem(sessionStorage.getItem("correct") , "acorrect") ;
+localStorage.setItem(sessionStorage.getItem("wrong") , "awrong") ;
+localStorage.setItem(sessionStorage.getItem("correct") * 5 , "apoints") ;
+} else {
+localStorage.getItem("acorrect") + sessionStorage.getItem("correct") ;
+localStorage.getItem("awrong") + sessionStorage.getItem("wrong") ;
+localStorage.getItem("apoints") + sessionStorage.getItem("correct") * 5 ;
+}
+document.getElementById("totalscore").innerHTML = localStorage.getItem("acorrect") ;
 </script>
 <script>
   var points = sessionStorage.getItem("points");
