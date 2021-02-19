@@ -151,13 +151,13 @@ var c = sessionStorage.getItem("correct") ;
 var w = sessionStorage.getItem("wrong") ;
 var p = sessionStorage.getItem("correct") * 5 ;
 if(localStorage.getItem("acorrect") == undefined) {
-localStorage.setItem("acorrect"), c;
-localStorage.setItem( "awrong") , w ;
-localStorage.setItem( "apoints" , p) ;
+localStorage.setItem("acorrect" , c) ;
+localStorage.setItem("awrong" , w ) ;
+localStorage.setItem("apoints" , p) ;
 } else {
-localStorage.getItem("acorrect") + c ;
-localStorage.getItem("awrong") + w ;
-localStorage.getItem("apoints") + p ;
+localStorage.getItem("acorrect") ++ c ;
+localStorage.getItem("awrong") ++ w ;
+localStorage.getItem("apoints") ++ p ;
 }
 document.getElementById("totalscore").innerHTML = localStorage.getItem("acorrect") ;
 </script>
