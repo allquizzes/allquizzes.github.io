@@ -147,19 +147,6 @@ if (currentTheme == "dark") {
 document.getElementById("correct").innerHTML = sessionStorage.getItem("correct");
 document.getElementById("wrong").innerHTML = sessionStorage.getItem("wrong");
 document.getElementById("points").innerHTML = sessionStorage.getItem("correct") * 5;
-var c = sessionStorage.getItem("correct") ;
-var w = sessionStorage.getItem("wrong") ;
-var p = sessionStorage.getItem("correct") * 5 ;
-if(localStorage.getItem("acorrect") == undefined) {
-localStorage.setItem("acorrect" , c) ;
-localStorage.setItem("awrong" , w ) ;
-localStorage.setItem("apoints" , p) ;
-} else {
-localStorage.getItem("acorrect") ++ c ;
-localStorage.getItem("awrong") ++ w ;
-localStorage.getItem("apoints") ++ p ;
-}
-document.getElementById("totalscore").innerHTML = localStorage.getItem("acorrect") ;
 </script>
 <script>
   var points = sessionStorage.getItem("points");
