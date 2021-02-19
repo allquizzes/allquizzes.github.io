@@ -147,14 +147,17 @@ if (currentTheme == "dark") {
 document.getElementById("correct").innerHTML = sessionStorage.getItem("correct");
 document.getElementById("wrong").innerHTML = sessionStorage.getItem("wrong");
 document.getElementById("points").innerHTML = sessionStorage.getItem("correct") * 5;
+var c = sessionStorage.getItem("correct") ;
+var w = sessionStorage.getItem("wrong") ;
+var p = sessionStorage.getItem("correct") * 5 ;
 if(localStorage.getItem("acorrect") == undefined) {
-localStorage.setItem(sessionStorage.getItem("correct") , "acorrect") ;
-localStorage.setItem(sessionStorage.getItem("wrong") , "awrong") ;
-localStorage.setItem(sessionStorage.getItem("correct") * 5 , "apoints") ;
+localStorage.setItem(c , "acorrect") ;
+localStorage.setItem(w , "awrong") ;
+localStorage.setItem(p , "apoints") ;
 } else {
-localStorage.getItem("acorrect") + sessionStorage.getItem("correct") ;
-localStorage.getItem("awrong") + sessionStorage.getItem("wrong") ;
-localStorage.getItem("apoints") + sessionStorage.getItem("correct") * 5 ;
+localStorage.getItem("acorrect") + c ;
+localStorage.getItem("awrong") + w ;
+localStorage.getItem("apoints") + p ;
 }
 document.getElementById("totalscore").innerHTML = localStorage.getItem("acorrect") ;
 </script>
