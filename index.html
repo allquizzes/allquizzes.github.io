@@ -237,6 +237,16 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+var i = 0;
+
+do {
+  const randomColor = Math.floor(Math.random()*360);
+  document.getElementsByClassName("card")[i].style.backgroundColor = "hsl(" + randomColor + ", 100% , 90%";
+
+  i++;
+}
+while (i < 100);  
+
 </script>
 </body>
 </html>
