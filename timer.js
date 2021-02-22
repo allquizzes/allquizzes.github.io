@@ -48,7 +48,11 @@ document.getElementById("timer").innerHTML = `
 
 function onTimesUp() {
   clearInterval(timerInterval);
- document.querySelectorAll("button").disabled = true ;
+  let i = 0 ;
+ while (i= 41) {
+ document.querySelectorAll("button")[i].disabled = true ;
+ i++ ; 
+}
  }
 
 function startGame() {
