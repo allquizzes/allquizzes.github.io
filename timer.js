@@ -49,9 +49,7 @@ document.getElementById("timer").innerHTML = `
 function onTimesUp() {
   clearInterval(timerInterval);
  document.querySelectorAll("button").disabled = true ;
- document.getElementById("chc").disabled = false;
- document.getElementById("sharethis").disabled = false;
-}
+ }
 
 function startGame() {
  document.getElementById(
