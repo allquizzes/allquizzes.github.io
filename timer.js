@@ -53,6 +53,8 @@ function onTimesUp() {
  document.querySelectorAll("button")[i].disabled = true ;
  i++ ; 
 }
+ document.getElementById("chc").disabled = false;
+ document.getElementById("sharethis").disabled = false;
  }
 
 function startGame() {
