@@ -48,85 +48,9 @@ document.getElementById("timer").innerHTML = `
 
 function onTimesUp() {
   clearInterval(timerInterval);
- var y = document
-  .getElementsByClassName("1");
- y[0].disabled = true;
- y[1].disabled = true;
- y[2].disabled = true;
- y[3].disabled = true;
-
-  document.getElementsByClassName(
-  "2")[0].disabled = true;
- document.getElementsByClassName(
-  "2")[1].disabled = true;
- document.getElementsByClassName(
-  "2")[2].disabled = true;
- document.getElementsByClassName(
-  "2")[3].disabled = true;
-  document.getElementsByClassName(
-  "3")[0].disabled = true;
- document.getElementsByClassName(
-  "3")[1].disabled = true;
- document.getElementsByClassName(
-  "3")[2].disabled = true;
- document.getElementsByClassName(
-  "3")[3].disabled = true;
-  document.getElementsByClassName(
-  "4")[0].disabled = true;
- document.getElementsByClassName(
-  "4")[1].disabled = true;
- document.getElementsByClassName(
-  "4")[2].disabled = true;
- document.getElementsByClassName(
-  "4")[3].disabled = true;
-  document.getElementsByClassName(
-  "5")[0].disabled = true;
- document.getElementsByClassName(
-  "5")[1].disabled = true;
- document.getElementsByClassName(
-  "5")[2].disabled = true;
- document.getElementsByClassName(
-  "5")[3].disabled = true;
-  document.getElementsByClassName(
-  "6")[0].disabled = true;
- document.getElementsByClassName(
-  "6")[1].disabled = true;
- document.getElementsByClassName(
-  "6")[2].disabled = true;
- document.getElementsByClassName(
-  "6")[3].disabled = true;
-  document.getElementsByClassName(
-  "7")[0].disabled = true;
- document.getElementsByClassName(
-  "7")[1].disabled = true;
- document.getElementsByClassName(
-  "7")[2].disabled = true;
- document.getElementsByClassName(
-  "7")[3].disabled = true;
-  document.getElementsByClassName(
-  "8")[0].disabled = true;
- document.getElementsByClassName(
-  "8")[1].disabled = true;
- document.getElementsByClassName(
-  "8")[2].disabled = true;
- document.getElementsByClassName(
-  "8")[3].disabled = true; 
-document.getElementsByClassName(
-  "10")[0].disabled = true;
- document.getElementsByClassName(
-  "10")[1].disabled = true;
- document.getElementsByClassName(
-  "10")[2].disabled = true;
- document.getElementsByClassName(
-  "10")[3].disabled = true;
-    document.getElementsByClassName(
-  "20")[0].disabled = true;
- document.getElementsByClassName(
-  "20")[1].disabled = true;
- document.getElementsByClassName(
-  "20")[2].disabled = true;
- document.getElementsByClassName(
-  "20")[3].disabled = true;
+ document.querySelectorAll("button").disabled = true ;
+ document.getElementById("chc").disabled = false;
+ document.getElementById("sharethis").disabled = false;
 }
 
 function startGame() {
