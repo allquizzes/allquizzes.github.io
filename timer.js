@@ -49,7 +49,7 @@ document.getElementById("timer").innerHTML = `
 function onTimesUp() {
   clearInterval(timerInterval);
   let i = 0 ;
- while (i == 41) {
+ while (i < 41) {
  document.querySelectorAll("button")[i].disabled = true ;
  i++ ; 
 }
