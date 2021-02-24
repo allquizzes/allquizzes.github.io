@@ -10,7 +10,21 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+document.onkeydown = checkKey;
 
+function checkKey(e) {
+
+    e = e || window.event;
+ if (e.keyCode == '37') {
+       // left arrow
+     plusSlides(-1)
+    }
+    else if (e.keyCode == '39') {
+       // right arrow
+       plusSlides(1)
+    }
+
+}
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("con");
