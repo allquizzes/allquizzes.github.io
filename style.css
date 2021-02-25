@@ -63,7 +63,7 @@ font-family: Garamond, serif; font-size: 40px ;
   border-radius: 0 3px 3px 0;
   user-select: none;
   visibility: hidden;
-  
+  display: none;
 }
 
 /* Position the "next button" to the right */
