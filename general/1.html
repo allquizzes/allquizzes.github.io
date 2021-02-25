@@ -209,7 +209,7 @@ function countdown() {
   "8")[3].disabled = true; 
   document.getElementById(
   "spell").readOnly = true;
-  document.getElementById("spbutt"). disabled = true;
+  document.getElementById("spbutt").disabled = true;
   
    }
  time--;
@@ -221,9 +221,9 @@ function startGame() {
  document.getElementById(
  "startquiz").style.display = "none";
  document.getElementsByClassName(
-  "next")[0].style.visibility = "visible";
+  "next")[0].style.display = "inline";
  document.getElementsByClassName(
-  "prev")[0].style.visibility = "visible";
+  "prev")[0].style.display = "inline";
 document.getElementById(
  "Que-1").style.display = "block";
  clearInterval(countingdown);
