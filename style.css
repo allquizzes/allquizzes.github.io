@@ -53,7 +53,7 @@ font-family: Garamond, serif; font-size: 40px ;
 
  .prev, .next {
   cursor: pointer;  position: relative;
-  top: 20px
+  top: 50px
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -68,7 +68,7 @@ font-family: Garamond, serif; font-size: 40px ;
 
 /* Position the "next button" to the right */
 .next {
-  left : 90px ;
+  left : 300px ;
   border-radius: 3px 0 0 3px;
 }
 
