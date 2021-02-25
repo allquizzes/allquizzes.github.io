@@ -61,9 +61,9 @@ function startGame() {
  document.getElementById(
  "startquiz").style.display = "none";
  document.getElementsByClassName(
-  "next")[0].style.display = "";
+  "next")[0].style.display = "block";
  document.getElementsByClassName(
-  "prev")[0].style.display = "";
+  "prev")[0].style.display = "block";
 document.getElementById(
  "Que-1").style.display = "block";
   timerInterval = setInterval(() => {
