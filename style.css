@@ -68,7 +68,7 @@ font-family: Garamond, serif; font-size: 40px ;
 
 /* Position the "next button" to the right */
 .next {
-  left : 275px ;
+  left : 250px ;
   border-radius: 3px 0 0 3px;
 }
 
@@ -189,12 +189,4 @@ body {
 
 body {
   color: var(--text-color);
-}
-@media screen and (min-width: 600px) {
-  .prev , .next {
- top: 45% ;
- }
- h1 {
-font-size:75px;
-}
 }
