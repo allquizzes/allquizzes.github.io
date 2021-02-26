@@ -143,6 +143,28 @@ body {
     margin-bottom: 20px;
   }
 }
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  display: none;
+  padding: 100px 20px;
+
+}
 </style>
 </head>
 <body>
@@ -191,6 +213,10 @@ closeNav()
 <div style="text-align: center">
 
 <img src="allquizzes-logo.jpg" height="150" width="200" align="center" alt="AllQuizzes Logo" ><br><br></div>
+
+<button class="tablink" onclick="openPage('row', this)" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('News', this)" >News</button>
+
 <div class="row">
 <div class="column">
 <a href="https://allquizzes.github.io/earth/mountain.html"><div class="card"><h1>Mountain Quiz</h1></div></a>
@@ -257,5 +283,20 @@ logo.rel = "icon" ;
 logo.href = "https://allquizzes.github.io/allquizzes-logo.jpg";         
 document.getElementsByTagName("head")[0].appendChild(logo);  
 </script>
+<script>
+function openPage(pageName,elmnt) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  document.getElementById(pageName).style.display = "block";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+ 
 </body>
 </html>
