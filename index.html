@@ -200,7 +200,7 @@ closeNav()
  <a href="https://github.com/allquizzes/allquizzes.github.io/">Source Code</a>
 </div>
 
-<div onclick="openNav()" id="News" class="tabcontent" >
+<div onclick="openNav()"  >
 <div class="ham"></div>
 <div class="ham"></div>
 <div class="ham"></div>
@@ -209,8 +209,8 @@ closeNav()
 
 <img src="allquizzes-logo.jpg" height="150" width="200" align="center" alt="AllQuizzes Logo" ><br><br></div>
 
-<button class="tablink" onclick="openPage('row', this)" id="defaultOpen">Home</button>
-<button class="tablink" onclick="openPage('News', this)" >News</button>
+<button class="tablink" onclick="openPage('row', this)" id="defaultOpen">Quizzes</button>
+<button class="tablink" onclick="openPage('video', this)" >Videos</button>
 
 <div class="row tabcontent" id="row" >
 <div class="column">
@@ -251,6 +251,10 @@ closeNav()
 <div class="column">
  <a href="maths-day/ramanujan.html"><div class="card"><h1>Srinivasa Ramanujan Quiz</h1></div></a>
   </div>
+</div>
+<div id="video" class="tabcontent">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EVsqVifWhwk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5l7RPM0h03Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <script>
 function openNav() {
