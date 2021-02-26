@@ -158,8 +158,16 @@ body {
 .tablink:hover {
   background-color: #777;
 }
-
-
+.tablink {
+padding: 10px;
+  flex: 50%;
+}
+.yz {
+display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
 </style>
 </head>
 <body>
@@ -208,10 +216,10 @@ closeNav()
 <div style="text-align: center">
 
 <img src="allquizzes-logo.jpg" height="150" width="200" align="center" alt="AllQuizzes Logo" ><br><br></div>
-
+<div class="yz" >
 <button class="tablink" onclick="openPage('row', this)" id="defaultOpen">Quizzes</button>
 <button class="tablink" onclick="openPage('video', this)" >Videos</button>
-
+</div>
 <div class="row tabcontent" id="row" >
 <div class="column">
 <a href="https://allquizzes.github.io/earth/mountain.html"><div class="card"><h1>Mountain Quiz</h1></div></a>
