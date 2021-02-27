@@ -17,3 +17,5 @@ background: repeating-radial-gradient(
   );
 font-family: Garamond, serif; font-size: 40px ;
 }
+details { outline : none 
+}
