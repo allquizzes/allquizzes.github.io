@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<script>
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme == "dark") {
+  document.body.classList.add("dark-theme");
+  }
+</script>
 <h1><br>Explanation: Atmosphere Quiz<br><br></h1>
 <details><summary>What percent of our atmosphere is nitrogen ?</summary>
 <b>Ans- 78%</b><br>78% of our Atmosphere is Nitrogen , 21% is Oxygen and 1% are other gases like argon , Krypton , neon , Co² etc. Carbon dioxide is only 0.04% in the atmosphere.</details><hr>
