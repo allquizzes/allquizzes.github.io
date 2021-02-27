@@ -160,7 +160,7 @@ body {
 }
 .tablink {
 padding: 10px;
-  flex: 50%;
+  flex: 33.3%;
 }
 .yz {
 display: flex;
@@ -219,6 +219,7 @@ closeNav()
 <div class="yz" >
 <button class="tablink" onclick="openPage('row', this)" id="defaultOpen" style="border-right: 1px solid white;" >Quizzes</button>
 <button class="tablink" onclick="openPage('video', this)" >Videos</button>
+<button class="tablink" onclick="openPage('exp', this)" >Explanations</button>
 </div><br><br>
 <div class="row tabcontent" id="row" >
 <div class="column">
@@ -263,6 +264,11 @@ closeNav()
 <div id="video" class="tabcontent">
 <iframe width="350" height="315" src="https://www.youtube.com/embed/EVsqVifWhwk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><br><iframe width="350" height="315" src="https://www.youtube.com/embed/5l7RPM0h03Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="tablink" id="exp" >
+<div class="column">
+ <a href="explanation/earth/atmosphere.html"><div class="card"><h1>Explanation: Atmosphere Quiz</h1></div></a>
+  </div>
 </div>
 <script>
 function openNav() {
