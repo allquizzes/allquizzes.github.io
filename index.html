@@ -170,17 +170,19 @@ display: flex;
 }
 .flip-card {
   background-color: transparent;
+  width: 300px;
+  height: 300px;
   perspective: 1000px;
 }
 
 .flip-card-inner {
   position: relative;
+  width: 100%;
+  height: 100%;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
- height: 100% ;
- width: 100% ;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -188,11 +190,11 @@ display: flex;
 }
 
 .flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-height: 100% ;
- width: 100% ;
-
 }
 
 .flip-card-front {
@@ -273,7 +275,7 @@ closeNav()
     <div class="flip-card-front card">
   <a href="https://allquizzes.github.io/earth/mountain.html"><h1>Mountain Quiz</h1></a>
        </div>
-    <div class="flip-card-back card">
+    <div class="flip-card-back">
 Good<br><br><br><br><br><br>Bad
 
     </div>
@@ -284,7 +286,7 @@ Good<br><br><br><br><br><br>Bad
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-  <a href="https://allquizzes.github.io/earth/country-capital.html"><div class="card"><h1>Capitals Quiz</h1></div></a>
+  <a href="https://allquizzes.github.io/earth/country-capital.html"><h1>Capitals Quiz</h1></a>
        </div>
     <div class="flip-card-back card">
 Good
