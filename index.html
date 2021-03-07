@@ -172,7 +172,7 @@ display: flex;
   background-color: transparent;
   text-align: center;
   perspective: 1000px;
-width: 400px;
+width: 300px;
   height: 100px;
 }
 
@@ -282,12 +282,12 @@ Good<br><br><br><br><br><br>Bad
     </div>
   </div>
 </div>
-<div class="flip-card">
+<div class="flip-card ">
   <div class="flip-card-inner">
-    <div class="flip-card-front">
+    <div class="flip-card-front color">
   <a href="https://allquizzes.github.io/earth/country-capital.html"><h1>Capitals Quiz</h1></a>
        </div>
-    <div class="flip-card-back">
+    <div class="flip-card-back color">
 Good
     </div>
   </div>
@@ -346,7 +346,7 @@ function closeNav() {
 var i = 0;
 const randomColor = Math.floor(Math.random()*360);
 do {
-    document.getElementsByClassName("card")[i].style.backgroundColor = "hsl(" + randomColor + ", 100% , 85%";
+    document.getElementsByClassName("color")[i].style.backgroundColor = "hsl(" + randomColor + ", 100% , 85%";
 
   i++;
 }
