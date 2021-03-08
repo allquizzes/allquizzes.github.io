@@ -137,7 +137,7 @@ body {
 
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
-  .flip-card {
+  .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
@@ -168,48 +168,7 @@ display: flex;
   font-size: 30px;
   text-align: center;
 }
-.flip-card {
-  background-color: transparent;
-  text-align: center;
-  perspective: 1000px;
-width: 100%;
-  height: 100px;
-display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-padding: 16px;
-
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  color: black;
-}
-
-.flip-card-back {
-  transform: rotateY(180deg);
-}
 </style>
 <!-- Hotjar Tracking Code for https://allquizzes.github.io -->
 <script>
@@ -274,30 +233,12 @@ closeNav()
 <button class="tablink" onclick="openPage('video', this)" style="border: 1px solid white;" >Videos</button>
 <button class="tablink" onclick="openPage('exp', this)" style="border: 1px solid white">Explanations</button>
 </div><br><br>
-<div class="row tabcontent" id="row" style="text-align: center"  >
-<div class="flip-card" style="margin-left:auto;margin-right:auto;text-align:center">
-  <div class="flip-card-inner color" style="margin-left:auto;margin-right:auto;text-align:center" >
-    <div class="flip-card-front" style="margin-left:auto;margin-right:auto;text-align:center">
-  <a href="https://allquizzes.github.io/earth/mountain.html"><h1>Mountain Quiz</h1></a>
-       </div>
-    <div class="flip-card-back">
-Good
-
-    </div>
-  </div>
-</div><br>
-<div class="flip-card ">
-  <div class="flip-card-inner color">
-    <div class="flip-card-front">
-  <a href="https://allquizzes.github.io/earth/country-capital.html"><h1>Capitals Quiz</h1></a>
-       </div>
-    <div class="flip-card-back">
-Good
-    </div>
-  </div>
-</div>
+    <div class="row tabcontent" id="row" >
 <div class="column">
 <a href="https://allquizzes.github.io/earth/atmosphere.html"><div class="card"><h1>Atmosphere Quiz</h1></div></a>
+  </div>
+<div class="column">
+ <a href="https://allquizzes.github.io/earth/country-capital.html"><div class="card"><h1>Capitals Quiz</h1></div></a>
   </div>
 <div class="column">
 <a href="https://allquizzes.github.io/general/inventions-discoveries.html"><div class="card"><h1>Inventions and Discoveries Quiz</h1></div></a>
