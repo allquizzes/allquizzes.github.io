@@ -142,9 +142,18 @@ body {
                 transform: rotate(360deg); 
             } 
         } 
+   .center { 
+            position: absolute; 
+            top: 0; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            margin: auto; 
+        } 
 </style>
   </head>
   <body>
+<div id="loader" class="center"></div> 
 <script> 
         document.onreadystatechange = function() { 
             if (document.readyState !== "complete") { 
@@ -161,7 +170,6 @@ body {
         }; 
     </script> 
 <h1>Looks like you are Offline</h1>
-<div id="loader" class="center"></div> 
     <!-- #gameContainer is the main game board-->
     <div id="gameContainer"></div>
 
