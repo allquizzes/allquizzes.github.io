@@ -1,7 +1,7 @@
 const OFFLINE_VERSION = 1;
 const CACHE_NAME = 'offline';
 // Customize this with a different URL if needed.
-const OFFLINE_URL = 'index.html';
+const OFFLINE_URL = 'offline.html';
 
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
