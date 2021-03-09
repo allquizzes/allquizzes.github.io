@@ -157,7 +157,7 @@ body {
 <script> 
         function onReady(callback) {
   var intervalId = window.setInterval(function() {
-    if (document.getElementsByTagName('canvas')[0] !== undefined) {
+    if (document.getElementById('gameContainer') !== undefined) {
       window.clearInterval(intervalId);
       callback.call(this);
     }
