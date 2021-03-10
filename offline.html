@@ -173,8 +173,9 @@ onReady(function() {
   setVisible('#loader', false);
 });
     </script> 
-<h1>Looks like you are Offline</h1>
-<div id="game" hidden>
+<h1 style="color:white" >Looks like you are Offline ☹️</h1>
+<h2 style="color:white" >But you can <strong>Play</p> while you wait 🙂</h2>
+<button onclick="play(this)">Play</button>
     <!-- #gameContainer is the main game board-->
     <div id="gameContainer"></div>
 
@@ -193,9 +194,9 @@ onReady(function() {
       </div>
       <button id="rightButton">▶️</button>
     </div>
-</div>
    <script>
- if(document.getElementById("game").hidden == false) {
+function play(button) {
+button.hidden = true ;
 // GAME_PIXEL_COUNT is the pixels on horizontal or vertical axis of the game board (SQUARE).
 const GAME_PIXEL_COUNT = 40;
 const SQUARE_OF_GAME_PIXEL_COUNT = Math.pow(GAME_PIXEL_COUNT, 2);
@@ -368,7 +369,7 @@ leftButton.onclick = () => changeDirection(LEFT_DIR);
 rightButton.onclick = () => changeDirection(RIGHT_DIR);
 upButton.onclick = () => changeDirection(UP_DIR);
 downButton.onclick = () => changeDirection(DOWN_DIR) ;
-}
+ }
 </script>
   </body>
 
