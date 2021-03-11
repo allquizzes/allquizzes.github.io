@@ -233,23 +233,7 @@ closeNav()
 <button class="tablink" onclick="openPage('video', this)" style="border: 1px solid white;" >Videos</button>
 <button class="tablink" onclick="openPage('exp', this)" style="border: 1px solid white">Explanations</button>
 </div><br><br><input type="search" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name" results=5 >
-<script>
-function myFunction() {
-    var input, filter, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    li = document.getElementsByTagName("card");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("h1")[0];
-       txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-</script>
+
     <div class="row tabcontent" id="row" >
 <div class="column">
 <a href="https://allquizzes.github.io/earth/atmosphere.html"><div class="card"><h1>Atmosphere Quiz</h1></div></a>
@@ -335,6 +319,22 @@ function openPage(pageName,elmnt) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-
+<script>
+function myFunction() {
+    var input, filter, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    li = document.getElementsByTagName("card");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("h1")[0];
+       txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
 </body>
 </html>
