@@ -91,7 +91,7 @@ text-decoration : none ;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
-  display: block;
+  display: inline-block;
   transition: 0.3s;
 }
 
@@ -179,11 +179,12 @@ display: flex;
   width: 130px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
+ direction: rtl ;
 }
 
 /* When the input field gets focus, change its width to 100% */
 #myInput:focus {
-  width: 100%;
+  width: 80%;
 }
 </style>
 <!-- Hotjar Tracking Code for https://allquizzes.github.io -->
@@ -241,6 +242,7 @@ closeNav()
 <div class="ham"></div>
 <div class="ham"></div>
 </div>
+<input type="search" id="myInput" onkeyup="myFunction()" placeholder="Search for Quizzes.." title="Saerch for a Quiz" results= "2">
 <div style="text-align: center">
 
 <img src="allquizzes-logo.jpg" height="150" width="200" align="center" alt="AllQuizzes Logo" ><br><br></div>
@@ -250,7 +252,6 @@ closeNav()
 <button class="tablink" onclick="openPage('exp', this)" style="border: 1px solid white">Explanations</button>
 </div><br><br>
     <div class="row tabcontent" id="row" >
-<input type="search" id="myInput" onkeyup="myFunction()" placeholder="Search for Quizzes.." title="Saerch for a Quiz" results= "2">
 <div class="column">
 <a href="https://allquizzes.github.io/earth/atmosphere.html"><div class="card"><h1>Atmosphere Quiz</h1></div></a>
   </div>
