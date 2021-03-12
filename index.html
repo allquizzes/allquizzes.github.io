@@ -168,7 +168,16 @@ display: flex;
   font-size: 30px;
   text-align: center;
 }
-
+#myInput {
+  background-image: url('https://www.w3schools.com/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
 </style>
 <!-- Hotjar Tracking Code for https://allquizzes.github.io -->
 <script>
@@ -232,9 +241,9 @@ closeNav()
 <button class="tablink" onclick="openPage('row', this)" id="defaultOpen" style="border: 1px solid white;" >Quizzes</button>
 <button class="tablink" onclick="openPage('video', this)" style="border: 1px solid white;" >Videos</button>
 <button class="tablink" onclick="openPage('exp', this)" style="border: 1px solid white">Explanations</button>
-</div><br><br><input type="search" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name" results=5 >
-
+</div><br><br>
     <div class="row tabcontent" id="row" >
+<input type="search" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name" results=5 autosave=previous_search >
 <div class="column">
 <a href="https://allquizzes.github.io/earth/atmosphere.html"><div class="card"><h1>Atmosphere Quiz</h1></div></a>
   </div>
