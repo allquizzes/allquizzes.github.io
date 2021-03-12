@@ -172,11 +172,18 @@ display: flex;
   background-image: url('https://www.w3schools.com/css/searchicon.png');
   background-position: 10px 12px;
   background-repeat: no-repeat;
-  width: 100%;
   font-size: 16px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+#myInput:focus {
+  width: 100%;
 }
 </style>
 <!-- Hotjar Tracking Code for https://allquizzes.github.io -->
