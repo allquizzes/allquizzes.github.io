@@ -329,9 +329,11 @@ function myFunction() {
         a = li[i].getElementsByTagName("h1")[0];
        txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "block";
-        } else {
+            li[i].style.display = "";
+                  } else {
             li[i].style.display = "none";
+          document.getElementsByClassName("column")[i].display = "none";
+  
         }
     }
 }
