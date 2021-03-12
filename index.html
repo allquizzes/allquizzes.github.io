@@ -324,7 +324,7 @@ function myFunction() {
     var input, filter, li, a, i, txtValue;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
-    li = document.getElementsByTagName("card");
+    li = document.getElementsByClassName("card");
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("h1")[0];
        txtValue = a.textContent || a.innerText;
