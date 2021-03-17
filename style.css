@@ -83,8 +83,8 @@ font-size:16px;
 line-height: 1.5;
 }
 #startquiz {
- background-color: red;
- color: lightGreen;
+ color: white ;
+ background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
  position: relative;
  left: 100px;
  bottom:60px ;
@@ -92,6 +92,7 @@ line-height: 1.5;
  width: 150px;
 font-size: 27px;
 font-weight:bold;
+
 }
 #chc {
 margin-top: 100px;
