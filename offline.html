@@ -154,25 +154,6 @@ body {
   </head>
   <body>
 <div id="loader" class="center"></div> 
-<script> 
-        function onReady(callback) {
-  var intervalId = window.setInterval(function() {
-    if (document.getElementById('gameContainer') !== undefined) {
-      window.clearInterval(intervalId);
-      callback.call(this);
-    }
-  }, 1000);
-}
-
-function setVisible(selector, visible) {
-  document.querySelector(selector).style.display = visible ? 'block' : 'none';
-}
-
-onReady(function() {
-  setVisible('#gameContainer', true);
-  setVisible('#loader', false);
-});
-    </script> 
 <h1 style="color:white" >Looks like you are Offline ☹️</h1>
 <h2 style="color:white" >But you can <strong>Play</p> while you wait 🙂</h2>
 <button onclick="play(this)">Play</button>
@@ -197,7 +178,6 @@ onReady(function() {
    <script>
 function play(button) {
 document.querySelector("#loader").style.display = 'block';
-button.hidden = true ;
 // GAME_PIXEL_COUNT is the pixels on horizontal or vertical axis of the game board (SQUARE).
 const GAME_PIXEL_COUNT = 40;
 const SQUARE_OF_GAME_PIXEL_COUNT = Math.pow(GAME_PIXEL_COUNT, 2);
