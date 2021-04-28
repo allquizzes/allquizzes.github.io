@@ -196,7 +196,7 @@ onReady(function() {
     </div>
    <script>
 function play(button) {
-document.querySelector(selector).style.display = 'block';
+document.querySelector("#loader").style.display = 'block';
 button.hidden = true ;
 // GAME_PIXEL_COUNT is the pixels on horizontal or vertical axis of the game board (SQUARE).
 const GAME_PIXEL_COUNT = 40;
@@ -371,7 +371,7 @@ rightButton.onclick = () => changeDirection(RIGHT_DIR);
 upButton.onclick = () => changeDirection(UP_DIR);
 downButton.onclick = () => changeDirection(DOWN_DIR) ;
  }
-document.querySelector(selector).style.display = 'none' ;
+document.querySelector("#loader").style.display = 'none' ;
 </script>
   </body>
 
