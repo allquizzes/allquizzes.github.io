@@ -453,13 +453,6 @@ navigator.share ({ text : "Please play this Amazing Quiz - \n"  + document.URL
  alert("Native Sharing is not supported in your Browser") ;
  }
 }
-</script><script>
-document.querySelector('.cache').addEventListener('click', function (event) {
-  event.preventDefault();
-  caches.open('mysite-article-' + document.location).then(function (cache) {
-      var depend = ["https://allquizzes.github.io/tech/html.html" , "https://allquizzes.github.io/style.css"] ;
-        cache.addAll(depend);
-});
 </script>
 </body>
 </html>
