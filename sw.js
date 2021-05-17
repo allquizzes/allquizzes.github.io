@@ -59,3 +59,9 @@ self.addEventListener('fetch', (event) => {
   // event.respondWith(), the request will be handled by the browser as if there
   // were no service worker involvement.
 })
+document.querySelector('.cache').addEventListener('click', function (event) {
+  event.preventDefault();
+  caches.open('mysite-article-' + document.location).then(function (cache) {
+      var depend = ["https://allquizzes.github.io/tech/html.html" , "https://allquizzes.github.io/style.css"] ;
+        cache.addAll(depend);
+});
