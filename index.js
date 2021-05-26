@@ -37,3 +37,48 @@ window.addEventListener('beforeinstallprompt', (e) => {
       });
   });
 });
+var fnum ,snum, sign , answer ;
+function generate() {
+  var operation = ["*" , "+" , "-" ]
+  var opnum = ranum(0 , 2) ;
+  if(operation[opnum] === "*") {
+     fnum = ranum(1 , 20) ;
+    snum= ranum(1 , 20) ;
+    sign = "×" ;
+  answer=  fnum * snum ;
+} else if (operation[opnum] === "+") {
+  fnum = ranum(0, 1000) ;
+  snum = ranum(0, 1000) ;
+  sign = "+" ;
+  answer= fnum + snum ;
+} else {
+  fnum = ranum(0, 1000) ;
+  snum = ranum(0, 1000) ;
+  sign = "-" ;
+  while(fnum < snum) {
+    fnum= ranum(0, 1000)
+    snum= ranum(0 , 1000)
+  }
+ answer = fnum - snum ;
+}
+  document.getElementById("first"). innerHTML = fnum ;
+  document.getElementById("second"). innerHTML = snum ;
+    document.getElementById("sign"). innerHTML = sign ;
+}
+function check() {
+  var input = document.getElementById("in").value ;
+  var respass = " ✓ Correct , " + fnum + " " + sign  + " " + snum + " = " + answer ;
+ var resfail =  "❌ Wrong , " + fnum + " " + sign  + " " + snum + " = " + answer ;
+   if(input == answer) {
+  document.getElementById("res").innerHTML  = respass ;
+     document.getElementById("res").style.color= "green" ;
+  } else {
+document.getElementById("res").innerHTML = resfail ; 
+    document.getElementById("res").style.color = "red" ;
+  }
+  
+  generate()
+}
+function ranum(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
