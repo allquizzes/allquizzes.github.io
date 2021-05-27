@@ -15,20 +15,8 @@ text-align: center;
   text-align: center;
   display: none;
  border : 5px solid ;
-border-image: conic-gradient(from var(--angle) , red, yellow, lime, aqua, blue, magenta, red) 5;
-
-	animation: 10s rotate linear infinite;  
+border-image: conic-gradient(0deg , red, yellow, lime, aqua, blue, magenta, red) 5 ;  
  }
-@keyframes rotate {
-	to {
-		--angle: 360deg;
-	}
-}
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
 
  #head {
   text-align: center;
