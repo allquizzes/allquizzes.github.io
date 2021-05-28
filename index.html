@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" >
-<head>
+<head class="cc" >
 <script data-ad-client="ca-pub-8566824643349234" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <title>AllQuizzes</title>
 <script src="index.js" defer></script>
@@ -542,7 +542,7 @@ if (el) {
   return;
 }
 window.addEventListener('popstate', changePage);
-var main = document.querySelector('main');
+var main = document.querySelector('body');
 
 function changePage() {
   // Note, the URL has already been changed
@@ -559,6 +559,6 @@ function changePage() {
     animate(oldContent, newContent);
   });
 }
-
+</script>
 </body>
 </html>
