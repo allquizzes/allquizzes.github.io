@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" >
-<head class="cc" >
+<head>
 <script data-ad-client="ca-pub-8566824643349234" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <title>AllQuizzes</title>
 <script src="index.js" defer></script>
@@ -266,7 +266,7 @@ display: inline ;
 }
 </style>
 </head>
-<body onload="generate()" >
+<body onload="generate()" class="cc" >
 <script>
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
@@ -535,7 +535,7 @@ function loadPage(url) {
   });
 }
 
-var main = document.querySelector('head');
+var main = document.querySelector('body');
 
 function changePage() {
   var url = window.location.href;
