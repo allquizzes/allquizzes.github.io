@@ -7,9 +7,10 @@ font-weight: bold ;
  color: green;
 }
 button {
-color: cyan;
-background-color: black;
+color: black;
+background-color: white;
 text-align: center;
+border-radius: 5px
 }
  .con {
   text-align: center;
