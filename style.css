@@ -16,7 +16,7 @@ border-radius: 5px
   text-align: center;
   display: none;
  border : 5px solid ;
-border-image: conic-gradient(0deg , red, yellow, lime, aqua, blue, magenta, red) 5 ;  
+border-image: conic-gradient(from 0deg , red, yellow, lime, aqua, blue, magenta, red) 5 ;  
  }
 
  #head {
