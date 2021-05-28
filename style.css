@@ -193,3 +193,8 @@ body {
 body {
   color: var(--text-color);
 }
+@media (prefers-reduced-motion) {
+#startquiz {
+animation: none ;
+}
+}
