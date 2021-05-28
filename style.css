@@ -176,10 +176,14 @@ font-weight: bold;
 body {
   --text-color: #222;
   --bkg-color: #fff;
+  --button-back : white ;
+  --button-color: black ;
   }
 body.dark-theme {
   --text-color: #eee;
   --bkg-color: #121212;
+ --button-back : black ;
+  --button-color: cyan ;
 }
 
 * {
@@ -193,6 +197,9 @@ body {
 body {
   color: var(--text-color);
 }
+button {
+background-color: var(--button-color);
+color: var(--button-color);
 @media (prefers-reduced-motion) {
 #startquiz {
 animation: none ;
