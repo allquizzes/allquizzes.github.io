@@ -264,19 +264,6 @@ border: 3px solid ;
 display: inline ;
 }
 
-.masthead {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-  height: 50vh; /* if you don't want it to take up the full screen, reduce this number */
-  overflow: hidden;
-  background-size: cover !important;
-  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(156,255,255,0.65) 100%), url(allquizzes-logo.jpg) no-repeat center center scroll;
-}
-
 h1 {
   font-style: normal;
   font-weight: bold;
@@ -284,7 +271,7 @@ h1 {
   font-size: 11vmin;
   letter-spacing: 0.03em;
   line-height: 1;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
   margin-bottom: 1px;
 }
    
@@ -334,12 +321,6 @@ closeNav()
 </div><div style="text-align: right "> <input type="search" id="myInput" onkeyup="myFunction()" placeholder="Search for Quizzes.." title="Search for a Quiz" results= "2">
 </div><div style="text-align: center">
   
-<section class="masthead" role="img" aria-label="Image Description">
-  <h1 style="background-color: rgba(250 , 250 , 250 , 0.7) ;" >
-    11 Quizzes and 100 Questions
-  </h1>
-</section>
-    
 <div class="yz" >
 <button class="tablink" onclick="openPage('row', this)" id="defaultOpen" style="border: 1px solid white;" >Quizzes</button>
 <button class="tablink" onclick="openPage('video', this)" style="border: 1px solid white;" >Videos</button>
