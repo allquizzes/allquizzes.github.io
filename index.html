@@ -49,15 +49,11 @@ body {
   --text-color: #222;
   --bkg-color: #fff;
   --side-nav: black;
-  --link: black;
-  --link-visit: black;
   }
 body.dark-theme {
   --text-color: #eee;
   --bkg-color: #121212;
   --side-nav: white;
-  --link: black;
-  --link-visit: black ;
 }
 
 * {
@@ -74,15 +70,11 @@ body {
 .ham {
   width: 35px;
   height: 5px;
-  background-color: var(--side-nav) ;
+  background-color: var(--text-color) ;
   margin: 6px 0;
 }
-a:link {
-color : var(--link);
-text-decoration : none ;
-}
-a:visited {
-color : var(--link-visit) ;
+a {
+color : black;
 text-decoration : none ;
 }
 /* The navigation menu links */
