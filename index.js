@@ -37,6 +37,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
       });
   });
 });
+
 var fnum ,snum, sign , answer ;
 function generate() {
   var operation = ["*" , "+" , "-" ]
