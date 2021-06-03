@@ -408,49 +408,6 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-var i = 0;
-const randomColor = Math.floor(Math.random()*360);
-do {
-    document.getElementsByClassName("card")[i].style.backgroundColor = "hsl(" + randomColor + ", 100% , 85%";
-
-  i++;
-}
-while (i < 100);  
-
-</script>
-<script>
-function openPage(pageName,elmnt) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  document.getElementById(pageName).style.display = "block";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-<script>
-function myFunction() {
-    var input, filter, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    li = document.getElementsByClassName("card");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("h1")[0];
-       txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-           document.getElementsByClassName("column")[i].style.display = "";
-                  } else {
-            li[i].style.display = "none";
-          document.getElementsByClassName("column")[i].style.display = "none";
-  
-        }
-    }
-}
 </script>
 <script>
 var fnum ,snum, sign , answer ;
