@@ -139,53 +139,6 @@ display: none ;
 display:block ;
 }
 }
-
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
-}
-
-.tablink:hover {
-  background-color: #777;
-}
-.tablink {
-padding: 10px;
-  flex: 33.3%;
-}
-.yz {
-display: flex;
-  flex-wrap: wrap;
-  font-size: 30px;
-  text-align: center;
-}
-#myInput {
-  background-image: url('https://www.w3schools.com/css/searchicon.png');
-  background-position: 4px 4px;
-  background-repeat: no-repeat;
-  font-size: 12px;
-  border: 1px solid #ddd;
-  width: 6px;
-   height: 30px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-    display: inline ;
-padding: 12px 20px 12px 40px;
-  margin-bottom: 12px;
-  position: relative;
-bottom: 35px ;
-}
-
-/* When the input field gets focus, change its width to 100% */
-#myInput:focus {
-  width: 50%;
-}
 .con {
   font-family: sans-serif ;
 text-align: left;
@@ -316,13 +269,6 @@ closeNav()
 <div class="ham"></div>
 <div class="ham"></div>
 <div class="ham"></div>
-</div><div style="text-align: right "> <input type="search" id="myInput" onkeyup="myFunction()" placeholder="Search for Quizzes.." title="Search for a Quiz" results= "2">
-</div>
-<div class="yz" >
-<button class="tablink" onclick="openPage('row', this)" id="defaultOpen" style="border: 1px solid white;" >Quizzes</button>
-<button class="tablink" onclick="openPage('video', this)" style="border: 1px solid white;" >Videos</button>
-<button class="tablink" onclick="openPage('exp', this)" style="border: 1px solid white">Explanations</button>
-</div><br><br>
 <div class="ranmath"><h2>Random Maths Questions</h2>
  <button onclick="generate()" class="gen" ><img src=" https://raw.githubusercontent.com/google/material-design-icons/master/png/navigation/refresh/materialicons/18dp/1x/baseline_refresh_black_18dp.png" loading="lazy" alt="Refresh" height=18 width=18></button><br>
 <p id="first">Loading... </p> <p id="sign"></p>  <p id="second"></p> = <input type="number" id="in"> <button onclick="check()" class="check">Check</button>
