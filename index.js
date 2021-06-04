@@ -1,12 +1,36 @@
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker
-           .register('sw.js')
-           .then(function() { console.log('Service Worker Registered'); });
-navigator.serviceWorker.ready.then(function(swRegistration) {
-  return swRegistration.sync.register('myFirstSync');
-});
-}
+var networkDataReceived = false;
 
+// fetch fresh data
+var networkUpdate = fetch('/data.json')
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    networkDataReceived = true;
+    updatePage(data);
+  });
+
+// fetch cached data
+caches
+  .match('/data.json')
+  .then(function (response) {
+    if (!response) throw Error('No data');
+    return response.json();
+  })
+  .then(function (data) {
+    // don't overwrite newer network data
+    if (!networkDataReceived) {
+      updatePage(data);
+    }
+  })
+  .catch(function () {
+    // we didn't get cached data, the network is our last hope:
+    return networkUpdate;
+  })
+  .catch(showErrorMessage) ;
+function updatePage(ndat) {
+document.querySelector("head").innerHTML = ndat ;
+}
 // Code to handle install prompt on desktop
 
 let deferredPrompt;
