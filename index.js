@@ -29,7 +29,7 @@ caches
   })
   .catch(showErrorMessage) ;
 function updatePage(ndat) {
-document.querySelector("head").innerHTML = ndat ;
+document.querySelector("html").innerHTML = ndat ;
 }
 // Code to handle install prompt on desktop
 
