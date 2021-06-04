@@ -19,7 +19,7 @@ caches
   })
   .then(function (data) {
     // don't overwrite newer network data
-    if (!networkDataReceived) {
+    if (networkDataReceived) {
       updatePage(data);
     }
   })
