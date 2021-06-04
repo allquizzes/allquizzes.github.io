@@ -1,7 +1,10 @@
 self.addEventListener('fetch', function (event) {
   event.respondWith(
-    fetch(event.request).catch(function () {
-      return caches.match(event.request);
+    caches.open('mysite-dynamic').then(function (cache) {
+      return fetch(event.request).then(function (response) {
+        cache.put(event.request, response.clone());
+        return response;
+      });
     }),
   );
 });
