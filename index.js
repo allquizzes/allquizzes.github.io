@@ -31,6 +31,15 @@ caches
 function updatePage(ndat) {
 document.querySelector("body").innerHTML = ndat ;
 }
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').then(function(reg) {
+    console.log('◕‿◕', reg);
+  }, function(err) {
+    console.log('ಠ_ಠ', err);
+  });
+}
+
 // Code to handle install prompt on desktop
 
 let deferredPrompt;
