@@ -152,9 +152,6 @@ document.getElementById("points").innerHTML = points ;
 var tc = parseInt(getCookie("totalc")) + parseInt(correct) ;
 var tw = parseInt(getCookie("totalw")) + parseInt(wrong) ;
 var tp = parseInt(getCookie("totalp")) + parseInt(points) ;
-setCookie("totalc" , tc , 9999999999) ;
-setCookie("totalw" , tw , 9999999999) ;
-setCookie("totalp" , tp , 9999999999) ;
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
