@@ -177,15 +177,16 @@ function getCookie(cname) {
   return "";
 }
 function checkCookie() {
-  var cc = getCookie("wrong");
-  var bc = getCookie("correct") ;
-  if (username != "") {
-   alert("Welcome again " + username);
+  var cc = getCookie("totalc");
+  var bc = getCookie("totalw") ;
+  if (cc != "" | bc != "" ) {
+  setCookie("totalc" , tc , 9999999999) ;
+setCookie("totalw" , tw , 9999999999) ;
+setCookie("totalp" , tp , 9999999999) ; 
   } else {
-    username = prompt("Please enter your name:", "");
-    if (username != "" && username != null) {
-      setCookie("username", username, 365);
-    }
+setCookie("totalc" , correct , 9999999999) ;
+setCookie("totalw" , wrong , 9999999999) ;
+setCookie("totalp" , points , 9999999999) ;
   }
 }
 alert(getCookie("totalc"))
