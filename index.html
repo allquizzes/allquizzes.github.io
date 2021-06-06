@@ -99,46 +99,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Float four columns side by side */
-.column {
-  padding: 0 10px;
-  margin-bottom: 20px;
-}
-
-/* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px; margin-bottom: 20px; text-align: center}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0 , 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
- color: black ;
- text-decoration : none ;
-}
-.mobile-ad {
-display: none ;
-}
-
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-.mobile-ad {
-display:block ;
-}
-}
 .con {
   font-family: sans-serif ;
 text-align: left;
@@ -328,21 +288,9 @@ var x = setInterval(function() {
 </script>
 <a href="/human-body/bones.html"><div class="con" ><h1>Bones</h1><p class="category"> Quiz</p> <p class="q" >10 Questions</p> <time>22 March</time><br><br><div class="tag-con"><a href="/t/humanbody" ><div class="body tag">#humanbody</div></a><a href="t/medium"><div class="medium tag">#medium</div></a><a href="t/free"><div class="free tag">#free</div></a></div></div></a>
  <a href="/space/universe.html"><div class="con" ><h1>Universe</h1><p class="category"> Quiz</p> <p class="q" >10 Questions</p> <time>15 March</time><br><br><div class="tag-con"><a href="/t/space" ><div class="space tag">#space</div></a><a href="t/space/universe"><div class="universe tag">#universe</div></a><a href="t/easy"><div class="easy tag">#easy</div></a><a href="t/free"><div class="free tag">#free</div></a></div></div></a>
-<div class="column">
- <a href="space/planet-extremes.html"><div class="card"><h1>Planet-Extremes Quiz </h1></div></a>
-  </div>
-  <div class="column">
- <a href="general/1.html" >
-   <div class="card"><h1>General Knowledge Quiz</h1></div></a>
-  </div>
-<div class="column">
- <a href="maths-day/basics.html"><div class="card"><h1>Maths Day 'Basics' Quiz</h1></div></a>
-  </div>
-<div class="column">
- <a href="maths-day/ramanujan.html"><div class="card"><h1>Srinivasa Ramanujan Quiz</h1></div></a>
-  </div>
-</div>
-<script>
+ <a href="/space/planet-extremes.html"><div class="con" ><h1>Planet-Extremes</h1><p class="category"> Quiz</p> <p class="q" >10 Questions</p> <time>8 March</time><br><br><div class="tag-con"><a href="/t/space" ><div class="space tag">#space</div></a><a href="t/space/planets"><div class="planet tag">#planet</div></a><a href="t/easy"><div class="easy tag">#easy</div></a><a href="t/free"><div class="free tag">#free</div></a></div></div></a>
+<a href="/general/1.html"><div class="con" ><h1>General Knowledge</h1><p class="category"> Quiz</p> <p class="q" >10 Questions</p> <time>1 March</time><br><br><div class="tag-con"><a href="/t/generalknowledge" ><div class="general tag">#generalknowledge</div></a><a href="t/easy"><div class="easy tag">#easy</div></a><a href="t/free"><div class="free tag">#free</div></a></div></div></a>
+ <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
