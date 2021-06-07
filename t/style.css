@@ -1,0 +1,17 @@
+body {
+  --text-color: #222;
+  --bkg-color: #fff;
+  --side-nav: black;
+  }
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #121212;
+  --side-nav: white;
+}
+body {
+  background: var(--bkg-color);
+}
+
+body {
+  color: var(--text-color);
+}
