@@ -58,3 +58,6 @@ color: var(--text-color)
 content: " | ";
 color: var(--text-color) 
 }
+a {
+text-decoration: none ;
+}
