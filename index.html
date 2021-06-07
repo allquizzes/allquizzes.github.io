@@ -184,30 +184,6 @@ h1 {
   text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 1px;
 }
-@media only screen and (min-width: 600px) {
-  #side {
-display: none  ;
-}
-.sidenav {
-height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  overflow-y
-  : hidden ;
-padding-top: 20px;
-}
-.main {
-margin-left: 250px ;
-}
-.sidenav .closebtn {
-display: none ;
-}
-}
 </style>
 </head>
 <body onload="generate()" >
@@ -239,7 +215,7 @@ if (currentTheme == "dark") {
 <div onclick="openNav()"  id="side"  >
 <div class="ham"></div>
 <div class="ham"></div>
-<div class="ham"></div></div><div class="main">
+<div class="ham"></div></div>
 <h1 id="demo"></h1>
 
 <script>
@@ -312,7 +288,7 @@ var x = setInterval(function() {
  <a href="/space/universe.html"><div class="con" ><h1>Universe</h1><p class="category"> Quiz</p> <p class="q" >10 Questions</p> <time>15 March</time><br><br><div class="tag-con"><a href="/t/space" ><div class="space tag">#space</div></a><a href="t/space/universe"><div class="universe tag">#universe</div></a><a href="t/easy"><div class="easy tag">#easy</div></a><a href="t/free"><div class="free tag">#free</div></a></div></div></a>
  <a href="/space/planet-extremes.html"><div class="con" ><h1>Planet-Extremes</h1><p class="category"> Quiz</p> <p class="q" >10 Questions</p> <time>8 March</time><br><br><div class="tag-con"><a href="/t/space" ><div class="space tag">#space</div></a><a href="t/space/planets"><div class="planet tag">#planets</div></a><a href="t/easy"><div class="easy tag">#easy</div></a><a href="t/free"><div class="free tag">#free</div></a></div></div></a>
 <a href="/general/1.html"><div class="con" ><h1>General Knowledge</h1><p class="category"> Quiz</p> <p class="q" >10 Questions</p> <time>1 March</time><br><br><div class="tag-con"><a href="/t/generalknowledge" ><div class="general tag">#generalknowledge</div></a><a href="t/easy"><div class="easy tag">#easy</div></a><a href="t/free"><div class="free tag">#free</div></a></div></div></a>
-</div> <script>
+<script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
