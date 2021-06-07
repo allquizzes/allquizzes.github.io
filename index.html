@@ -87,7 +87,7 @@ text-decoration : none ;
   transition: 0.3s;
 }
 hr {
-border: 1px solid ;
+border: 1px solid black;
 }
 * {
   box-sizing: border-box;
@@ -184,6 +184,17 @@ h1 {
   text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 1px;
 }
+@media only screen and (min-width: 600px) {
+  #side {
+display: none 
+}
+.sidenav {
+width: 250px ;
+}
+.main {
+margin-right: 250px ;
+}
+}
 </style>
 </head>
 <body onload="generate()" >
@@ -212,10 +223,10 @@ if (currentTheme == "dark") {
   <a href="privacy-policy.html">Privacy Policy</a><hr>
  <a href="https://github.com/allquizzes/allquizzes.github.io/">Source Code</a>
 </div>
-<div onclick="openNav()"  style="display:inline" >
+<div onclick="openNav()"  id="side"  >
 <div class="ham"></div>
 <div class="ham"></div>
-<div class="ham"></div></div>
+<div class="ham"></div></div><div class="main">
 <h1 id="demo"></h1>
 
 <script>
@@ -288,7 +299,7 @@ var x = setInterval(function() {
  <a href="/space/universe.html"><div class="con" ><h1>Universe</h1><p class="category"> Quiz</p> <p class="q" >10 Questions</p> <time>15 March</time><br><br><div class="tag-con"><a href="/t/space" ><div class="space tag">#space</div></a><a href="t/space/universe"><div class="universe tag">#universe</div></a><a href="t/easy"><div class="easy tag">#easy</div></a><a href="t/free"><div class="free tag">#free</div></a></div></div></a>
  <a href="/space/planet-extremes.html"><div class="con" ><h1>Planet-Extremes</h1><p class="category"> Quiz</p> <p class="q" >10 Questions</p> <time>8 March</time><br><br><div class="tag-con"><a href="/t/space" ><div class="space tag">#space</div></a><a href="t/space/planets"><div class="planet tag">#planets</div></a><a href="t/easy"><div class="easy tag">#easy</div></a><a href="t/free"><div class="free tag">#free</div></a></div></div></a>
 <a href="/general/1.html"><div class="con" ><h1>General Knowledge</h1><p class="category"> Quiz</p> <p class="q" >10 Questions</p> <time>1 March</time><br><br><div class="tag-con"><a href="/t/generalknowledge" ><div class="general tag">#generalknowledge</div></a><a href="t/easy"><div class="easy tag">#easy</div></a><a href="t/free"><div class="free tag">#free</div></a></div></div></a>
- <script>
+</div> <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
