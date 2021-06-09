@@ -125,7 +125,7 @@ h1 {
 }
 </style>
 </head>
-<body onload="generate()" >
+<body onload="generate()" class="cc"  >
 <script>
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
@@ -277,8 +277,8 @@ function changePage() {
     var wrapper = document.createElement('div');
         wrapper.innerHTML = responseText;
 
-    var oldContent = document.querySelector('html');
-    var newContent = wrapper.querySelector('html');
+    var oldContent = document.querySelector('.cc');
+    var newContent = wrapper.querySelector('.cc');
 
     main.appendChild(newContent);
     animate(oldContent, newContent);
