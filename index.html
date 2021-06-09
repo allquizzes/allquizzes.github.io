@@ -265,7 +265,10 @@ xhttp.open("GET", url, true);
 xhttp.send();
 
 }
-
+function changePage() {
+  var url = window.location.href;
+loadPage(url) ;
+}
 document.addEventListener('click', function(e) {
   var el = e.target;
 
