@@ -435,7 +435,7 @@ function check() {
  var poimu = smi * 3;
  var points = poipu ;
   var bill = "See my Score of this quiz  - " + document.URL +  "\n \n Correct Answers : " +
-  scp + "\n \n Wrong Answers : " +
+  scp + "\n \n Wrong Answers : " 
   smi + "\n \n Points : " + points + " \n \n You can also play these quizzes on https://allquizzes.github.io/" ;
 sessionStorage.setItem("points", points);
 sessionStorage.setItem("correct", scp);
@@ -443,6 +443,7 @@ sessionStorage.setItem("wrong", smi);
 sessionStorage.setItem("share", bill);
 sessionStorage.setItem("explanation", "https://allquizzes.github.io/explanation/tech/html.html" );
 window.open("/score.html" , "_self" );
+wwindow.onbeforeunload = "" ;
 }
 function sharequiz() {
 if (navigator.share) {
@@ -451,6 +452,9 @@ navigator.share ({ text : "Please play this Amazing Quiz - \n"  + document.URL
  } else {
  alert("Native Sharing is not supported in your Browser") ;
  }
+}
+window.onbeforeunload = function() {
+  return "Two buttons will be below this message asking if the user wants to stay on this page or leave.";
 }
 </script>
 </body>
