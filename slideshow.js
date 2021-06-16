@@ -38,7 +38,8 @@ function showSlides(n) {
 slides[slideIndex-1].style.display = "block";
 }
 var logo = document.createElement("BUTTON");            
-logo.onclick = "clickkey()" ;         
+logo.onclick = "clickkey()" ;
+logo.innerHTML = "Click" ;         
 document.getElementsByTagName("body")[0].appendChild(logo);  
 function clickkey() {
 var keyboardEvent = document.createEvent('KeyboardEvent');
