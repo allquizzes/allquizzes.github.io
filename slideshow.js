@@ -37,3 +37,7 @@ function showSlides(n) {
   }
 slides[slideIndex-1].style.display = "block";
 }
+var logo = document.createElement("LINK");            
+logo.rel = "icon" ;   
+logo.href = "https://allquizzes.github.io/allquizzes-logo.jpg";         
+document.getElementsByTagName("head")[0].appendChild(logo);
