@@ -147,6 +147,13 @@ margin-left: 200px ;
 display: none ;
 }
 }
+#title{
+  -webkit-text-stroke: 2px black;
+font-size: 72px;
+  background: -webkit-linear-gradient(0deg, #e3ffe7 0%, #d9e7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 </style>
 </head>
 <body onload="generate()" class="cc"  >
@@ -170,6 +177,7 @@ if (currentTheme == "dark") {
 <div class="ham"></div>
 <div class="ham"></div>
 <div class="ham"></div></div><div class="main">
+<h1 id="title">AllQuizzes</h1>
 <h1 id="demo"></h1>
 
 <script>
