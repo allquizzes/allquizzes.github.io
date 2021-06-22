@@ -11,6 +11,7 @@
 <meta name="color-scheme" content="dark light">
 <link href = "https://allquizzes.github.io/allquizzes-logo.jpg" rel="icon">
 <script src="https://unpkg.com/@barba/core"></script>
+
 </head>
 <body id="body" class="cc" data-barba="wrapper"  >
   <main data-barba="container" data-barba-namespace="home">
@@ -455,6 +456,33 @@ navigator.share ({ text : "Please play this Amazing Quiz - \n"  + document.URL
  alert("Native Sharing is not supported in your Browser") ;
  }
 }
+</script>
+<script>
+barba.init({
+  transitions: [{
+    name: 'opacity-transition',
+    leave(data) {
+      return data.current.container.animate(
+  [
+    { opacity: 0px},
+  ], {
+    duration: 1000,
+    iterations: Infinity
+  }
+);
+    },
+    enter(data) {
+      data.next.container.animate(
+  [
+    { opacity: 0px},
+  ], {
+    duration: 1000,
+    iterations: Infinity
+  }
+);
+    }
+  }]
+});
 </script>
 </main>
 </body>
