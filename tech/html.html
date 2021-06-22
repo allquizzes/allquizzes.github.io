@@ -467,17 +467,17 @@ barba.init({
     { opacity: 0px},
   ], {
     duration: 1000,
-    iterations: Infinity
+    iterations: 1
   }
 );
     },
     enter(data) {
-      data.next.container.animate(
+   return data.next.container.animate(
   [
     { opacity: 0px},
   ], {
     duration: 1000,
-    iterations: Infinity
+    iterations: 1
   }
 );
     }
