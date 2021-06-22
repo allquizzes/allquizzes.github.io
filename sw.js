@@ -1,8 +1,8 @@
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open('v1').then(function(cache) {
+    caches.open('v1_alpha').then(function(cache) {
       return cache.addAll([
-'index.html' , 'style.css' 
+'tags.css' , 'style.css' , 'index.js' , 'slideshow.js" , 'timer.js' , 'score.html'
       ]);
     })
   );
@@ -21,12 +21,12 @@ self.addEventListener('fetch', function(event) {
         // and serve second one
         let responseClone = response.clone();
         
-        caches.open('v1').then(function (cache) {
+        caches.open('v1_alpha').then(function (cache) {
           cache.put(event.request, responseClone);
         });
         return response;
       }).catch(function () {
-        return caches.match('/index.html');
+        return caches.match('/404.html');
       });
     }
   }));
