@@ -159,8 +159,10 @@ font-family: 'Pangolin', cursive;
 }
 </style>
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet"></head>
-<body onload="generate()" class="cc"  >
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@barba/core"></script>
+</head>
+<body onload="generate()" class="cc" data-barba="wrapper"  >
 <script>
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
@@ -182,6 +184,8 @@ if (currentTheme == "dark") {
 <div class="ham"></div>
 <div class="ham"></div></div><div class="main">
 <h1 id="title">AllQuizzes</h1>
+
+  <main data-barba="container" data-barba-namespace="home">
 <h1 id="demo"></h1>
 
 <script>
@@ -264,6 +268,33 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw" defer></script>
+<script>
+barba.init({
+  transitions: [{
+    name: 'opacity-transition',
+    leave(data) {
+      return data.current.container.animate(
+  [
+    { opacity: 0px},
+  ], {
+    duration: 1000,
+    iterations: Infinity
+  }
+);
+    },
+    enter(data) {
+      data.next.container.animate(
+  [
+    { opacity: 0px},
+  ], {
+    duration: 1000,
+    iterations: Infinity
+  }
+);
+    }
+  }]
+});
+</script>
+</main>
 </body>
 </html>
