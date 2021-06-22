@@ -10,8 +10,10 @@
    <meta name="description" content="It contains 10 questions on HTML. Play this Quiz to increase your knowledge">
 <meta name="color-scheme" content="dark light">
 <link href = "https://allquizzes.github.io/allquizzes-logo.jpg" rel="icon">
+<script src="https://unpkg.com/@barba/core"></script>
 </head>
-<body id="body" class="cc" >
+<body id="body" class="cc" data-barba="wrapper"  >
+  <main data-barba="container" data-barba-namespace="home">
 <script>
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
@@ -453,8 +455,8 @@ navigator.share ({ text : "Please play this Amazing Quiz - \n"  + document.URL
  alert("Native Sharing is not supported in your Browser") ;
  }
 }
-window.onbeforeunload = " Leaving";
 </script>
+</main>
 </body>
 </html>
 
