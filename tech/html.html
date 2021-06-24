@@ -4,17 +4,15 @@
  <title>HTML Quiz</title>
 <link rel="stylesheet" href="../style.css">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="fb:admins" content="100055036303318"/>
 <script src="../slideshow.js"></script>
 <meta name="keywords" content="html , html quiz ,HTML Quiz , Hyper Text Markup Language Quiz , Css , Javascript">
    <meta name="description" content="It contains 10 questions on HTML. Play this Quiz to increase your knowledge">
 <meta name="color-scheme" content="dark light">
 <link href = "https://allquizzes.github.io/allquizzes-logo.jpg" rel="icon">
-<script src="https://unpkg.com/@barba/core"></script>
 
 </head>
-<body id="body" class="cc" data-barba="wrapper"  >
-  <main data-barba="container" data-barba-namespace="ho">
+<body id="body">
+  <main>
 <script>
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
@@ -456,33 +454,6 @@ navigator.share ({ text : "Please play this Amazing Quiz - \n"  + document.URL
  alert("Native Sharing is not supported in your Browser") ;
  }
 }
-</script>
-<script>
-barba.init({
-  transitions: [{
-    name: 'opacity-transition',
-    leave(data) {
-      return data.current.container.animate(
-  [
-    { opacity: 0px},
-  ], {
-    duration: 1000,
-    iterations: 1
-  }
-);
-    },
-    enter(data) {
-   return data.next.container.animate(
-  [
-    { opacity: 0px},
-  ], {
-    duration: 1000,
-    iterations: 1
-  }
-);
-    }
-  }]
-});
 </script>
 </main>
 </body>
