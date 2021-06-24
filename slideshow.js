@@ -41,3 +41,11 @@ var logo = document.createElement("LINK");
 logo.rel = "icon" ;   
 logo.href = "https://allquizzes.github.io/allquizzes-logo.jpg";         
 document.getElementsByTagName("head")[0].appendChild(logo);
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
