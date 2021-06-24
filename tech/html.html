@@ -454,7 +454,17 @@ navigator.share ({ text : "Please play this Amazing Quiz - \n"  + document.URL
  alert("Native Sharing is not supported in your Browser") ;
  }
 }
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+       document.getElementById("sidenav").innerHTML = xhttp.responseText;
+    }
+};
+xhttp.open("GET", "index.html", true);
+xhttp.send();
 </script>
+
 </main>
 </body>
 </html>
