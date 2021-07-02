@@ -18,6 +18,7 @@ if (currentTheme == "dark") {
   document.body.classList.add("dark-theme");
   }
 </script>
+<aside id="sidenav"></aside><main>
 <strong><center><a href="../index.html" style="text-align: center;">Go to Home Page</a></center></strong>
 <h1 id="head"><br>Quiz <br><br></h1>
 ​<center>
@@ -452,7 +453,17 @@ navigator.share ({ text : "Please play this Amazing Quiz - \n"  + document.URL
  alert("Native Sharing is not supported in your Browser") ;
  }
 }
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+       document.getElementById("sidenav").innerHTML = xhttp.responseText;
+    }
+};
+xhttp.open("GET", "../../sidenav.html", true);
+xhttp.send();
 </script>
 <br><br><br><br><br><br><br><br>
+</main>
 </body>
 </html>
