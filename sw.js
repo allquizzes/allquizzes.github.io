@@ -2,7 +2,7 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('v1_alpha').then(function(cache) {
       return cache.addAll([
-'tags.css' , 'style.css' , 'index.js' , 'slideshow.js" , 'timer.js' , 'score.html'
+'tags.css' , 'style.css' , 'index.js' , 'slideshow.js' , 'timer.js' , 'score.html'
       ]);
     })
   );
