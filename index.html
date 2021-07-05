@@ -153,6 +153,14 @@ font-size: 3rem ;
 font-family: 'Pangolin', cursive;
 color: #4fb9ff ;
 }
+
+@supports (-webkit-text-stroke: 0.5px black) {
+  #title {
+    -webkit-text-stroke: 0.5px black;
+    -webkit-text-fill-color: #4fb9ff;
+  }
+}
+
 .con {
   font-family: sans-serif ;
 text-align: left;
