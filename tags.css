@@ -85,6 +85,13 @@ height: 100%; /* 100% Full-height */
 hr {
 border: 1px solid black;
 }
+
+.ham {
+  width: 35px;
+  height: 5px;
+  background-color: var(--text-color) ;
+  margin: 6px 0;
+}
 @media only screen and (min-width: 600px) {
   #side {
 display: none  ;
@@ -104,12 +111,6 @@ padding-top: 20px;
 }
 .main , main {
 margin-left: 200px ;
-}
-.ham {
-  width: 35px;
-  height: 5px;
-  background-color: var(--text-color) ;
-  margin: 6px 0;
 }
 .sidenav .closebtn {
 display: none ;
