@@ -1,6 +1,8 @@
-a {
+
+.a {
 color: royalblue ;
 font-family : cursive ; 
+font-size: 2rem ; position: relative ; bottom: 2.5rem
 }
 .status {
  color: green;
@@ -18,7 +20,9 @@ border-radius: 5px
 border-image: conic-gradient(from 0deg , red, yellow, lime, aqua, blue, magenta, red) 5 ; 
 margin-top: -20px ;
  }
-
+#Que-1 {
+display: none ;
+}
  #head {
   text-align: center;
 color : white ; 

@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
  <title>Quiz</title>
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="../style.css">
+
+<link rel="stylesheet" href="../tags.css">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="fb:admins" content="100055036303318"/>
-<script src="slideshow.js"></script>
+<script src="../slideshow.js"></script>
 <meta name="keywords" content="">
    <meta name="description" content="It contains 10 questions on _. Play this Quiz to increase your knowledge">
 <meta name="color-scheme" content="dark light">
-<link href = "https://allquizzes.github.io/allquizzes-logo.jpg" rel="icon">
 </head>
 <body id="body" >
 <script>
@@ -18,7 +19,12 @@ if (currentTheme == "dark") {
   document.body.classList.add("dark-theme");
   }
 </script>
-<strong><center><a href="../index.html" style="text-align: center;">Go to Home Page</a></center></strong>
+<aside>
+<div onclick="openNav()"  id="side"  >
+<div class="ham"></div>
+<div class="ham"></div>
+<div class="ham"></div></div><div id="sidenav"></div></aside><main>
+<div style="text-align: center" ><a href="../index.html" class="a">🏠</a></div>
 <h1 id="head"><br>Quiz <br><br></h1>
 ​<center>
 <p id="timer">Timer 2:00</p>
@@ -111,7 +117,7 @@ if (currentTheme == "dark") {
 <div id="descript"> <h2 style="text-align:left ; text-decoration:none" >Instructions -</h2> <ul> <li>This is a ___ Quiz.  </li> <li>Click on <b>Start Quiz </b>button to start the Quiz.</li><li>It contains 10 questions.</li> <li> You have 5 minutes to do this Quiz, After 5 minutes you can not do the Quiz.</li> <li> Every Correct Answer gives you +5 points.</li> <li> You can Check your Score by clicking on <b>Check Score</b> button after completing the Quiz.</li><li>Please <strong>Like, Comment and <button class="share" ; id="sharethis"; onclick="sharequiz()" ><b>Share</button></b></strong>
 </ul>  <span style="text-align: center;">So enjoy the Quiz !!! </span>
    </div>
-<script src="timer.js"></script>
+<script src="../timer.js"></script>
 <script>
 
 var x = document
@@ -452,7 +458,17 @@ navigator.share ({ text : "Please play this Amazing Quiz - \n"  + document.URL
  alert("Native Sharing is not supported in your Browser") ;
  }
 }
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+       document.getElementById("sidenav").innerHTML = xhttp.responseText;
+    }
+};
+xhttp.open("GET", "../../sidenav.html", true);
+xhttp.send();
 </script>
 <br><br><br><br><br><br><br><br>
+</main>
 </body>
 </html>
