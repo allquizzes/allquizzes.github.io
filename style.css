@@ -72,7 +72,7 @@ font-family: Garamond, serif; font-size: 40px ;
 }
 @media only screen and (min-width: 600px) {
    .next {
-    left:520px
+    left:1050px ;
   }
 }
 
