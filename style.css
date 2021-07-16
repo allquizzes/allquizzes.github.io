@@ -78,9 +78,6 @@ line-height: 1.5;
 #startquiz {
  color: white ;
  background-image: linear-gradient(to right,  #fda085 51%, #f6d365 100%);
- position: relative;
- left: 100px;
- bottom:60px ;
  height: 100px;
  width: 150px;
 font-size: 27px;
@@ -88,7 +85,9 @@ font-weight:bold;
   background: linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
      background-size: 600% ;
      animation: anime 16s linear infinite ;
- 
+ margin: 0 auto
+  ;
+ display : block ;
 }
    
  @keyframes anime {
