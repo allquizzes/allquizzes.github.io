@@ -57,7 +57,7 @@ height: 100%; /* 100% Full-height */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background: linear-gradient(0deg, #e3ffe7 0%, #d9e7ff 100%);
+  background: #4fb9ff;
   overflow-x: hidden; /* Disable horizontal scroll */
  padding-top: 60px; /* Place content 60px from the top */
  }
