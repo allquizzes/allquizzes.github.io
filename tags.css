@@ -102,7 +102,7 @@ height: 100%;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background: #4fb9ff;
   overflow-x: hidden;
   overflow-y
   : hidden ;
@@ -114,7 +114,4 @@ margin-left: 200px ;
 .sidenav .closebtn {
 display: none ;
 }
-}
-body {
-background : #4fb9ff !important
 }
