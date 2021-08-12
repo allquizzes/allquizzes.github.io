@@ -52,8 +52,6 @@ color: var(--text-color);
 </head>
 <body>
 <script>
-import confetti from 'https://cdn.skypack.dev/canvas-confetti';
-confetti();
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
   document.body.classList.add("dark-theme");
@@ -126,7 +124,12 @@ if (navigator.share) {
   }
 }
 </script>
-<script>
-</script>
+<script type="module">
+import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+const confButton = document.querySelector("body");
+confButton.addEventListener("load", () => {
+  confetti();
+});
+;</script>
 </body>
 </html>
