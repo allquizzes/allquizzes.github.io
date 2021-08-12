@@ -75,12 +75,12 @@ document.getElementById("wrong").innerHTML = wrong ;
 document.getElementById("points").innerHTML = points ;
 </script>
 <script>
-var high = sessionStorage.getItem("correct") ;
+var high = document.getElementById("correct").innerHTML ;
 var byeg = document.getElementById("wrong").innerHTML  ;
 var hi = parseInt(high);
 var bye = parseInt(byeg);
 var tc = localStorage.getItem("totalCorrect") ;
-if(tc === undefined) {
+if(tc === null) {
 localStorage.setItem("totalCorrect" , hi) 
 } else {
 var ne = parseInt(tc) + hi ;
