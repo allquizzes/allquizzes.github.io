@@ -75,7 +75,7 @@ document.getElementById("wrong").innerHTML = wrong ;
 document.getElementById("points").innerHTML = points ;
 </script>
 <script>
-var high = document.getElementById("correct").innerHTML ;
+var high = sessionStorage.getItem("correct") ;
 var byeg = document.getElementById("wrong").innerHTML  ;
 var hi = parseInt(high);
 var bye = parseInt(byeg);
