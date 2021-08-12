@@ -61,7 +61,7 @@ if (currentTheme == "dark") {
 <h1 class="correct">Correct Answers : <span id="correct"></span></h1>
 <h1 class="wrong">Wrong Answers : <span id="wrong"></span></h1>
 <h1 class="points">Points : <span id="points"></span></h1>
-<audio hidden id="auwin">
+<audio hidden id="auwin" autoplay>
 <source src="https://upload.wikimedia.org/wikipedia/commons/9/93/Start.wav">
 </audio>
 <div id='piechart'>loading......</div>
@@ -78,8 +78,6 @@ var high = document.getElementById("correct").innerHTML ;
 var byeg = document.getElementById("wrong").innerHTML  ;
 var hi = parseInt(high);
 var bye = parseInt(byeg);
-
-  document.getElementById("auwin").play();
  google.charts.load('current', {
   'packages': ['corechart']
  });
