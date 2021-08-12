@@ -78,6 +78,14 @@ var high = document.getElementById("correct").innerHTML ;
 var byeg = document.getElementById("wrong").innerHTML  ;
 var hi = parseInt(high);
 var bye = parseInt(byeg);
+var tc = localStorage.getItem("totalCorrect") ;
+if(tc != undefined) {
+var ne = parseInt(tc) + hi ;
+localStorage.setItem("totalCorrect" , ne) 
+} else {
+localStorage.setItem("totalCorrect" , hi) 
+}
+alert(tc)
  google.charts.load('current', {
   'packages': ['corechart']
  });
