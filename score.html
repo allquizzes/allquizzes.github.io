@@ -80,12 +80,14 @@ var byeg = document.getElementById("wrong").innerHTML  ;
 var hi = parseInt(high);
 var bye = parseInt(byeg);
 var tc = localStorage.getItem("totalCorrect") ;
+var ne = parseInt(tc) + hi ;
 if(tc === null) {
 localStorage.setItem("totalCorrect" , hi) ;
 alert("🤥")
-} else {
-var ne = parseInt(tc) + hi ;
+} else if(hi == NaN || ne == NaN) { alert("Invalid")
+} else { 
 localStorage.setItem("totalCorrect" , ne) 
+alert("valid")
 }
 alert(localStorage.getItem("totalCorrect"))
  google.charts.load('current', {
