@@ -83,11 +83,12 @@ var tc = localStorage.getItem("totalCorrect") ;
 if(tc === null) {
 localStorage.setItem("totalCorrect" , hi) ;
 alert("🤥")
-} else if(hi == NaN) { alert("Invalid")
-} else { 
+} else if(hi != NaN) { 
 var ne = parseInt(tc) + hi ;
 localStorage.setItem("totalCorrect" , ne) 
 alert("valid")
+} else { 
+alert("in")
 }
 alert(localStorage.getItem("totalCorrect"))
  google.charts.load('current', {
