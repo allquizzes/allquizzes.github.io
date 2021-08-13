@@ -83,7 +83,7 @@ var tc = localStorage.getItem("totalCorrect") ;
 if(tc === null) {
 localStorage.setItem("totalCorrect" , hi) ;
 alert("🤥")
-} else if(hi != NaN) { 
+} else if(hi != NaN && parseInt(localStorage.getItem("totalCorrect")) != NaN) { 
 var ne = parseInt(tc) + hi ;
 localStorage.setItem("totalCorrect" , ne) 
 alert("valid")
