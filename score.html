@@ -84,7 +84,7 @@ var ne = parseInt(tc) + hi ;
 if(tc === null) {
 localStorage.setItem("totalCorrect" , hi) ;
 alert("🤥")
-} else if(ne != NaN) { 
+} else if( !isNaN(ne)) { 
 
 localStorage.setItem("totalCorrect" , ne) 
 alert("valid")
