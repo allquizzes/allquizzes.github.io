@@ -81,6 +81,7 @@ var hi = parseInt(high);
 var bye = parseInt(byeg);
 var tc = localStorage.getItem("totalCorrect") ;
 var ne = parseInt(tc) + hi ;
+
 if(tc === null) {
 localStorage.setItem("totalCorrect" , hi) ;
 alert("🤥")
@@ -89,9 +90,22 @@ alert("🤥")
 localStorage.setItem("totalCorrect" , ne) 
 alert("valid")
 } else { 
-alert("in")
+console.log("Invalid")
 }
 alert(localStorage.getItem("totalCorrect"))
+tc = localStorage.getItem("totalWrong") ;
+ne = parseInt(tc) + bye ;
+if(tc === null) {
+localStorage.setItem("totalWrong" , bye) ;
+alert("🤥")
+} else if( !isNaN(ne)) { 
+
+localStorage.setItem("totalWrong" , ne) 
+alert("valid")
+} else { 
+console.log("Invalid")
+}
+alert(localStorage.getItem("totalWrong"))
  google.charts.load('current', {
   'packages': ['corechart']
  });
