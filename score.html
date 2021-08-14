@@ -62,7 +62,7 @@ if (currentTheme == "dark") {
 <h1 class="correct">Correct Answers : <span id="correct"></span></h1>
 <h1 class="wrong">Wrong Answers : <span id="wrong"></span></h1>
 <h1 class="points">Points : <span id="points"></span></h1>
-<audio hidden id="auwin" autoplay="true" >
+<audio hidden id="auwin" autoplay="true" controls >
 <source src="https://upload.wikimedia.org/wikipedia/commons/9/93/Start.wav">
 </audio>
 <div id='piechart'>loading......</div>
@@ -84,24 +84,19 @@ var ne = parseInt(tc) + hi ;
 
 if(tc === null) {
 localStorage.setItem("totalCorrect" , hi) ;
-alert("🤥")
 } else if( !isNaN(ne)) { 
 
 localStorage.setItem("totalCorrect" , ne) 
-alert("valid")
 } else { 
 console.log("Invalid")
 }
-alert(localStorage.getItem("totalCorrect"))
 tc = localStorage.getItem("totalWrong") ;
 ne = parseInt(tc) + bye ;
 if(tc === null) {
 localStorage.setItem("totalWrong" , bye) ;
-alert("🤥")
 } else if( !isNaN(ne)) { 
 
 localStorage.setItem("totalWrong" , ne) 
-alert("valid")
 } else { 
 console.log("Invalid")
 }
@@ -149,6 +144,9 @@ if (navigator.share) {
    alert("Native Sharing not supported")
   }
 }
+sessionStorage.deleteItem("correct");
+sessionStorage.deleteItem("wrong");
+sessionStorage.deleteItem("share");
 </script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
 <script > confetti()
