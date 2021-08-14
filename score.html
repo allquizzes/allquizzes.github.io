@@ -144,9 +144,9 @@ if (navigator.share) {
    alert("Native Sharing not supported")
   }
 }
-sessionStorage.deleteItem("correct");
-sessionStorage.deleteItem("wrong");
-sessionStorage.deleteItem("share");
+sessionStorage.removeItem("correct");
+sessionStorage.removeItem("wrong");
+sessionStorage.removeItem("share");
 </script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
 <script > confetti()
