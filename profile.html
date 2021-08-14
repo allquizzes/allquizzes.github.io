@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head><style>
+h2 {
+font-size : 60px;
+text-align : center;
+color: white ;
+border : 2px solid black;
+background : #4fb9ff ;
+}
+.correct {
+color : green;
+}
+.wrong {
+color : red;
+}
+body {
+  --text-color: #222;
+  --bkg-color: #fff;
+  --side-nav: black;
+  --link: green;
+  --link-visit: red ;
+--text-color: black ;
+  }
+body.dark-theme {
+  --text-color: white;
+  --bkg-color: #121212;
+  --side-nav: white;
+  --link: chartreuse;
+  --link-visit: red ;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--bkg-color);
+}
+body {
+  color: var(--text-color);
+}
+i {
+color: var(--text-color);
+}
+</style>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+<script>
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme == "dark") {
+  document.body.classList.add("dark-theme");
+  }
+</script>
+<h2 style="color:black" >Your&nbspScore</h2>
+<h1 class="correct">Correct Answers : <span id="correct"></span></h1>
+<h1 class="wrong">Wrong Answers : <span id="wrong"></span></h1>
+<div id='piechart'>loading......</div>
+<script>
+var correct = localStorage.getItem("totalCorrect");
+var wrong = localStorage.getItem("totalWrong");
+document.getElementById("correct").innerHTML = correct ;
+document.getElementById("wrong").innerHTML = wrong ;
+</script>
+<script>
+var high = document.getElementById("correct").innerHTML ;
+var byeg = document.getElementById("wrong").innerHTML  ;
+var hi = parseInt(high);
+var bye = parseInt(byeg);
+ google.charts.load('current', {
+  'packages': ['corechart']
+ });
+ google.charts.setOnLoadCallback(
+  drawChart);
+ // Draw the chart and set the chart values
+ function drawChart() {
+  var data = google.visualization
+   .arrayToDataTable([
+    ['status', 'percentage'],
+    ['Correct Answers', hi],
+    ['Wrong Answers', bye]
+   ]);
+  // Optional; add a title and set the width and height of the chart
+  var options = {
+   'title': 'Your Score',
+   'width': 400,
+   'height': 300,
+    pieHole : 0.5 ,
+   slices: {
+    0: {
+     color: 'green'
+    },
+    1: {
+     color: 'red'
+    }
+   }
+  };
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google
+   .visualization.PieChart(document
+    .getElementById('piechart'));
+  chart.draw(data, options);
+ }
+</script>
+</body>
+</html>
