@@ -115,7 +115,7 @@ color: black ;
 .extra {
   display: grid;
   padding: 2px;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 100px 1px;
   gap: 10px;
   align-items: center;
   max-width: 100vw;
@@ -152,38 +152,6 @@ if (currentTheme == "dark") {
 <div class="ham"></div></div><div class="main">
 <img src="https://res.cloudinary.com/aishakhan/image/upload/c_scale,h_60,q_auto:best,w_250/v1628958799/allquizzes-logo.png">
 <p class="al">AllQuizzes is in continuous development. It will be released on 30 August. You can give your <a href="https://docs.google.com/forms/d/e/1FAIpQLSet9MEfP97EJGEhGjpy69iRs_jEPAZII1nNpm6lHPPHRYYASg/viewform">Feedback</a> to help us create a better AllQuizzes</p>
-<h1 id="demo"></h1>
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("August 30, 2021 00:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
 <div class="ranmath"><h2>Random Maths Questions</h2>
  <button onclick="generate()" class="gen" ><img src=" https://raw.githubusercontent.com/google/material-design-icons/master/png/navigation/refresh/materialicons/18dp/1x/baseline_refresh_black_18dp.png" loading="lazy" alt="Refresh" height=18 width=18></button><br>
 <p id="first">Loading... </p> <p id="sign"></p>  <p id="second"></p> = <input type="number" id="in"> <button onclick="check()" class="check">Check</button>
