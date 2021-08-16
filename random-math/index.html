@@ -18,9 +18,16 @@ display: inline ;
 }
 .ranmath h2 {
   display: inline ;
-color : #4fb9ff ;
+font-size: 3rem ;
+font-family: sans-serif ;
+color: #4fb9ff ;
 }
-
+@supports (-webkit-text-stroke: 0.5px black) {
+  h2 {
+    -webkit-text-stroke: 0.5px black;
+    -webkit-text-fill-color: #4fb9ff;
+  }
+}
 </style>
 </head>
 <body>
@@ -61,7 +68,7 @@ function generate() {
 }
 function check() {
   var input = document.getElementById("in").value ;
-  var respass = " ✓ Correct , " + fnum + " " + sign  + " " + snum + " = " + answer ;
+  var respass = "✔️ Correct , " + fnum + " " + sign  + " " + snum + " = " + answer ;
  var resfail =  "❌ Wrong , " + fnum + " " + sign  + " " + snum + " = " + answer ;
    if(input == answer) {
   document.getElementById("res").innerHTML  = respass ;
