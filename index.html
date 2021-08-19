@@ -221,7 +221,8 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-document.getElementsByClassName("correct")[0].innerHTML = "hh" ;
+var correct = localStorage.getItem("totalCorrect");
+document.getElementsByClassName("correct")[0].innerHTML = correct ;
 document.getElementsByClassName("wrong")[0].innerHTML = "c" ;
 </script>
 </div>
