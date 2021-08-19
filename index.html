@@ -167,7 +167,7 @@ if (currentTheme == "dark") {
 <div class="ham"></div>
 <div class="ham"></div></div>
 
-<div class="total"> <div class="correct">Hello</div><div class="wrong">Bye</div></div>
+<div class="total"> <div class="correct"></div><div class="wrong"></div></div>
 
 <div class="main"><img src="https://res.cloudinary.com/aishakhan/image/upload/c_scale,h_60,q_auto:best,w_250/v1628958799/allquizzes-logo.png">
 <p class="al">AllQuizzes is in continuous development. It will be released on 30 August. You can give your <a href="https://docs.google.com/forms/d/e/1FAIpQLSet9MEfP97EJGEhGjpy69iRs_jEPAZII1nNpm6lHPPHRYYASg/viewform">Feedback</a> to help us create a better AllQuizzes</p>
@@ -221,8 +221,8 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-document.querySelector("#correct").innerHTML = localStorage.getItem("totalCorrect") ;
-document.querySelector("#wrong").innerHTML = localStorage.getItem("totalWrong") ;
+document.querySelector(".correct").innerHTML = localStorage.getItem("totalCorrect") ;
+document.querySelector(".wrong").innerHTML = localStorage.getItem("totalWrong") ;
 </script>
 </div>
 </body>
