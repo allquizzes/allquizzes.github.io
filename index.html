@@ -221,8 +221,13 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+if (localStorage.getItem("totalCorrect") == null || localStorage.getItem("totalWrong")== null) {
+document.getElementsByClassName("correct")[0].innerHTML = "0" ;
+document.getElementsByClassName("wrong")[0].innerHTML = "0" ;
+} else {
 document.getElementsByClassName("correct")[0].innerHTML = localStorage.getItem("totalCorrect") ;
 document.getElementsByClassName("wrong")[0].innerHTML = localStorage.getItem("totalWrong") ;
+}
 </script>
 </div>
 </body>
