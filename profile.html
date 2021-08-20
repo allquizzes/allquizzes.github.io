@@ -54,15 +54,19 @@ if (currentTheme == "dark") {
   document.body.classList.add("dark-theme");
   }
 </script>
-<h2 style="color:black" >Your&nbspScore</h2>
+<h2 style="color:black" >Stastics</h2>
 <h1 class="correct">Correct Answers : <span id="correct"></span></h1>
 <h1 class="wrong">Wrong Answers : <span id="wrong"></span></h1>
 <div id='piechart'>loading......</div>
-<script>
+<script> if (localStorage.getItem("totalCorrect") == null || localStorage.getItem("totalWrong")== null) {
+document.getElementById("correct").innerHTML = "0";
+document.getElementById("wrong").innerHTML = "0" ;
+} else {
 var correct = localStorage.getItem("totalCorrect");
 var wrong = localStorage.getItem("totalWrong");
 document.getElementById("correct").innerHTML = correct ;
 document.getElementById("wrong").innerHTML = wrong ;
+}
 </script>
 <script>
 var high = document.getElementById("correct").innerHTML ;
@@ -84,7 +88,7 @@ var bye = parseInt(byeg);
    ]);
   // Optional; add a title and set the width and height of the chart
   var options = {
-   'title': 'Your Score',
+   'title': 'Stastics',
    'width': 400,
    'height': 300,
     pieHole : 0.5 ,
