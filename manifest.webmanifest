@@ -1,12 +1,12 @@
 {
-  "background_color": "#4fb9ff",
+  "background_color": "black",
   "theme" : "#4fb9ff",
   "description": "It contains Quizzes on every topic",
   "display": "standalone",
   "icons": [
     {
       "src": "https://res.cloudinary.com/aishakhan/image/upload/c_scale,h_60,q_auto:best,w_250/v1628958799/allquizzes-logo.png",
-      "sizes": "192x192",
+      "sizes": "60x250",
       "type": "image/png"
     }
   ],
