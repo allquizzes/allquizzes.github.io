@@ -6,7 +6,7 @@
   "icons": [
     {
       "src": "https://res.cloudinary.com/aishakhan/image/upload/c_scale,h_60,q_auto:best,w_250/v1628958799/allquizzes-logo.png",
-      "sizes": "150x192",
+      "sizes": "192x192",
       "type": "image/png"
     }
   ],
