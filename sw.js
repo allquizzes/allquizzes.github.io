@@ -1,8 +1,8 @@
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open('v1_alpa').then(function(cache) {
+    caches.open('v1_ahlpa').then(function(cache) {
       return cache.addAll([
-'tags.css' , 'style.css' , 'index.js' , 'slideshow.js' , 'timer.js' , 'score.html'
+'style.css' , 'score.html'
       ]);
     })
   );
@@ -21,7 +21,7 @@ self.addEventListener('fetch', function(event) {
         // and serve second one
         let responseClone = response.clone();
         
-        caches.open('v1_alpa').then(function (cache) {
+        caches.open('v1_ahlpa').then(function (cache) {
           cache.put(event.request, responseClone);
         });
         return response;
