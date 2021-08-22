@@ -2,7 +2,7 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('v1_ahlpa').then(function(cache) {
       return cache.addAll([
-'style.css' , 'score.html' , 'offline.html"
+'style.css' , 'score.html' , 'offline.html'
       ]);
     })
   );
