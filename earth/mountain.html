@@ -1,13 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
- <title>Mountain Quiz</title>
+ <title>Mountain Quiz | AllQuizzes</title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8566824643349234"
+     crossorigin="anonymous"></script>
 <link rel="stylesheet" href="../style.css">
+
+<link rel="stylesheet" href="../tags.css">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="fb:admins" content="100055036303318"/>
 <script src="../slideshow.js"></script>
-<meta name="keywords" content="mountain , mountain quiz , mountains quiz , Mountain Quiz ">
-   <meta name="description" content="It contains 10 questions on Mountains. Play this Quiz to increase your knowledge">
+<meta name="keywords" content="">
+   <meta name="description" content="It contains 10 questions on _. Play this Quiz to increase your knowledge. Created by AllQuizzes">
 <meta name="color-scheme" content="dark light">
 </head>
 <body id="body" >
@@ -17,8 +21,13 @@ if (currentTheme == "dark") {
   document.body.classList.add("dark-theme");
   }
 </script>
-<strong><center><a href="../index.html" style="text-align: center;">Go to Home Page</a></center></strong>
-<h1 id="head"><br>Mountain Quiz <br><br></h1>
+<aside>
+<div onclick="openNav()"  id="side"  >
+<div class="ham"></div>
+<div class="ham"></div>
+<div class="ham"></div></div><div id="sidenav"></div></aside><main>
+<div style="text-align: center" ><a href="../index.html" class="a">🏠</a></div>
+ <h1>Quiz</h1>  <p>10 Questions</p><time>23 August 2021</time><br>
 ​<center>
 <p id="timer">Timer 2:00</p>
 </center>
@@ -104,10 +113,11 @@ if (currentTheme == "dark") {
  <button class="8" onclick="wroten(this.style)">Lhotse</button><br><br>
  <button class="8" onclick="wroten(this.style)">Cho Oyu</button><br> 
  <p class="status"></p>
-</div><div class="con" style="border: none; text-align: center" >
+</div>
+<div class="con" style="border: none; text-align: center" >
 <button onclick="check()" id="chc" style="none">Check Score</button></div></div>
 <br><br><br>
-<div id="descript"> <h2 style="text-align:left ; text-decoration:none" >Instructions -</h2> <ul> <li>This is Mountain Quiz.  </li> <li>Click on <b>Start Quiz </b>button to start the Quiz.</li><li>It contains 10 questions.</li> <li> You have 5 minutes to do this Quiz, After 5 minutes you can not do the Quiz.</li> <li> Every Correct Answer gives you +5 points.</li> <li> You can Check your Score by clicking on <b>Check Score</b> button after completing the Quiz.</li><li>Please <button class="share" ; id="sharethis"; onclick="sharequiz()" ><b>Share</button></b>
+<div id="descript"> <h2 style="text-align:left ; text-decoration:none" >Instructions -</h2> <ul> <li>Click on <b>Start Quiz </b>button to start the Quiz.</li><li>It contains 10 questions.</li> <li> You have 5 minutes to do this Quiz, After 5 minutes you can not do the Quiz.</li> <li> Every Correct Answer gives you +5 points.</li> <li> You can Check your Score by clicking on <b>Check Score</b> button after completing the Quiz.</li><li>Please <button class="share" ; id="sharethis"; onclick="sharequiz()" ><b>Share</button></b> the Quiz</strong>
 </ul>  <span style="text-align: center;">So enjoy the Quiz !!! </span>
    </div>
 <script src="../timer.js"></script>
@@ -140,7 +150,7 @@ here.backgroundColor = "green";
 function wroone(here) {
 here.backgroundColor = "red";
  smi += 1;
- x[0].innerHTML = "❌ Wrong";
+ x[0].innerHTML = "&cross; Wrong";
  x[0].style.color = "red";
  document.getElementsByClassName(
   "1")[0].disabled = true;
@@ -168,7 +178,7 @@ function cortwo(here) {
 
 function wrotwo(here) {
  here.backgroundColor = "red";
- x[1].innerHTML = "❌ Wrong";
+ x[1].innerHTML = "&cross; Wrong";
  x[1].style.color = "red";
  y = document
   .getElementsByClassName("20");
@@ -198,7 +208,7 @@ function corthree(here) {
 function wrothree(here) {
  here.backgroundColor = "red";
  smi += 1;
- x[2].innerHTML = "❌ Wrong";
+ x[2].innerHTML = "&cross; Wrong";
  x[2].style.color = "red";
  document.getElementsByClassName(
   "2")[0].disabled = true;
@@ -229,7 +239,7 @@ function corfour(here) {
 function wrofour(here) {
  here.backgroundColor = "red";
  smi += 1;
- x[3].innerHTML = "❌ Wrong";
+ x[3].innerHTML = "&cross; Wrong";
  x[3].style.color = "red";
  document.getElementsByClassName(
   "3")[0].disabled = true;
@@ -260,7 +270,7 @@ function corfive(here) {
 function wrofive(here) {
  here.backgroundColor = "red";
  smi += 1;
- x[4].innerHTML = "❌ Wrong";
+ x[4].innerHTML = "&cross; Wrong";
  x[4].style.color = "red";
  document.getElementsByClassName(
   "4")[0].disabled = true;
@@ -293,7 +303,7 @@ function corsev(here) {
 function wrosev(here) {
  here.backgroundColor = "red";
  smi += 1;
- x[6].innerHTML = "❌ Wrong";
+ x[6].innerHTML = "&cross; Wrong";
  x[6].style.color = "red";
  document.getElementsByClassName(
   "5")[0].disabled = true;
@@ -324,7 +334,7 @@ function coreight(here) {
 function wroeight(here) {
  here.backgroundColor = "red";
  smi += 1;
- x[7].innerHTML = "❌ Wrong";
+ x[7].innerHTML = "&cross; Wrong";
  x[7].style.color = "red";
  document.getElementsByClassName(
   "6")[0].disabled = true;
@@ -355,7 +365,7 @@ function cornine(here) {
 function wronine(here) {
  here.backgroundColor = "red";
  smi += 1;
- x[8].innerHTML = "❌ Wrong";
+ x[8].innerHTML = "&cross; Wrong";
  x[8].style.color = "red";
  document.getElementsByClassName(
   "7")[0].disabled = true;
@@ -386,7 +396,7 @@ function corten(here) {
 function wroten(here) {
  here.backgroundColor = "red";
  smi += 1;
- x[9].innerHTML = "❌ Wrong";
+ x[9].innerHTML = "&cross; Wrong";
  x[9].style.color = "red";
  document.getElementsByClassName(
   "8")[0].disabled = true;
@@ -416,7 +426,7 @@ function corsix(here) {
 function wrosix(here) {
  here.backgroundColor = "red";
  smi += 1;
- x[5].innerHTML = "❌ Wrong";
+ x[5].innerHTML = "&cross; Wrong";
  x[5].style.color = "red";
  document.getElementsByClassName(
   "10")[0].disabled = true;
@@ -440,7 +450,7 @@ sessionStorage.setItem("points", points);
 sessionStorage.setItem("correct", scp);
 sessionStorage.setItem("wrong", smi);
 sessionStorage.setItem("share", bill);
-sessionStorage.setItem("explanation", "https://allquizzes.github.io/explanation/earth/mountain.html" );
+sessionStorage.setItem("explanation", "https://allquizzes.github.io/explanation" );
 window.open("/score.html" , "_self" );
 }
 function sharequiz() {
@@ -451,7 +461,16 @@ navigator.share ({ text : "Please play this Amazing Quiz - \n"  + document.URL
  alert("Native Sharing is not supported in your Browser") ;
  }
 }
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+       document.getElementById("sidenav").innerHTML = xhttp.responseText;
+    }
+};
+xhttp.open("GET", "../../sidenav.html", true);
+xhttp.send();
 </script>
-<br><br><br><br><br><br><br><br>
+</main>
 </body>
 </html>
